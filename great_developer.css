@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Serif|Roboto+Slab");
+
 .first_section {
   background: url("https://www.dropbox.com/s/uzkeu1gd569meo4/Website_Background_3.jpg?raw=1");
   background-size: cover;
@@ -75,10 +75,14 @@
 }
 
 .image-container {
-  width: 50%;
+  width: 90%;
   margin: auto;
-  padding: 10px;
-  border: 20px #0000c8 solid;
+  padding: 3px;
+  border: 2px #0000c8 solid;
+}
+
+img {
+  margin: auto;
 }
 
 .spacer {
@@ -116,15 +120,31 @@ p {
 .caption {
   margin: auto;
   border: 2px solid red;
-  width: 50%;
+  width: 90%;
   height: 100px;
 }
 
 .sub-caption {
   margin: auto;
   border: 2px solid blue;
-  width: 50%;
+  width: 90%;
   height: 100px;
+}
+
+.caption p {
+  color: white;
+  font-family: 'Work Sans', serif;
+  font-size: 8px;
+  font-weight: normal;
+  font-variant: normal;
+}
+
+.sub-caption p {
+  color: white;
+  font-family: 'Work Sans', serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-variant: normal;
 }
 
 footer {
