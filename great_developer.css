@@ -75,9 +75,10 @@
 }
 
 .image-container {
-  width: 200px;
+  width: 50%;
   margin: auto;
   padding: 10px;
+  border: 20px #0000c8 solid;
 }
 
 .spacer {
@@ -108,13 +109,22 @@ p {
   font-size: 16.5px;
 }
 
-.image-container {
-  border: 20px;
-  border-color: #0000c8;
-}
-
 .skillicon {
   font-size: 33px;
+}
+
+.caption {
+  margin: auto;
+  border: 2px solid red;
+  width: 50%;
+  height: 100px;
+}
+
+.sub-caption {
+  margin: auto;
+  border: 2px solid blue;
+  width: 50%;
+  height: 100px;
 }
 
 footer {
