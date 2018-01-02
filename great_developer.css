@@ -119,30 +119,31 @@ p {
 
 .caption {
   margin: auto;
-  border: 2px solid red;
   width: 90%;
-  height: 100px;
+  border-bottom: 2px solid grey;
 }
 
 .sub-caption {
   margin: auto;
-  border: 2px solid blue;
   width: 90%;
   height: 100px;
+  
 }
 
 .caption p {
   color: white;
   font-family: 'Work Sans', serif;
-  font-size: 8px;
-  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: bold;
   font-variant: normal;
+  text-align: center;
 }
 
 .sub-caption p {
   color: white;
   font-family: 'Work Sans', serif;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: normal;
   font-variant: normal;
 }
