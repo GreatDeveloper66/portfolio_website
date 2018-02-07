@@ -1,132 +1,107 @@
 <!DOCTYPE html>
 <html>
-<head>
-<!--Important MetaData: title, keywords, etc..-->
-<meta charset="UTF-8"/>
-<title>My Portfolio Page</title>
-<meta name="description" content="Portfolio Home Page"/>
-<meta name="keywords" content="Web Project, Portfolio,Web Developer, Web Development"/>
-<meta name="device" content="width=device-width,initial-scale=1.0"/>
-<meta name="author" content="Adam Shaffer"/>
+  <head>
+    <!--Important MetaData: title, keywords, etc..-->
+    <meta charset="UTF-8"/>
+    <title>My Portfolio Page</title>
+    <meta name="description" content="Portfolio Home Page"/>
+    <meta name="keywords" content="Web Project, Portfolio,Web Developer, Web Development"/>
+    <meta name="device" content="width=device-width,initial-scale=1.0"/>
+    <meta name="author" content="Adam Shaffer"/>
   
-<!--LINKS TO EXTERNAL FILES-->
+    <!--LINKS TO EXTERNAL FILES-->
 
-<!--EXTERNAL LINKS TO LOCAL CASCADING STYLE SHEET AND JAVASCRIPT CODE-->
-<!--Link to CSS sheet-Show_the_Weather.css-->
-<link rel="stylesheet" href="great_developer.css">
-<!--Link to JavaScript Code-->
-<script src="great_developer.js"></script>
+    <!--EXTERNAL LINKS TO LOCAL CASCADING STYLE SHEET AND JAVASCRIPT CODE-->
+    <!--Link to CSS sheet-Show_the_Weather.css-->
+    <link rel="stylesheet" href="great_developer.css">
+    <!--Link to JavaScript Code-->
+    <script src="great_developer.js"></script>
 
-<!--BOOTSTRAP LINKS AND CDN-->
-<!--Links to Bootstrap-->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--BOOTSTRAP LINKS AND CDN-->
+    <!--Links to Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-<!--JQuery Google CDN-->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <!--JQuery Google CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 
- <!--Link to w3 School library-->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Link to w3 School library-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-<!-- Links to Devicons and Font Awesome -->
-<link rel="stylesheet" href= "https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Work+Sans" rel="stylesheet">
+    <!-- Links to Devicon Icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-</head>
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab|Work+Sans" rel="stylesheet">
+
+  </head>
 
 <body>
-
-<div class="first_section">
-  
- <!--TOP NAVIGATION BAR-->
- <!--THIS SIDE NAVIGATION BAR IS FOR SMALLER MOBILE DEVICES-->
-  <div class="container-fluid visible-xs-inline-block">
-    <div class="row side_navbar" id="mySidenav">
-        <a href="javscript:void(0)" class="exit" onclick="closeNav()">
+  <div class="first_section">
+    <div class="title-bar">
+      <!--TOP NAVIGATION BAR-->
+      <!--THIS SIDE NAVIGATION BAR IS FOR SMALLER MOBILE DEVICES-->
+      <div class="container-fluid visible-xs-inline-block">
+        <div class="row side_navbar" id="mySidenav">
+          <a href="javscript:void(0)" class="exit" onclick="closeNav()">
           &times;
-        </a>
-        <a href="#title" data-toggle="tooltip" title="Home"><i class="fa fa-home fa-3x" aria-hidden="true" onclick="closeNav()"></i></a>
-        <a href="#Education" data-toggle="tooltip" title="Education"><i class="fa fa-graduation-cap fa-3x" aria-hidden="true" onclick="closeNav()"></i></a>
-        <a href="#about" data-toggle="tooltip" title="About Me"><i class="fa fa-info-circle fa-3x" aria-hidden="true" onclick="closeNav()"></i></a>
-        <a href="#contact" data-toggle="tooltip" title="Contact Me"><i class="fa fa-envelope fa-3x" aria-hidden="true" onclick="closeNav()"></i></a>
-        <a href="#portfolio" data-toggle="tooltip" title="Portfolio"><i class="fa fa-briefcase fa-3x" aria-hidden="true" onclick="closeNav()"></i></a>
-        <a href="https://www.linkedin.com/in/adamquality" target="_blank" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin-square fa-3x" onclick="closeNav()"></i></a>
-        <a href="https://www.facebook.com/adam.shaffer.7146" target="_blank" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook-square fa-3x" onclick="closeNav()"></i></a>
-        <a href="https://github.com/GreatDeveloper66" target="_blank" data-toggle="tooltip" title="GitHub"><i class="fa fa-github-square fa-3x" onclick="closeNav()"></i></a>
-        <a href="https://twitter.com/Great_Developer" target="_blank" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter-square fa-3x" onclick="closeNav()"></i></a>
-      </div>
+          </a>
+          <a href="#title" data-toggle="tooltip" title="Home"><p onclick="openNav()">Home</p></a>
+          <a href="#Education" data-toggle="tooltip" title="Education"><p onclick="openNav()">Skills</p></a>
+          <a href="#about" data-toggle="tooltip" title="About Me"><p onclick="openNav()">About</p></a>
+          <a href="#contact" data-toggle="tooltip" title="Contact Me"><p onclick="openNav()">Contact</p></a>
+          <a href="#portfolio" data-toggle="tooltip" title="Portfolio"><p onclick="openNav()">Portfolio</p></a>
+        </div>
       <a href="#"><i class="fa fa-bars fa-3x" aria-hidden="true" onclick="openNav()"></i></a>
-      
     </div>
-
-<!--TOP NAVIGATION BAR FOR MEDIUM TABLET SIZE SCREENS-->
-<div class="container-fluid visible-sm-inline-block">
-  <div class="row">
-  <!--nav buttons pulled to the left-home, about, Portfolio,Contact-->
-  <ul class="nav nav-pills pull-left" role="tablist">
-    <li role="presentation" class="active"><a href="#title" data-toggle="tooltip" title="Home"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
-    <li role="presentation"><a href="#Education" data-toggle="tooltip" title="Education"><i class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i></a></li>
-    <li role="presentation"><a href="#about" data-toggle="tooltip" title="About Me"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i></a></li>
-    <li role="presentation"><a href="#contact" data-toggle="tooltip" title="Contact Me"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-    <li role="presentation"><a href="#portfolio" data-toggle="tooltip" title="Portfolio"><i class="fa fa-briefcase fa-2x" aria-hidden="true"></i></a></li>
-  <li role="presentation"><a href="https://www.linkedin.com/in/adamquality" target="_blank" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-    <li role="presentation"><a href="https://www.facebook.com/adam.shaffer.7146" target="_blank" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-    <li role="presentation"><a href="https://www.freecodecamp.com/greatdeveloper66" target="_blank" data-toggle="tooltip" title="Free Code Camp"><i class="fa fa-free-code-camp fa-2x"></i></a></li>
-    <li role="presentation"><a href="https://github.com/GreatDeveloper66" target="_blank" data-toggle="tooltip" title="GitHub"><i class="fa fa-github-square fa-2x"></i></a></li>
-    <li role="presentation"><a href="https://twitter.com/Great_Developer" target="_blank" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a></li>
- </ul>
   
-  </div>
-  </div>
 
+
+
+<!--TOP NAVIGATION BAR-->
+ <!--this navigation bar is for desktop and large screens-responsive design-->
+ <div class="container-fluid visible-sm-block">
+  <div class="row">
+    <!--nav buttons pulled to the left-home, about, Portfolio,Contact-->
+    <ul class="nav nav-pills pull-right" role="tablist">
+      <li role="presentation" class="active"><a href="#title" data-toggle="tooltip" title="Home">Home</a></li>
+      <li role="presentation" data-toggle="tooltip" title=""><a href="#portfolio" data-toggle="tooltip" title="Portfolio">Portfolio</i></a></li>
+      <li role="presentation"><a href="#Education" data-toggle="tooltip" title="Skills">Skills</a></li>
+      <li role="presentation"><a href="#contact" data-toggle="tooltip" title="SocialMedia">Social Media</a></li>
+      <li role="presentation"><a href="#about" data-toggle="tooltip" title="About Me">About</a></li>
+      <li role="presentation"><a href="#contact" data-toggle="tooltip" title="Contact Me">Contact</a></li>
+      
+      
+    </ul>
+  </div>
+</div>
  
  <!--TOP NAVIGATION BAR-->
  <!--this navigation bar is for desktop and large screens-responsive design-->
  <div class="container-fluid hidden-sm hidden-xs">
   <div class="row">
-  <!--nav buttons pulled to the left-home, about, Portfolio,Contact-->
-  <ul class="nav nav-pills pull-left" role="tablist">
-    <li role="presentation" class="active"><a href="#title" data-toggle="tooltip" title="Home"><i class="fa fa-home fa-4x" aria-hidden="true"></i></a></li>
-    <li role="presentation"><a href="#Education" data-toggle="tooltip" title="Education"><i class="fa fa-graduation-cap fa-4x" aria-hidden="true"></i></a></li>
-    <li role="presentation"><a href="#about" data-toggle="tooltip" title="About Me"><i class="fa fa-info-circle fa-4x" aria-hidden="true"></i></a></li>
-        <li role="presentation"><a href="#contact" data-toggle="tooltip" title="Contact Me"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a></li>
-        <li role="presentation" data-toggle="tooltip" title=""><a href="#portfolio" data-toggle="tooltip" title="Portfolio"><i class="fa fa-briefcase fa-4x" aria-hidden="true"></i></a></li>
-  </ul>
- 
-
-
-<!--Nav buttons pulled to the right-Social Media--> 
-      <ul class="nav nav-pills pull-right" role="tablist">
-        <li role="presentation" class="active"><a href="https://www.linkedin.com/in/adamquality" target="_blank" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin-square fa-4x"></i></a></li>
-        <li role="presentation"><a href="https://www.facebook.com/adam.shaffer.7146" target="_blank" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook-square fa-4x"></i></a></li>
-        <li role="presentation"><a href="https://www.freecodecamp.com/greatdeveloper66" target="_blank" data-toggle="tooltip" title="Free Code Camp"><i class="fa fa-free-code-camp fa-4x"></i></a></li>
-        <li role="presentation"><a href="https://github.com/GreatDeveloper66" target="_blank" data-toggle="tooltip" title="GitHub"><i class="fa fa-github-square fa-4x"></i></a></li>
-        <li role="presentation"><a href="https://twitter.com/Great_Developer" target="_blank" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter-square fa-4x"></i></a></li>
-      </ul>
-  </div>
-  </div>
     
-  <div class="spacer"></div>
-    <!--THIS MAIN SECTION WILL INCLUDE BACKGROUND PICTURE, TITLE, SUBTITLE AS WELL AS ABOUT,PROFILE AND CONTACT FORM SECTIONS-->
-  <!--Title and subtitle container-->
-  <div class="container-fluid" id="home">
-    <div class="row title"> 
-      Adam Shaffer
+    <!--nav buttons pulled to the left-home, about, Portfolio,Contact-->
+    <ul class="nav nav-pills pull-right" role="tablist">
+      <li role="presentation" class="active"><a href="#title" data-toggle="tooltip" title="Home">Home</a></li>
+      <li role="presentation" data-toggle="tooltip" title=""><a href="#portfolio" data-toggle="tooltip" title="Portfolio">Portfolio</i></a></li>
+      <li role="presentation"><a href="#Education" data-toggle="tooltip" title="Skills">Skills</a></li>
+      <li role="presentation"><a href="#contact" data-toggle="tooltip" title="SocialMedia">Social Media</a></li>
+      <li role="presentation"><a href="#about" data-toggle="tooltip" title="About Me">About</a></li>
+      <li role="presentation"><a href="#contact" data-toggle="tooltip" title="Contact Me">Contact</a></li>
+      
+    </ul>
   </div>
-  <div class="row subtitle">
-  Junior Web Developer
-  </div>
- </div>
+</div>
+    
 
-  
-  <div class="spacer"></div>
   
    
   <!--Portfolio container-->
@@ -140,137 +115,155 @@
         </div>
         
     </div>
-    <!--first row of project links-->
+    <!--Project Links-->
     <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-xs-6 col-sm-4">
         <div class="image-container">
-          <a href="Random_Quote_Machine/Random_Quote_Machine.html" data-toggle="tooltip" title="Random Quote Machine" target="_blank"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/dm23nkvqyvmhkgf/Website-Under-Construction_E.jpg?raw=1"/></a>
+          <a href="../Simon_Game/Simon_Game.html" data-toggle="tooltip" title="Simon Game" target="_blank"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/zd4h80djsgeo9h0/Simon_Game.png?raw=1"/></a>
         </div>
         <div class="caption">
           <p>
             Simon Game
           </p>
         </div>
-        <div class="sub-caption">
-          <p>
+        <div class="hidden-xs">
+          <div class="sub-caption">
+            <p>
             Do you remember the Simon Game? Test your memory by repeating a series of random sounds and lights. 
-          </p>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-xs-6 col-sm-4">
         <div class="image-container">
-          <a href="#"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/dm23nkvqyvmhkgf/Website-Under-Construction_E.jpg?raw=1"/></a>
+          <a href="../JavaScript_Calculator/javascript_calculator.html" data-toggle="tooltip" title="Basic Calculator" target="_blank"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/17pprnmbueie6ty/Basic_Calculator.png?raw=1"/></a>
         </div>
         <div class="caption">
           <p>
             Calculator App
           </p>
         </div>
-        <div class="sub-caption">
-          <p>
-            This calculator app performs basic arithmetic operations. 
-          </p>
+        <div class="hidden-xs">
+          <div class="sub-caption">
+            <p>
+              This calculator app performs basic arithmetic operations. 
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-xs-6 col-sm-4">
         <div class="image-container">
-          <a href="#"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/dm23nkvqyvmhkgf/Website-Under-Construction_E.jpg?raw=1"/></a>
+          <a href="../Tic-Tac-Toe/Tic-Tac-Toe.html" data-toggle="tooltip" title="Tic Tac Toe Game" target="_blank"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/xumf8l6tgebtxhi/Tic-Tac-Toe.png?raw=1"/></a>
         </div>
         <div class="caption">
           <p>
             Tic-Tac-Toe
           </p>
         </div>
-        <div class="sub-caption">
-          <p>
-            Play Tic-Tac-Toe. See if you can beat the computer at this simple game.
-          </p>
+        <div class="hidden-xs">
+          <div class="sub-caption">
+            <p>
+              Play Tic-Tac-Toe. See if you can beat the computer at this simple game.
+            </p>
+          </div>
         </div>
       </div>
     
-    <!--second row of project links-->
     
-      <div class="col-xs-12 col-sm-6 col-md-4">
+    
+      <div class="col-xs-6 col-sm-4">
         <div class="image-container">
-          <a href="#"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/dm23nkvqyvmhkgf/Website-Under-Construction_E.jpg?raw=1"></a>
+          <a href="../Show_the_Weather/Show_the_Weather.html" data-toggle="tooltip" title="Weather App" target="_blank"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/gjrsvdq3md9nyl5/Weather_App.png?raw=1"></a>
         </div>
         <div class="caption">
           <p>
             Weather App
           </p>
         </div>
-        <div class="sub-caption">
-          <p>
-            Do you want to know the weather in your area? Use this app to find out the temperature, precipitation and other weather conditions.
-          </p>
+        <div class="hidden-xs">
+          <div class="sub-caption">
+            <p>
+              Do you want to know the weather in your area?
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-xs-6 col-sm-4">
         <div class="image-container">
-          <a href="#"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/dm23nkvqyvmhkgf/Website-Under-Construction_E.jpg?raw=1"></a>
+          <a href="../Random_Quote_Machine/Random_Quote_Machine.html" data-toggle="tooltip" title="Random Quote Machine" target="_blank"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/cii3ykzea3q30no/Random_Quote.png?raw=1"></a>
         </div>
         <div class="caption">
           <p>
             Random Quote Machine
           </p>  
         </div>
-        <div class="sub-caption">
-          <p>
-            Roll the Dice to see and tweet a random quote from a famous person.
-          </p>
+        <div class="hidden-xs">
+          <div class="sub-caption">
+            <p>
+              Roll the Dice to see and tweet a random quote from a famous person.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-xs-6 col-sm-4">
         <div class="image-container">
-          <a href="#"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/dm23nkvqyvmhkgf/Website-Under-Construction_E.jpg?raw=1"></a>
+          <a href="../Wikipedia_Viewer/Wikipedia_Viewer.html" data-toggle="tooltip" title="Wikipedia Viewer" target="_blank"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/v4811sfkpgltfxy/Wikipedia_Viewer.png?raw=1"></a>
         </div>
         <div class="caption">
           <p>
             Wikipedia Viewer
           </p>
         </div>
-        <div class="sub-caption">
-          <p>
-            Use this app to see a random Wikipedia article or look up a specific article.
-          </p>
+        <div class="hidden-xs">
+          <div class="sub-caption">
+            <p>
+              Use this app to see a random Wikipedia article or look up a specific article.
+            </p>
+          </div>
         </div>
       </div>
-   
-    <!--Third row of project links-->
     
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-xs-6 col-sm-4">
         <div class="image-container">
           <a href="#"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/dm23nkvqyvmhkgf/Website-Under-Construction_E.jpg?raw=1"/></a>
         </div>
-        <div class="caption">
-          <p>
-            Coming Soon..<br>
-            Dual N-Back
-          </p>
-        </div>
-        <div class="sub-caption">
-          <p>
+        
+          <div class="caption">
+            <p>
+              Coming Soon..<br>
+              Dual N-Back
+            </p>
+          </div>
+        <div class="hidden-xs">
+          <div class="sub-caption">
+            <p>
             Working memory is an important component of general intelligence. Play this app to improve your working memory.
-          </p>
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-xs-6 col-sm-4">
         <div class="image-container">
           <a href="#"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/dm23nkvqyvmhkgf/Website-Under-Construction_E.jpg?raw=1"/></a>
         </div>
-        <div class="caption">
-          <p>
-            Coming Soon...<br>
-            Advanced Calculator
-          </p>
+        <div class="hidden-xs">
+          <div class="caption">
+            <p>
+              Coming Soon...<br>
+              Calculator v2
+            </p>
+          </div>
         </div>
-        <div class="sub-caption">
-          <p>
-            This app will be able to perform advanced mathematical operations
-          </p>
+        <div class="hidden-xs">
+          <div class="sub-caption">
+            <p>
+              This app will be able to perform advanced mathematical operations
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
+      <div class="col-xs-6 col-sm-4">
+        <div class="project">
         <div class="image-container">
           <a href="#"><img class="img-rounded img-responsive" alt="under construction" src="https://www.dropbox.com/s/dm23nkvqyvmhkgf/Website-Under-Construction_E.jpg?raw=1"/></a>
         </div>
@@ -280,46 +273,172 @@
             Meme Generator
           </p>
         </div>
-        <div class="sub-caption">
-          <p>
-            Do you like memes? Would you like to make your own? This app will allow you to make an internet meme.
-          </p>
+        <div class="hidden-xs">
+          <div class="sub-caption">
+            <p>
+              Do you like memes? Would you like to make your own? This app will allow you to make an internet meme.
+            </p>
+          </div>
         </div>
       </div>
     </div>
       
    </div> 
    </div>
+</div>
    
 <div class="second_section"> 
-    <div class="spacer"></div>
+    <div class="spacer">
+    </div>
   <!--SKILLS SECTION-->
-  <div class="container-fluid" id="Education">
-    <div class="row hidden-xs">
-      <div class="page-header">
-        Education <span id="verticaldivider">|</span>
-    <button class="btn btn-primary dropdown-toggle" type="button" onmouseover="showSkills()" onmouseleave="clearHTML()"><span class="buttontext">Skills</span></button>
-    <button class="btn btn-primary dropdown-toggle" type="button" onmouseover="showCourses()" onmouseleave="clearHTML()"><span class="buttontext">Courses</span></button>
-    <button class="btn btn-primary dropdown-toggle" type="button" onmouseover="showDegrees()" onmouseleave="clearHTML()"><span class="buttontext">Degrees</span></button>
-      </div>
-   </div>
-   <div class="row visible-xs-block">
+  <div class="container-fluid visible-md visible-lg">
+
     <div class="page-header">
-      Education
+        Skills
       </div>
-   </div>
-   <div class="row visible-xs-block">
-      <button class="btn btn-primary dropdown-toggle" type="button" onmouseover="showSkills()" onmouseleave="clearHTML()"><span class="buttontext">Skills</span></button>
-      <button class="btn btn-primary dropdown-toggle" type="button" onmouseover="showCourses()" onmouseleave="clearHTML()"><span class="buttontext">Courses</span></button>
-      <button class="btn btn-primary dropdown-toggle" type="button" onmouseover="showDegrees()" onmouseleave="clearHTML()"><span class="buttontext">Degrees</span></button>
-   </div>
-    <!--Skills and courses drop down menu-->
-    <div class="row" id="targetText">
+    <div class="row">
+      <div class="icon-container">
+      <i class="devicon-html5-plain-wordmark colored"></i>
+    <div class="sub-caption">
+          <p>
+            Hyper Text Markup Language 
+          </p>
+        </div>
+    </div>
     
+    
+      <div class="icon-container">
+        <i class="devicon-css3-plain-wordmark colored"></i>
+    <div class="sub-caption">
+          <p>
+            Cascading Style Sheets 
+          </p>
+        </div>
     </div>
+    
+      <div class="icon-container">
+      <i class="devicon-sass-original colored"></i>
+    <div class="sub-caption">
+          <p>
+            Syntactically Awesome Style Sheets 
+          </p>
+        </div>
     </div>
-    <div class="spacer"></div>
+    
+      <div class="icon-container">
+      <i class="devicon-javascript-plain colored"></i>
+    <div class="sub-caption">
+          <p>
+            Web Programming 
+          </p>
+        </div>
+    </div>
+    
+      <div class="icon-container">
+<i class="devicon-jquery-plain-wordmark colored"></i>
+    <div class="sub-caption">
+          <p>
+            Popular JavaScript Library 
+          </p>
+        </div>
+    </div>
+    
+      <div class="icon-container">
+      <i class="devicon-bootstrap-plain-wordmark colored"></i>
+    <div class="sub-caption">
+          <p>
+            Popular front end library 
+          </p>
+        </div>
+    </div>
+    
+      <div class="icon-container">
+      <i class="devicon-github-plain-wordmark"></i>
+    <div class="sub-caption">
+          <p>
+            Check out my GitHub Skills 
+          </p>
+        </div>
+    </div>
+    
+      <div class="icon-container">
+      <i class="devicon-chrome-plain-wordmark colored"></i>
+    <div class="sub-caption">
+          <p>
+            Chrome Development Tools
+          </p>
+        </div>
+    </div>
+   
+      <div class="icon-container">
+      <i class="devicon-wordpress-plain-wordmark"></i>
+    <div class="sub-caption">
+          <p>
+            My blog was made with wordpress. 
+          </p>
+        </div>
+    </div>
+</div>
+
+  </div>
      
+  <div class="container-fluid" id="SocialMedia">
+    <div class="page-header">
+      Social Media
+    </div>
+    <!--SOCIAL MEDIA BAR FOR DESKTOPS AND LARGE SCREENS-->
+<div class="container-fluid hidden-xs hidden-sm">
+  <div class="row">
+  	<div class="col-lg-6 col-lg-offset-3 col-md-7 col-md-offset-3">
+  <ul class="nav nav-pills nav-justified" role="tablist">
+    
+  <li role="presentation"><a href="https://www.linkedin.com/in/adamquality" target="_blank" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin-square fa-5x"></i></a></li>
+    <li role="presentation"><a href="https://www.facebook.com/adam.shaffer.7146" target="_blank" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook-square fa-5x"></i></a></li>
+    <li role="presentation"><a href="https://www.freecodecamp.com/greatdeveloper66" target="_blank" data-toggle="tooltip" title="Free Code Camp"><i class="fa fa-free-code-camp fa-5x"></i></a></li>
+    <li role="presentation"><a href="https://github.com/GreatDeveloper66" target="_blank" data-toggle="tooltip" title="GitHub"><i class="fa fa-github-square fa-5x"></i></a></li>
+    <li role="presentation"><a href="https://twitter.com/Great_Developer" target="_blank" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter-square fa-5x"></i></a></li>
+ </ul>
+</div>
+</div>
+</div>
+<!--SOCIAL MEDIA BAR FOR TABLET SIZED SCREENS-->
+<div class="container-fluid visible-sm-block">
+	<div class="row">
+<div class="col-sm-8 col-sm-offset-2">
+  <ul class="nav nav-pills nav-justified" role="tablist">
+    
+  <li role="presentation"><a href="https://www.linkedin.com/in/adamquality" target="_blank" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin-square fa-4x"></i></a></li>
+    <li role="presentation"><a href="https://www.facebook.com/adam.shaffer.7146" target="_blank" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook-square fa-4x"></i></a></li>
+    <li role="presentation"><a href="https://www.freecodecamp.com/greatdeveloper66" target="_blank" data-toggle="tooltip" title="Free Code Camp"><i class="fa fa-free-code-camp fa-4x"></i></a></li>
+    <li role="presentation"><a href="https://github.com/GreatDeveloper66" target="_blank" data-toggle="tooltip" title="GitHub"><i class="fa fa-github-square fa-4x"></i></a></li>
+    <li role="presentation"><a href="https://twitter.com/Great_Developer" target="_blank" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter-square fa-4x"></i></a></li>
+ </ul>
+</div>
+</div>
+  </div>
+  
+<div class="container-fluid visible-xs-block">
+	<div class="row">
+		<div class="col-xs-12">
+  <ul class="nav nav-tabs nav-justified">
+    
+  <li role="presentation"><a href="https://www.linkedin.com/in/adamquality" target="_blank" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin-square fa-5x"></i><p>LinkedIn</p></a></li>
+    <li role="presentation"><a href="https://www.facebook.com/adam.shaffer.7146" target="_blank" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook-square fa-5x"></i><p>Facebook</p></a></li>
+    <li role="presentation"><a href="https://www.freecodecamp.com/greatdeveloper66" target="_blank" data-toggle="tooltip" title="Free Code Camp"><i class="fa fa-free-code-camp fa-5x"></i><p>FreeCodeCamp</p></a></li>
+    <li role="presentation"><a href="https://github.com/GreatDeveloper66" target="_blank" data-toggle="tooltip" title="GitHub"><i class="fa fa-github-square fa-5x"></i><p>GitHub</p></a></li>
+    <li role="presentation"><a href="https://twitter.com/Great_Developer" target="_blank" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter-square fa-5x"></i><p>Twitter</p></a></li>
+ </ul>
+</div>
+</div>
+  </div>
+  
+
+
+
+
+
+
+    
     
   <!--ABOUT SECTION-->
     <div class="container-fluid" id="about">
@@ -337,7 +456,7 @@
     
     <div class="spacer"></div>
 </div>
-  
+  </div>
  <footer id="contact">
   
   

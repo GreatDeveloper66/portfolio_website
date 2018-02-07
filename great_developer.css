@@ -58,20 +58,23 @@
 .title {
   color: white;
   font-family: "Roboto Slab", serif;
-  font-size: 44px;
+  font-size: 20px;
   font-weight: bold;
   font-variant: normal;
-  text-align: center;
   text-transform: uppercase;
+  border: 2px solid white;
+  background-color: black;
+  border-radius: 10px;
+  height: 100%;
+  
 }
 
-.subtitle {
-  color: white;
-  font-family: "Roboto Slab", serif;
-  font-size: 22px;
-  font-weight: bold;
-  font-variant: normal;
-  text-align: center;
+.title-bar {
+  height: 100%;
+  margin: 3px;
+  padding: 3px;
+  border: 2px solid red;
+
 }
 
 .image-container {
@@ -104,7 +107,7 @@ img {
 p {
   color: white;
   font-family: "PT Serif", serif;
-  font-size: 12.1px;
+  font-size: 10px;
   font-weight: normal;
   font-variant: normal;
 }
@@ -120,21 +123,22 @@ p {
 .caption {
   margin: auto;
   width: 90%;
+  height: 40px;
   border-bottom: 2px solid grey;
 }
 
 .sub-caption {
   margin: auto;
   width: 90%;
-  height: 100px;
+  height: 115px;
   
 }
 
 .caption p {
   color: white;
   font-family: 'Work Sans', serif;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 20px;
   font-weight: bold;
   font-variant: normal;
   text-align: center;
@@ -146,6 +150,18 @@ p {
   font-size: 14px;
   font-weight: normal;
   font-variant: normal;
+}
+
+.icon-container {
+  display: inline-block;
+  float: left;
+  height: 224px;
+  width: 10%;
+  border: solid 3px red;
+}
+
+i {
+  font-size: 100px;
 }
 
 footer {
@@ -170,13 +186,15 @@ footer p {
   color: rgba(0, 0, 255, 0.5);
 }
 
+li p {
+  text-transform: uppercase;
+  font-family:"Roboto Slab";
+  font-size: 30px;
+}
+//tablet size screens
 @media screen and (min-width: 768px) {
   .title {
-    font-size: 56px;
-  }
-
-  .subtitle {
-    font-size: 28px;
+    font-size: 23px;
   }
 
   .page-header {
@@ -184,7 +202,7 @@ footer p {
   }
 
   p {
-    font-size: 15.4px;
+    font-size: 11px;
   }
 
   .buttontext {
@@ -194,14 +212,15 @@ footer p {
   .skillicon {
     font-size: 42px;
   }
+  .caption p {
+  font-size: 21px;
+  line-height: 23px;
+  }
 }
+//desktop sized screens
 @media screen and (min-width: 992px) {
   .title {
-    font-size: 72px;
-  }
-
-  .subtitle {
-    font-size: 36px;
+    font-size: 22px;
   }
 
   .page-header {
@@ -209,7 +228,7 @@ footer p {
   }
 
   p {
-    font-size: 19.8px;
+    font-size: 14px;
   }
 
   .buttontext {
@@ -219,14 +238,16 @@ footer p {
   .skillicon {
     font-size: 54px;
   }
-}
-@media screen and (min-width: 1280px) {
-  .title {
-    font-size: 88px;
-  }
 
-  .subtitle {
-    font-size: 44px;
+  .caption p {
+    font-size: 25px;
+    line-height: 27px;
+  }
+}
+//large screens
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 25px;
   }
 
   .page-header {
@@ -234,14 +255,20 @@ footer p {
   }
 
   p {
-    font-size: 24.2px;
+    font-size: 27px;
   }
 
   .buttontext {
-    font-size: 33px;
+    font-size: 29px;
   }
 
   .skillicon {
     font-size: 54px;
   }
+
+  .caption p {
+    font-size: 22px;
+    line-height: 27px;
+  }
+
 }
