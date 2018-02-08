@@ -135,6 +135,8 @@ p {
 }
 
 .caption p {
+  padding: 2px;
+  margin: 2px;
   color: white;
   font-family: 'Work Sans', serif;
   font-size: 18px;
@@ -145,9 +147,11 @@ p {
 }
 
 .sub-caption p {
+  margin: 2px;
+  padding: 2px;
   color: white;
   font-family: 'Work Sans', serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal;
   font-variant: normal;
 }
@@ -240,8 +244,8 @@ li p {
   }
 
   .caption p {
-    font-size: 25px;
-    line-height: 27px;
+    font-size: 27px;
+    line-height: 28px;
   }
 }
 //large screens
@@ -267,8 +271,8 @@ li p {
   }
 
   .caption p {
-    font-size: 22px;
-    line-height: 27px;
+    font-size: 29px;
+    line-height: 30px;
   }
 
 }
