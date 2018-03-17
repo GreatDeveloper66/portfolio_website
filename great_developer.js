@@ -22,12 +22,19 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+  $("#contact-button").on("click", function(event) {
+    event.preventDefault();
+    $("#contact-form").fadeIn(1000);
+  });
+
+  $("#cancel-button").on("click", function(event){
+    event.preventDefault();
+    $("#contact-form").fadeOut(1000);
+  });
 });
 
-$("#contact-button").on("click", function(event) {
-  event.preventDefault();
-  $("#contact-form").fadeIn(1000);
-});
+
 
 window.onscroll = () => {
   var navArray = document.querySelectorAll("nav a");
