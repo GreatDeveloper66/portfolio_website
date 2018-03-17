@@ -35,7 +35,15 @@ $(document).ready(function(){
 
   $("#reset-button").on("click", function(event){
     event.preventDefault();
-    document.getElementById("contact-form").reset();
+    $("#contact-form")[0].reset();
+  });
+  $("#submit-button").on("click", function(event){
+    $("#contact-form")[0].submit();
+  });
+
+  $("#close-button").on("click", function(event){
+    event.preventDefault();
+    $("#contact-form").fadeOut(1000);
   });
 });
 
