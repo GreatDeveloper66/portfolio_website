@@ -32,6 +32,11 @@ $(document).ready(function(){
     event.preventDefault();
     $("#contact-form").fadeOut(1000);
   });
+
+  $("#reset-button").on("click", function(event){
+    event.preventDefault();
+    document.getElementById("contact-form").reset();
+  });
 });
 
 
