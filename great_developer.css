@@ -215,6 +215,13 @@ i {
     padding: 10px;
 }
 
+#resume-button {
+  margin: auto;
+  padding: 2px;
+  text-align: center;
+  font-family: 'Roboto', 'sans-serif';
+}
+
 /*.close {
     position: absolute;
     right: 35px;
