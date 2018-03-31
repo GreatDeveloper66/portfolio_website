@@ -1,5 +1,15 @@
 
 $(document).ready(function(){
+
+  //test for download attribute compatability
+  
+  if(!Modernizr.adownload){
+    document.getElementById("resume-button").innerHTML = "<a href='../Resume/Adam_Shaffer_Resume.htm' target='_blank'>" 
+                                                          + "<button type='button' role='button' class='btn btn-info btn-lg'>" 
+                                                          + "Resume</button></a>";
+  }
+  
+
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 

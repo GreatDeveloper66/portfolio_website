@@ -205,9 +205,14 @@ i {
   justify-content: center;
 }
 
-
-
-
+.email-caption p, .form-caption p, .phone-caption p {
+  color: white;
+  font-size: 9px;
+  font-family: 'Work Sans', serif;
+  font-weight: bold;
+  font-variant: normal;
+  text-align: center;
+}
 
 #resume-button, #contact-button {
   margin: auto;
@@ -224,10 +229,10 @@ i {
     display: none; /* Hidden by default */
     margin: auto;
     top: 10%;
-    left: 35%;
+    left: 25%;
     position: fixed; /* Stay in place */
     z-index: 10; /* Sit on top */
-    width: 400px; /* Full width */
+    width: 300px; /* Full width */
     height: 550px; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(246, 241, 241, 1);
@@ -294,6 +299,14 @@ footer p {
   .banner-text {
     font-size: 20px;
   }
+
+  .email-caption p, .form-caption p, .phone-caption p {
+    font-size: 12px;
+  }
+  .modal-form {
+    left: 35%;
+    width: 400px;
+  }
 }
 
 /*desktop sized screens*/
@@ -325,6 +338,9 @@ footer p {
   .skills-caption p {
     font-size: 15px;
   }
+  .email-caption p, .form-caption p, .phone-caption p {
+    font-size: 14px;
+  }
 }
 
 
@@ -345,5 +361,8 @@ footer p {
   }
   .sub-caption p {
     font-size: 25px;
+  }
+  .email-caption p, .form-caption p, .phone-caption p {
+    font-size: 16px;
   }
 }
