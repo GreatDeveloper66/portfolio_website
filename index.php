@@ -52,7 +52,33 @@
 </head>
 
 <body>
-
+ <?php
+    global $connection;
+    $connection = mysqli_connect(mysql.portfolio.great-developer.com,,,great_developer_mysql);
+    if($connection){
+        echo "connected";
+    }
+    else {
+        die("failed");
+    }
+    
+    if(isset($_POST['submit'])){
+        $Name = $_POST['Name'];
+        $Title = $_POST['Title'];
+        $Company = $_POST['Company'];
+        $Email = $_POST['Email'];
+        $Message = $_POST['Message'];
+        $Name = mysqli_real_escape_string($connection, $Name);
+        $Title = mysqli_real_escape_string($connection, $Title);
+        $Company = mysqli_real_escape_string($connection, $Company);
+        $Email = mysqli_real_escape_string($connection, $Email);
+        $Message = mysqli_real_escape_string($connection, $Message);
+        
+        $query = "INSERT INTO Contacts(Name, Title, Company, Email, Message) VALUES('$Name','$Title','$Company','$Email','$Message')"
+        $result = mysqli_query($connection,$query);
+    }
+    
+    ?>
   <!--Modal section for form in contact section-it is placed at the beginning to prevent interference-->
 
   <!--INTRO SECTION-->
@@ -452,7 +478,7 @@
         contact me
       </div>
       <div class="row">
-        <form class="form modal-form" id="contact-form" action="great_developer.php" method="POST">
+        <form class="form modal-form" id="contact-form" action="index.php" method="post">
           <div class="modal-header text-center">
             <h4 class="modal-title w-100 font-weight-bold">Send me a meassage</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close-button">
@@ -464,33 +490,33 @@
             <div class="md-form mb-4">
               <i class="fa fa-user prefix grey-text"></i>
               <label data-error="wrong" data-success="right" for="form34">Name</label>
-              <input type="text" id="form34" class="form-control validate" name="Name" required>
+              <input type="text" id="form34" class="form-control validate" name="Name">
 
             </div>
             <div class="md-form mb-4">
               <i class="fa fa-address-card prefix grey-text"></i>
               <label data-error="wrong" data-success="right" for="form29">Title</label>
-              <input type="email" id="form29" class="form-control validate" name="Title"" required>
+              <input type="email" id="form29" class="form-control validate" name="Title">
 
             </div>
             <div class="md-form mb-4">
               <i class="fas fa-building prefix grey-text"></i>
               <label data-error="wrong" data-success="right" for="form30">Company</label>
-              <input type="email" id="form30" class="form-control validate" name="Company" required>
+              <input type="email" id="form30" class="form-control validate" name="Company">
 
             </div>
 
             <div class="md-form mb-4">
               <i class="fa fa-at prefix grey-text"></i>
               <label data-error="wrong" data-success="right" for="form31">Email</label>
-              <input type="email" id="form31" class="form-control validate" name="Email" required>
+              <input type="email" id="form31" class="form-control validate" name="Email">
 
             </div>
 
             <div class="md-form">
               <i class="fa fa-edit prefix grey-text"></i>
               <label data-error="wrong" data-success="right" for="form8">Message</label>
-              <textarea id="form8" class="md-textarea form-control" rows="4" name="Message" required></textarea>
+              <textarea id="form8" class="md-textarea form-control" rows="4" name="Message"></textarea>
 
             </div>
           </div>
@@ -539,5 +565,4 @@
 </body>
 
 </html>
-
 

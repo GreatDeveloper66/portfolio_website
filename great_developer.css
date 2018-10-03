@@ -1,5 +1,5 @@
 #portfolio {
-  background: url("../images/code_screen.jpg");
+  background: url("../Images/Website_Background_6.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -8,7 +8,7 @@
 }
 
 #skills {
-  background: url("../images/Website_Background_2.jpg");
+  background: url("../Images/Website_Background_2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -46,13 +46,19 @@
 }
 
 #intro {
-  background: url("../images/Website_Background_3.jpg");
+  background: url("../Images/Website_Background_5.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   padding-top: 150px;
   padding-bottom: 10px;
   height: 500px;
+}
+
+.navbar-default {
+  background-color: rgba(204, 204,204,1);
+  background-image: none;
+  background-repeat: no-repeat;
 }
 
 .banner-text {
@@ -132,10 +138,12 @@ i {
 }
 
 .menu-text {
+  color: rgba(10, 10, 10, 1);
   transition: 1s;
   text-transform: uppercase;
   font-family: 'Roboto Slab';
   font-size: 14px;
+  
 }
 
 .scroll-menu-text {
