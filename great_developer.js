@@ -1,3 +1,8 @@
+/*global window*/
+/*global document*/
+/*jshint esversion:6*/
+
+
 
 $(document).ready(function(){
 
@@ -80,4 +85,5 @@ window.onscroll = () => {
     });
   }
 };
+
 
