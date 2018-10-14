@@ -1,5 +1,7 @@
 /*global window*/
 /*global document*/
+/*global Modernizr*/
+/*global $*/
 /*jshint esversion:6*/
 
 
@@ -9,9 +11,7 @@ $(document).ready(function(){
   //test for download attribute compatability
   
   if(!Modernizr.adownload){
-    document.getElementById("resume-button").innerHTML = "<a href='../Resume/Adam_Shaffer_Resume.htm' target='_blank'>" 
-                                                          + "<button type='button' role='button' class='btn btn-info btn-lg'>" 
-                                                          + "Resume</button></a>";
+    document.getElementById("resume-button").innerHTML = "<a href='../Resume/Adam_Shaffer_Resume.htm target='_blank'>" + "<button type='button' role='button' class='btn btn-info btn-lg'>" + "Resume</button></a>";
   }
   
 
