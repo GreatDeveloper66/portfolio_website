@@ -1,89 +1,48 @@
 /*global window*/
 /*global document*/
 /*global Modernizr*/
+/*global SmoothScroll*/
 /*global $*/
 /*jshint esversion:6*/
 
+  let scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 800,
+    easing: 'easeInOutQuad',
+    offset: function(anchor,toggle){
+      return 60;
+    }
+    
+  });
 
-
-$(document).ready(function(){
-
-  //test for download attribute compatability
+  window.onscroll = () => {
+    const nava = document.getElementsByTagName("nav")[0];
+    const navlinks = document.getElementById("navlinks");
+				const navbarBrand = document.getElementsByClassName("navbar-brand")[0];
+    if (window.pageYOffset > 600) {
+      nava.classList.remove("bg-dark");
+      nava.classList.remove("navbar-dark");
+      nava.classList.add("bg-light");
+      nava.classList.add("navbar-light");
+      navlinks.classList.remove("ml-auto");
+      navlinks.classList.add("mr-auto");
+						navbarBrand.classList.add("invisible");
+						//nava.classList.add("navbar-custom");
+						nava.classList.add("py-0");
+    } else {
+      nava.classList.remove("bg-light");
+      nava.classList.remove("navbar-light");
+      nava.classList.add("bg-dark");
+      nava.classList.add("navbar-dark");
+					 nava.classList.remove("py-0");
+      navlinks.classList.remove("mr-auto");
+      navlinks.classList.add("ml-auto");
+					 navbarBrand.classList.remove("invisible");
+    }
   
-  if(!Modernizr.adownload){
-    document.getElementById("resume-button").innerHTML = "<a href='../Resume/Adam_Shaffer_Resume.htm target='_blank'>" + "<button type='button' role='button' class='btn btn-info btn-lg'>" + "Resume</button></a>";
-  }
   
-
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-
-  $("#contact-button").on("click", function(event) {
-    event.preventDefault();
-    $("#contact-form").fadeIn(1000);
-  });
-
-  $("#cancel-button").on("click", function(event){
-    event.preventDefault();
-    $("#contact-form").fadeOut(1000);
-  });
-
-  $("#reset-button").on("click", function(event){
-    event.preventDefault();
-    $("#contact-form")[0].reset();
-  });
-  $("#submit-button").on("click", function(event){
-    $("#contact-form")[0].submit();
-  });
-
-  $("#close-button").on("click", function(event){
-    event.preventDefault();
-    $("#contact-form").fadeOut(1000);
-  });
-});
-
-
-
-window.onscroll = () => {
-  var navArray = document.querySelectorAll("nav a");
-  var navBar = document.querySelectorAll("nav")[0];
-  if (window.pageYOffset > 500) {
-    navArray.forEach(function(nava) {
-      nava.classList.remove("menu-text");
-      nava.classList.add("scroll-menu-text");
-      navBar.classList.remove("navbar-default");
-      navBar.classList.add("navbar-inverse");
-      navBar.classList.add("navbar-fixed-top");
-    });
-  } else {
-    navArray.forEach(function(nava) {
-      nava.classList.remove("scroll-menu-text");
-      nava.classList.add("menu-text");
-      navBar.classList.remove("navbar-inverse");
-      navBar.classList.add("navbar-default");
-      navBar.classList.remove("navbar-fixed-top");
-    });
-  }
-};
+  };
+  
+  
+  
 
 

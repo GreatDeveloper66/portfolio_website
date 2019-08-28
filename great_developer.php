@@ -26,7 +26,7 @@
         $Email = mysqli_real_escape_string($connection, $Email);
         $Message = mysqli_real_escape_string($connection, $Message);
         
-        $query = "INSERT INTO Contacts(Name, Title, Company, Email, Message) VALUES('$Name','$Title','$Company','$Email','$Message')"
+        $query = "INSERT INTO Contacts(Name, Title, Company, Email, Message) VALUES('$Name','$Title','$Company','$Email','$Message')";
         $result = mysqli_query($connection,$query);
     }
 
