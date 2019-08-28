@@ -21,11 +21,11 @@ section {
 }
 
 section#portfolio {
-	background-color: antiquewhite;
+	background-color: #FAEBD7;
 }
 
 section#contact {
-	background-color: lightyellow;
+	background-color: #FFFFE0;
 }
 
 section#social-media {
@@ -218,6 +218,20 @@ img {
 
 img.card-img-top, iframe {
 	height: 13rem;
+}
+
+/* Parallax */
+#plx {
+		background: url('/images/bg-1.jpg');
+	 background-attachment: fixed;
+	 background-position: center;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+}
+
+div.wtitle {
+	padding: 150px 20px;
+	
 }
 
 footer p {
