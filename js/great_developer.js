@@ -13,6 +13,8 @@
     }
     
   });
+	/*call jquery parallax*/
+ $('.plx').parallax({imgSrc: '/images/bg-1.jpg', speed: 0.3});
 
   window.onscroll = () => {
     const nava = document.getElementsByTagName("nav")[0];

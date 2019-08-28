@@ -221,12 +221,17 @@ img.card-img-top, iframe {
 }
 
 /* Parallax */
+/*
 #plx {
 		background: url('/images/bg-1.jpg');
 	 background-attachment: fixed;
 	 background-position: center;
 	 background-repeat: no-repeat;
 	 background-size: cover;
+}
+*/
+section#plx {
+	background: transparent;
 }
 
 div.wtitle {
