@@ -32,6 +32,18 @@ section#social-media {
 	background-color: azure;
 }
 
+div.contactbackground {
+	background-image: url('/images/bg-1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	position: absolute;
+	z-index: -2;
+	top: 0;
+	height: 500px;
+	border: 3px solid red;
+}
+
 header {
 	background-size: cover;
 	background-position: center;
@@ -230,7 +242,9 @@ img.card-img-top, iframe {
 	 background-size: cover;
 }
 */
-section#plx {
+section#contact-area {
+	position: relative;
+	height: auto;
 	background: transparent;
 }
 
