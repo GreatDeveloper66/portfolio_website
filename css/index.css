@@ -5,117 +5,203 @@ html {
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	margin: auto;
+	overflow-x: hidden;
+	overflow-y: visible;
 }
 
 section {
-	width: 100%;
-	margin: auto;
-	height: auto;
 	background-color: #FFFFFF;
-	padding: 2px;
+	display: grid;
+	height: auto;
+	margin: auto;
+	padding: 4px;
+	position: relative;
+
 }
 
 header {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	height: 700px;
-}
-
-header menu {
-	display: flex;
-	position: fixed;
-	flex-direction: column;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	width: 100vw;
-	padding: 0;
-	margin: 0;
-	height: 0px;
-	margin-top: 50px;
-	margin-left: -15px;
-	background-color: #3d3e41;
+	display: grid;
+	grid-template: 600px 100px/1fr;
+	align-items: center;
 }
 
 header button {
-	height: 45px;
+	background-color: #3d3e41;
+	border: rgb(255, 255, 255);
+	border: 0.5px solid rgba(255, 255, 255, 0.3);
 	color: #FFFFFF;
 	font-size: 25px;
-	background-color: #3d3e41;
-	border: 0.5px solid rgba(255,255,255,0.3);
 	margin-left: 15px;
-	width: 100%;
+	min-width: 100%;
+	min-height: 45px;
+	text-align: center;
+}
+
+menu {
+	display: grid;
+	align-items: center;
+	background-color: transparent;
+	height: auto;
+	border: 3px solid red;
+}
+
+.banner {
+	display: grid;
+	grid-template: 1fr/1fr;
+	justify-items: center;
+	align-items: center;
+	border: 3px solid blue;
+}
+.titleblock {
+	text-align:center;
+}
+/*
+header::before {
+	background: url('/images/Website_Background_2.jpg') center no-repeat cover;
+
+}
+
+header menu {
+	background-color: #3d3e41;
+	display: flex;
+	flex-direction: column;
+	height: 0;
+	margin: 0;
+	margin-left: -15px;
+	margin-top: 50px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding: 0;
+	position: fixed;
+	width: 100vw;
+}
+
+header button {
+	background-color: #3d3e41;
+	border: rgb(255, 255, 255);
+	border: 0.5px solid rgba(255, 255, 255, 0.3);
+	color: #FFFFFF;
+	font-size: 25px;
+	margin-left: 15px;
+	max-width: 100%;
+	min-height: 45px;
 	text-align: center;
 }
 
 header div.bars {
-	position: fixed;
+	align-items: center;
+	background-color: #3d3e41;
+	border-radius: 4px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin-top: 15px;
-	margin-left: -15px;
 	font-size: 60px;
 	height: 34px;
+	justify-content: center;
+	margin-left: -15px;
+	margin-top: 15px;
+	position: fixed;
 	width: 43px;
-	border-radius: 4px;
-	background-color: #3d3e41;
+
+
 }
 
-header div.bars div.bar {
-	width: 60%;
-	height: 2px;
+.bar {
 	background-color: #FFFFFF;
+	height: 2px;
 	margin: 2px;
+	width: 60%;
+}
+*/
+button {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	transition: all 0.3s ease;
+
 }
 
-button {
-	transition: all 0.3s ease;
-	font-family: 'Roboto', Helvetica, Arial, sans-serif
-}
-button:hover, .active {
+button:hover,
+.active {
 	filter: brightness(150%);
 }
 
-button:hover, div.bars:hover {
+button:hover,
+div.bars:hover {
 	cursor: pointer;
 }
 
-
-
-@media only screen and (min-width: 520px){
-	
+.bars {
+	display: grid;
+	justify-items: center;
+	align-items: center;
+	justify-self: end;
+	grid-gap: 5px;
+	background-color: #3d3e41;
+	border-radius: 4px;
+	height: 34px;
+	width: 43px;
+	border: 3px solid blue;
 }
 
-@media only screen and (min-width: 768px){
-	header {
-		flex-direction: column;
-		align-items: center;
-		justify-content: flex-start;
+.bar {
+	background-color: #FFFFFF;
+	height: 4px;
+	margin: 2px;
+	width: 60%;
+}
+
+.navmenu {
+		display: grid;
+		grid-template: repeat(5,1fr)/1fr;
+		justify-self: end;
+		border: 4px solid green;
+		background-color: #3d3e41;
+	}
+
+
+@media only screen and (min-width: 520px) {}
+
+@media only screen and (min-width: 768px) {
+	menu {
+		background-color: #3d3e41;
 	}
 	
-	header button {
-		width: 140px;
-	}
-	
-	menu.navmenu {
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
-	 height: 60px;
-		margin: 0;
-		padding: 0;
-	}
-	
-	header div.bars {
+	.bars {
 		display: none;
 	}
 	
-}
-
-@media only screen and (min-width:1024px){
+	.navmenu {
+		grid-template: 1fr/repeat(5, 1fr);
+		grid-gap: 25px;
+		justify-self: center;
+	}
 	
 }
+	/*
+	header {
+		align-items: center;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	
 
+	header button {
+		width: 140px;
+	}
+
+	.navmenu {
+		align-items: center;
+		flex-direction: row;
+		height: 60px;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	header div.bars {
+		display: none;
+	}
+
+}
+
+@media only screen and (min-width:1024px) {}
+*/
