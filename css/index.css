@@ -23,10 +23,11 @@ section {
 header {
 	position: relative;
 	display: grid;
-	grid-template: 600px 400px/1fr;
+	grid-template: 600px 50px/1fr;
 	align-items: center;
 	overflow: hidden;
 	background: transparent;
+	height: auto;
 }
 
 .headerbackground {
@@ -37,13 +38,12 @@ header {
 	top: 0;
 	right: 0;
 	left: 0;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
-	border: 3px solid red;
 	content: "";
 }
 
-header button {
+header button, .mobilemenu button {
 	background-color: #3d3e41;
 	border: rgb(255, 255, 255);
 	border: 0.5px solid rgba(255, 255, 255, 0.3);
@@ -60,7 +60,7 @@ menu {
 	align-items: center;
 	background-color: transparent;
 	height: auto;
-	border: 3px solid red;
+	overflow-y: visible;
 }
 
 .banner {
@@ -68,7 +68,7 @@ menu {
 	grid-template: 1fr/1fr;
 	justify-items: center;
 	align-items: center;
-	border: 3px solid blue;
+	height: 100%;
 }
 .titleblock {
 	text-align:center;
@@ -156,7 +156,6 @@ div.bars:hover {
 	border-radius: 4px;
 	height: 34px;
 	width: 43px;
-	border: 3px solid blue;
 }
 
 .bar {
@@ -167,14 +166,34 @@ div.bars:hover {
 }
 
 .navmenu {
+		position: absolute;
+		z-index: 3;
+		top: 450px;
+		right: 0;
 		display: grid;
 		grid-template: repeat(5,1fr)/1fr;
 		justify-self: end;
-		border: 4px solid green;
+		background-color: #3d3e41;
+
+	}
+
+
+.mobilemenu {
+		position: absolute;
+		z-index: 3;
+		top: 650px;
+		margin-right: 20px;
+		right: 0;
+		display: grid;
+		grid-template: repeat(5,1fr)/1fr;
+		justify-self: end;
 		background-color: #3d3e41;
 	}
 
 section#portfolio {
+	height: 700px;
+}
+section#about {
 	height: 700px;
 }
 @media only screen and (min-width: 520px) {}
@@ -197,7 +216,9 @@ section#portfolio {
 		grid-gap: 25px;
 		justify-self: center;
 	}
-	
+	.mobilemenu {
+		display: none;
+	}
 }
 	/*
 	header {
