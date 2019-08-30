@@ -31,7 +31,7 @@ header::before {
 	background: url('/images/Website_Background_2.jpg') center no-repeat;
 	background-size: cover;
  position: absolute;
-	z-index: -2;
+	z-index: -1;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -171,7 +171,9 @@ div.bars:hover {
 		background-color: #3d3e41;
 	}
 
-
+section#portfolio {
+	height: 700px;
+}
 @media only screen and (min-width: 520px) {}
 
 @media only screen and (min-width: 768px) {
