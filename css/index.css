@@ -20,9 +20,24 @@ section {
 }
 
 header {
+	position: relative;
 	display: grid;
-	grid-template: 600px 100px/1fr;
+	grid-template: 600px 400px/1fr;
 	align-items: center;
+	background: transparent;
+}
+
+header::before {
+	background: url('/images/Website_Background_2.jpg') center no-repeat;
+	background-size: cover;
+ position: absolute;
+	z-index: -2;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 3px solid red;
+	content: "";
 }
 
 header button {
@@ -163,6 +178,10 @@ div.bars:hover {
 	menu {
 		background-color: #3d3e41;
 	}
+	header {
+		grid-template: 600px 100px/1fr;
+	}
+		
 	
 	.bars {
 		display: none;
