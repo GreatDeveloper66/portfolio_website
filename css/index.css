@@ -1,6 +1,4 @@
-html {
-	
-}
+html {}
 
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -19,17 +17,20 @@ section {
 header {
 	position: relative;
 	display: grid;
+	grid-template: 1fr/1fr;
+	/*
 	grid-template-rows: 600px 50px;
 	grid-template-columns: 1fr;
+		*/
 	align-items: center;
 	background: transparent;
-	height: auto;
+	height: 700px;
 }
 
 .headerbackground {
 	background: url('/images/Website_Background_2.jpg') center no-repeat;
 	background-size: cover;
- position: absolute;
+	position: absolute;
 	z-index: -1;
 	top: 0;
 	right: 0;
@@ -39,14 +40,14 @@ header {
 	content: "";
 }
 
-header button, .mobilemenu button {
+header button {
 	background-color: #3d3e41;
 	border: rgb(255, 255, 255);
 	border: 0.5px solid rgba(255, 255, 255, 0.3);
 	color: #FFFFFF;
 	font-size: 25px;
 	margin-left: 15px;
-	min-width: 100%;
+	width: 100%;
 	min-height: 45px;
 	text-align: center;
 }
@@ -55,21 +56,35 @@ section#menu {
 	position: sticky;
 	display: grid;
 	grid-template: 1fr/1fr;
-	justify-items: end;
-	top: 0px;
-	width: 100%;
-	height: 100px;
-	background-color: red;
-	z-index: 100;
+	justify-items: center;
+	align-items: stretch;
+	top: 20px;
+	width: 10%;
+	height: 300px;
+	background-color: transparent;
+	z-index: 2;
+	margin-right: 100px;
 }
 
 nav {
 	display: grid;
-	grid-template: repeat(6,1fr)/1fr;
-	width: 15%;
-	height: 200%;
-	background-color: blue;
+	grid-template: repeat(6, 1fr)/1fr;
+	height: 50px;
+	background-color: #3d3e41;
 }
+
+nav button {
+	background-color: #3d3e41;
+	border: rgb(255, 255, 255);
+	border: 0.5px solid rgba(255, 255, 255, 0.3);
+	color: #FFFFFF;
+	font-size: 25px;
+	margin-left: 15px;
+	max-width: 100%;
+	min-height: 45px;
+	text-align: center;
+}
+
 /*
 nav {
 	position:sticky;
@@ -89,16 +104,18 @@ nav {
 	align-items: center;
 	height: 100%;
 }
+
 .titleblock {
-	text-align:center;
+	text-align: center;
 }
+
 /*
 header::before {
 	background: url('/images/Website_Background_2.jpg') center no-repeat cover;
 
 }
 
-header menu {
+nav {
 	background-color: #3d3e41;
 	display: flex;
 	flex-direction: column;
@@ -113,7 +130,7 @@ header menu {
 	width: 100vw;
 }
 
-header button {
+nav button {
 	background-color: #3d3e41;
 	border: rgb(255, 255, 255);
 	border: 0.5px solid rgba(255, 255, 255, 0.3);
@@ -187,11 +204,12 @@ div.bars:hover {
 
 nav {
 	/*display: grid;*/
-	
+
 	/*grid-template: 1fr/repeat(6,1fr);
 	height: auto;*/
 }
 
+/*
 
 .mobilemenu {
 		position: absolute;
@@ -204,71 +222,49 @@ nav {
 		justify-self: end;
 		background-color: #3d3e41;
 	}
-
+*/
 section#portfolio {
 	height: 700px;
 	background-color: green;
+	margin-top: -310px;
 }
+
 section#about {
 	height: 700px;
 }
+
 @media only screen and (min-width: 520px) {}
 
 @media only screen and (min-width: 768px) {
+	section#menu {
+		width: 100%;
+		margin-top: 0;
+		height: auto;
+		justify-items: center;
+		background-color: #3d3e41;
+	}
+
 	menu {
 		background-color: #3d3e41;
 	}
-	header {
-		grid-template: 600px 100px/1fr;
-	}
-		
-	
+
 	.bars {
 		display: none;
 	}
-	section#menu {
-	justify-items: center;
-}
 
-nav {
-	width: 100%;
-	height: 100%;
-	background-color: blue;
-	grid-template: 1fr/repeat(5, 1fr);
-	grid-gap: 25px;
-	justify-self: center;
-}
-	.mobilemenu {
-		display: none;
-	}
-}
-	/*
-	header {
+	nav {
+		grid-template: 1fr/repeat(5, 1fr);
+		grid-gap: 25px;
+		justify-self: center;
 		align-items: center;
-		flex-direction: column;
-		justify-content: flex-start;
-	}
-	
-
-	header button {
-		width: 140px;
+		justify-items: center;
 	}
 
-	.navmenu {
-		align-items: center;
-		flex-direction: row;
-		height: 60px;
-		justify-content: center;
-		margin: 0;
-		padding: 0;
-		width: 100%;
+	section#portfolio {
+		margin-top: 0px;
 	}
-
-	header div.bars {
-		display: none;
-	}
-
 }
+
 
 @media only screen and (min-width:1024px) {}
-*/
+
