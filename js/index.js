@@ -16,6 +16,8 @@ window.onload = () => {
 	setTranslate(0, window.scrollY * scrollRate, element);
 		requestAnimationFrame(scrollLoop);
 	}
+	
+
 window.addEventListener('scroll', function(e){
 	scrollLoop();
 	/*
