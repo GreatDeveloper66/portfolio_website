@@ -18,10 +18,6 @@ header {
 	position: relative;
 	display: grid;
 	grid-template: 1fr/1fr;
-	/*
-	grid-template-rows: 600px 50px;
-	grid-template-columns: 1fr;
-		*/
 	align-items: center;
 	background: transparent;
 	height: 700px;
@@ -38,18 +34,6 @@ header {
 	height: 100%;
 	width: 100%;
 	content: "";
-}
-
-header button {
-	background-color: #3d3e41;
-	border: rgb(255, 255, 255);
-	border: 0.5px solid rgba(255, 255, 255, 0.3);
-	color: #FFFFFF;
-	font-size: 25px;
-	margin-left: 15px;
-	width: 100%;
-	min-height: 45px;
-	text-align: center;
 }
 
 section#menu {
@@ -70,7 +54,7 @@ nav {
 	display: grid;
 	grid-template: repeat(6, 1fr)/1fr;
 	height: 50px;
-	background-color: #3d3e41;
+	background-color: transparent;
 }
 
 nav button {
@@ -80,23 +64,11 @@ nav button {
 	color: #FFFFFF;
 	font-size: 25px;
 	margin-left: 15px;
-	max-width: 100%;
+	width: 100%;
 	min-height: 45px;
 	text-align: center;
 }
 
-/*
-nav {
-	position:sticky;
-	top: 100px;
-	display: grid;
-	align-items: center;
-	background-color: yellow;
-	height: 100px;
-	width: 100%;
-	overflow-y: visible;
-}
-*/
 .banner {
 	display: grid;
 	grid-template: 1fr/1fr;
@@ -109,63 +81,6 @@ nav {
 	text-align: center;
 }
 
-/*
-header::before {
-	background: url('/images/Website_Background_2.jpg') center no-repeat cover;
-
-}
-
-nav {
-	background-color: #3d3e41;
-	display: flex;
-	flex-direction: column;
-	height: 0;
-	margin: 0;
-	margin-left: -15px;
-	margin-top: 50px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	padding: 0;
-	position: fixed;
-	width: 100vw;
-}
-
-nav button {
-	background-color: #3d3e41;
-	border: rgb(255, 255, 255);
-	border: 0.5px solid rgba(255, 255, 255, 0.3);
-	color: #FFFFFF;
-	font-size: 25px;
-	margin-left: 15px;
-	max-width: 100%;
-	min-height: 45px;
-	text-align: center;
-}
-
-header div.bars {
-	align-items: center;
-	background-color: #3d3e41;
-	border-radius: 4px;
-	display: flex;
-	flex-direction: column;
-	font-size: 60px;
-	height: 34px;
-	justify-content: center;
-	margin-left: -15px;
-	margin-top: 15px;
-	position: fixed;
-	width: 43px;
-
-
-}
-
-.bar {
-	background-color: #FFFFFF;
-	height: 2px;
-	margin: 2px;
-	width: 60%;
-}
-*/
 button {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	transition: all 0.3s ease;
@@ -201,28 +116,6 @@ div.bars:hover {
 	width: 60%;
 }
 
-
-nav {
-	/*display: grid;*/
-
-	/*grid-template: 1fr/repeat(6,1fr);
-	height: auto;*/
-}
-
-/*
-
-.mobilemenu {
-		position: absolute;
-		z-index: 3;
-		top: 650px;
-		margin-right: 20px;
-		right: 0;
-		display: grid;
-		grid-template: repeat(5,1fr)/1fr;
-		justify-self: end;
-		background-color: #3d3e41;
-	}
-*/
 section#portfolio {
 	height: 700px;
 	background-color: green;
