@@ -18,14 +18,24 @@ window.onload = () => {
 	}
 window.addEventListener('scroll', function(e){
 	scrollLoop();
+	/*
+	if(window.scrollY > 500){
+		document.querySelector("section#menu").style.position = "fixed";
+	}
+	else {
+		document.querySelector("section#menu").style.position = "relative";
+	}
+	
 	if(window.scrollY > 500){
 			document.querySelector("menu").style.position = "fixed";
 			document.querySelector(".mobilemenu").style.position = "fixed";
+			document.querySelector(".mobilemneu").style.top = 0;
 	}
 	else {
 		document.querySelector("menu").style.position = "relative";
 			document.querySelector(".mobilemenu").style.position = "absolute";
 	}
+	*/
 });
 
 };
