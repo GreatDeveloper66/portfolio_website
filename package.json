@@ -1,0 +1,26 @@
+{
+  "name": "portfolio_website",
+  "version": "1.0.0",
+  "description": "Web Site showcasing works and skills of GreatDeveloper66",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GreatDeveloper66/Portfolio_Website.git"
+  },
+  "keywords": [
+    "portfolio",
+    "showcase",
+    "website",
+    "webpage",
+    "apps"
+  ],
+  "author": "Adam Shaffer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GreatDeveloper66/Portfolio_Website/issues"
+  },
+  "homepage": "https://github.com/GreatDeveloper66/Portfolio_Website#readme"
+}
