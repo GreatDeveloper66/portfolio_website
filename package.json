@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/GreatDeveloper66/Portfolio_Website/issues"
   },
-  "homepage": "https://github.com/GreatDeveloper66/Portfolio_Website#readme"
+  "homepage": "https://github.com/GreatDeveloper66/Portfolio_Website#readme",
+  "devDependencies": {
+    "sass": "^1.22.10"
+  }
 }
