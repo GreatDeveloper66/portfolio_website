@@ -39,6 +39,32 @@ window.addEventListener('scroll', function(e){
 	}
 	*/
 });
+	
+const toggleDropDown = () => {
+	let navbar = document.querySelector("nav");
+	if(navbar.classList.contains("slidedown")){
+		navbar.classList.remove("slidedown");
+		navbar.classList.add("slideup");
+	}
+	else if (navbar.classList.contains("slideup")){
+		navbar.classList.remove("slideup");
+		navbar.classList.add("slidedown");
+	}
+	else {
+		navbar.classList.add("slideup");
+	}
+};
+
+	window.onresize = () => {
+		if(window.innerWidth < 768){
+			let navbar = document.querySelector("nav");
+				navbar.classList.remove("slidedown");
+				navbar.classList.remove("slideup");
+		}
+	};
+
+	document.getElementById("accordian").addEventListener("click", toggleDropDown);
+
 
 };
 
