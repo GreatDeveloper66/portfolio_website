@@ -64,7 +64,8 @@ const toggleDropDown = () => {
 	};
 
 	document.getElementById("accordian").addEventListener("click", toggleDropDown);
-
+	Array.from(document.querySelectorAll("nav a")).forEach(butt => {butt.addEventListener("click", toggleDropDown);});
+ 
 
 };
 
