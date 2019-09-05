@@ -7,6 +7,7 @@
 /*jshint esversion:6*/
 /*global event*/
 /*global requestAnimationFrame*/
+import toggleDropDown from '/js/toggleDropDown.js';
 
 window.onload = () => {
 	function scrollLoop() {
@@ -17,6 +18,7 @@ window.onload = () => {
 		requestAnimationFrame(scrollLoop);
 	}
 	
+	toggleDropDown("#accordian","nav","slidedown","slideup");
 
 window.addEventListener('scroll', function(e){
 	scrollLoop();
@@ -39,7 +41,7 @@ window.addEventListener('scroll', function(e){
 	}
 	*/
 });
-	
+	/*
 const toggleDropDown = () => {
 	let navbar = document.querySelector("nav");
 	if(navbar.classList.contains("slidedown")){
@@ -54,7 +56,7 @@ const toggleDropDown = () => {
 		navbar.classList.add("slideup");
 	}
 };
-
+*/
 	window.onresize = () => {
 		if(window.innerWidth < 768){
 			let navbar = document.querySelector("nav");
@@ -62,11 +64,12 @@ const toggleDropDown = () => {
 				navbar.classList.remove("slideup");
 		}
 	};
-
+	
+	
+/*
 	document.getElementById("accordian").addEventListener("click", toggleDropDown);
 	Array.from(document.querySelectorAll("nav a")).forEach(butt => {butt.addEventListener("click", toggleDropDown);});
- 
-
+	*/
 };
 
 
