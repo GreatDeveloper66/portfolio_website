@@ -143,8 +143,8 @@ section#about {
 }
 
 .slidedown {
-	max-height: 300px;
-	height: 300px;
+	max-height: 320px;
+	height: 320px;
 }
 
 @media only screen and (min-width: 520px) {}

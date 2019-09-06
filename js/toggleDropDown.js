@@ -10,9 +10,12 @@
 
 
 export default function toggleDropDown(source, target, class1, class2) {
-	window.alert(source);
-	target = document.querySelector(target);
-	document.querySelector(source).addEventListener("click", function () {
+	
+	if(Array.isArray(source)){
+		source.forEach(elem => {toggleDropDown(elem,target,class1,class2);});	
+	}
+	else{
+	source.addEventListener("click", function() {
 		if (target.classList.contains(class1)) {
 			target.classList.remove(class1);
 			target.classList.add(class2);
@@ -23,4 +26,5 @@ export default function toggleDropDown(source, target, class1, class2) {
 			target.classList.add(class1);
 		}
 	});
+}
 }
