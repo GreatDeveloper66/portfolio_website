@@ -1,3 +1,18 @@
+$wht: #FFFFFF;
+@mixin display($display, $gridtemplate,$alignitems,$justifyitems){
+	display: $display;
+	grid-template: $gridtemplate;
+	align-items: $alignitems;
+	justify-items: $justify-items;
+}
+@mixin positioning($position,$height,$width,$padding,$margin){
+	position: $position;
+	height: $height;
+	width: $width;
+	padding: $padding;
+	margin: $margin;
+}
+
 html {}
 
 body {
@@ -6,11 +21,11 @@ body {
 }
 
 section {
-	background-color: #FFFFFF;
+	background-color: $wht;
 	display: grid;
 	height: auto;
 	margin: auto;
-	padding: 4px;
+	padding: 2px;
 	position: relative;
 }
 
@@ -48,6 +63,7 @@ section#menu {
 	height: 300px;
 	background-color: transparent;
 	z-index: 2;
+	border: 3px solid red;
 }
 
 section#socialmedia {

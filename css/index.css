@@ -1,18 +1,18 @@
-/* line 3, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 18, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   margin: auto; }
 
-/* line 8, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 23, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 section {
   background-color: #FFFFFF;
   display: grid;
   height: auto;
   margin: auto;
-  padding: 4px;
+  padding: 2px;
   position: relative; }
 
-/* line 17, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 32, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 header {
   position: relative;
   display: grid;
@@ -21,7 +21,7 @@ header {
   background: transparent;
   height: 700px; }
 
-/* line 26, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 41, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 .headerbackground {
   background: url("/images/Website_Background_2.jpg") center no-repeat;
   background-size: cover;
@@ -34,7 +34,7 @@ header {
   width: 100%;
   content: ""; }
 
-/* line 39, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 54, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 section#menu {
   position: sticky;
   display: grid;
@@ -46,17 +46,18 @@ section#menu {
   width: 160px;
   height: 300px;
   background-color: transparent;
-  z-index: 2; }
+  z-index: 2;
+  border: 3px solid red; }
 
-/* line 53, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 69, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 section#socialmedia {
   height: 500px; }
 
-/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 72, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 section#contact {
   height: 500px; }
 
-/* line 59, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 75, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 nav {
   display: grid;
   grid-template: repeat(7, 1fr)/1fr;
@@ -64,7 +65,7 @@ nav {
   background-color: transparent;
   border: 3px solid blue; }
 
-/* line 67, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 83, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 nav button {
   background-color: #3d3e41;
   border: white;
@@ -75,7 +76,7 @@ nav button {
   min-height: 45px;
   text-align: center; }
 
-/* line 78, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 94, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 .banner {
   display: grid;
   grid-template: 1fr/1fr;
@@ -83,26 +84,26 @@ nav button {
   align-items: center;
   height: 100%; }
 
-/* line 86, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 102, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 .titleblock {
   text-align: center; }
 
-/* line 90, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 106, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 button {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   transition: all 0.3s ease; }
 
-/* line 96, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 112, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 button:hover,
 .active {
   filter: brightness(150%); }
 
-/* line 101, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 117, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 button:hover,
 div.bars:hover {
   cursor: pointer; }
 
-/* line 106, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 122, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 .bars {
   display: grid;
   justify-items: center;
@@ -114,24 +115,24 @@ div.bars:hover {
   height: 34px;
   width: 43px; }
 
-/* line 118, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 134, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 .bar {
   background-color: #FFFFFF;
   height: 4px;
   margin: 2px;
   width: 60%; }
 
-/* line 125, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 141, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 section#portfolio {
   height: 700px;
   background-color: green;
   margin-top: -310px; }
 
-/* line 131, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 147, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 section#about {
   height: 700px; }
 
-/* line 135, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 151, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 .slideup,
 .slidedown {
   max-height: 34px;
@@ -141,26 +142,26 @@ section#about {
   -moz-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out; }
 
-/* line 145, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+/* line 161, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
 .slidedown {
   max-height: 320px;
   height: 320px; }
 
 @media only screen and (min-width: 768px) {
-  /* line 153, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 169, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   section#menu {
     width: 100%;
     margin-top: 0;
     height: auto;
     justify-items: center;
     background-color: #3d3e41; }
-  /* line 161, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 177, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   menu {
     background-color: #3d3e41; }
-  /* line 165, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 181, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   .bars {
     display: none; }
-  /* line 169, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 185, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   nav {
     grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 25px;
@@ -168,7 +169,7 @@ section#about {
     align-items: center;
     justify-items: center;
     height: auto; }
-  /* line 178, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 194, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   section#portfolio {
     margin-top: 0px; } }
 
