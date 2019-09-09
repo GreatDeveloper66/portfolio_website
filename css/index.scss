@@ -75,7 +75,9 @@ section#contact {
 nav {
 	display: grid;
 	grid-template: repeat(7, 1fr)/1fr;
-	height: 320px;
+	height: 34px;
+	overflow-y: hidden;
+	/*height: 320px;*/
 	background-color: transparent;
 	border: 3px solid blue;
 }
@@ -189,6 +191,7 @@ section#about {
 		align-items: center;
 		justify-items: center;
 		height: auto;
+		overflow-y: visible;
 	}
 
 	section#portfolio {
