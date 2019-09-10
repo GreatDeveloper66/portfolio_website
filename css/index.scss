@@ -1,3 +1,5 @@
+@import 'mainStyling.css';
+
 $wht: #FFFFFF;
 @mixin display($display, $gridtemplate,$alignitems,$justifyitems){
 	display: $display;
@@ -137,12 +139,6 @@ div.bars:hover {
 	width: 60%;
 }
 
-section#portfolio {
-	height: 700px;
-	background-color: green;
-	margin-top: -310px;
-}
-
 section#about {
 	height: 700px;
 }
@@ -190,9 +186,6 @@ section#about {
 		overflow-y: visible;
 	}
 
-	section#portfolio {
-		margin-top: 0px;
-	}
 }
 
 
