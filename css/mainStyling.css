@@ -1,0 +1,12 @@
+/* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mainStyling.scss */
+section#portfolio {
+  height: 700px;
+  background-color: green;
+  margin-top: -310px; }
+
+@media only screen and (min-width: 768px) {
+  /* line 7, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mainStyling.scss */
+  section#portfolio {
+    margin-top: 0px; } }
+
+/*# sourceMappingURL=mainStyling.css.map */
