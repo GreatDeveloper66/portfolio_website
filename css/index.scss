@@ -58,7 +58,7 @@ section#menu {
 	justify-items: center;
 	align-items: stretch;
 	margin-right: 0px;
-	top: 20px;
+	top: 0px;
 	width: 160px;
 	height: 300px;
 	background-color: transparent;
@@ -170,7 +170,6 @@ section#about {
 @media only screen and (min-width: 768px) {
 	section#menu {
 		width: 100%;
-		margin-top: 0;
 		height: auto;
 		justify-items: center;
 		background-color: #3d3e41;
