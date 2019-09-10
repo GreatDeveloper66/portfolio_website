@@ -39,7 +39,7 @@ window.onload = () => {
 	});
 
 	window.onresize = () => {
-		if (window.innerWidth < 768) {
+		if (window.innerWidth > 768) {
 			let navbar = document.querySelector("nav");
 			navbar.classList.remove("slidedown");
 			navbar.classList.remove("slideup");

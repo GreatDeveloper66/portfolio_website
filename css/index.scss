@@ -58,12 +58,11 @@ section#menu {
 	justify-items: center;
 	align-items: stretch;
 	margin-right: 0px;
-	top: 20px;
+	top: 0px;
 	width: 160px;
 	height: 300px;
 	background-color: transparent;
 	z-index: 2;
-	border: 3px solid red;
 }
 
 section#socialmedia {
@@ -75,9 +74,9 @@ section#contact {
 nav {
 	display: grid;
 	grid-template: repeat(7, 1fr)/1fr;
-	height: 320px;
+	height: 34px;
+	overflow-y: hidden;
 	background-color: transparent;
-	border: 3px solid blue;
 }
 
 nav button {
@@ -168,7 +167,6 @@ section#about {
 @media only screen and (min-width: 768px) {
 	section#menu {
 		width: 100%;
-		margin-top: 0;
 		height: auto;
 		justify-items: center;
 		background-color: #3d3e41;
@@ -189,6 +187,7 @@ section#about {
 		align-items: center;
 		justify-items: center;
 		height: auto;
+		overflow-y: visible;
 	}
 
 	section#portfolio {
