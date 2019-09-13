@@ -15,6 +15,15 @@ $wht: #FFFFFF;
 	margin: $margin;
 }
 
+@mixin absolutePos($zindex,$top,$bottom,$right,$left,$content){
+	z-index: $zindex;
+	top: $top;
+	bottom: $bottom;
+	right: $right;
+	left: $left;
+	content: $content;
+}
+
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	 @include display(grid, 1fr/1fr,center,center);
@@ -22,17 +31,22 @@ body {
 }
 
 header {
-	
-	position: relative;
-	display: grid;
-	grid-template: 1fr/1fr;
-	align-items: center;
-	background: transparent;
-	height: 700px;
-	border: 3px solid red;
-	width: 100%;
+	@include display(grid, 1fr/1fr, center, center);
+	@include positioning(relative, 600px, 100%, 2px, auto);
 }
 
+.headerbackground {
+	background: url('/images/Website_Background_2.jpg') center no-repeat;
+	background-size: cover;
+	z-index: -1;
+	top: 0;
+	right: 0;
+	left: 0;
+	content: "";
+	@include positioning(absolute, 100%, 100%, 2px, auto);
+	@include absolutePos(-1,0,auto,0,0,"");
+	
+}
 
 section {
 	background-color: $wht;
@@ -44,18 +58,7 @@ section {
 }
 
 
-.headerbackground {
-	background: url('/images/Website_Background_2.jpg') center no-repeat;
-	background-size: cover;
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	right: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	content: "";
-}
+
 
 section#menu {
 	position: sticky;
