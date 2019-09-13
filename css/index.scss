@@ -37,7 +37,6 @@ header {
 	@include absolutePos(-1,0,auto,0,0,"");
 }
 main {
-	border: 3px solid yellow;
 	width: 100%;
 }
 section {
@@ -45,34 +44,31 @@ section {
 	@include positioning(relative,auto,auto, 2px, auto);
 	background-color: $wht;
 }
-
 section#menu {
 	position: sticky;
 	align-items: stretch;
-	margin-right: 0px;
 	top: 0px;
-	width: 160px;
-	height: 300px;
 	background-color: transparent;
 	z-index: 3;
-	border: 3px solid red;
+	@include positioning(sticky, 300px, 160px, 2x, default);
+	margin-right: 0px;
 }
-
 nav {
-	display: grid;
-	grid-template: repeat(7, 1fr)/1fr;
+	@include display(grid,repeat(7,1fr)/1fr,default,default);
 	height: 34px;
 	overflow-y: hidden;
 	background-color: transparent;
-	border: 3px solid blue;
+
 }
 
 section#portfolio {
+	
 	height: auto;
 	background-color: green;
 	display: grid;
-	grid-template: 300px 1fr/1fr;
+	grid-template: 75px 1fr/1fr;
 	margin-top: -310px;
+	@display(grid,75px 1fr/1fr,space-between,center);
 }
 
 div.portfolio {
