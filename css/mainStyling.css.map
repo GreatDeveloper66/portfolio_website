@@ -4,6 +4,6 @@
   "sources": [
     "mainStyling.scss"
   ],
-  "mappings": ";AAAA,AAAO,OAAA,AAAA,UAAU,CAAC;EACjB,MAAM,EAAE,KAAM;EACd,gBAAgB,EAAE,KAAM;EACxB,UAAU,EAAE,MAAO,GACnB;;AACD,MAAM,MAAD,MAAM,MAAM,SAAS,EAAE,KAAK;;EAChC,AAAO,OAAA,AAAA,UAAU,CAAC;IACjB,UAAU,EAAE,GAAI,GAChB",
+  "mappings": "",
   "names": []
 }

@@ -3,9 +3,9 @@
 $wht: #FFFFFF;
 @mixin display($display, $gridtemplate,$alignitems,$justifyitems){
 	display: $display;
-	grid-template: $gridtemplate;
+	grid-template-rows: $gridtemplate;
 	align-items: $alignitems;
-	justify-items: $justify-items;
+	justify-items: $justifyitems;
 }
 @mixin positioning($position,$height,$width,$padding,$margin){
 	position: $position;
@@ -15,12 +15,24 @@ $wht: #FFFFFF;
 	margin: $margin;
 }
 
-html {}
-
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	margin: auto;
+	 @include display(grid, 1fr/1fr,center,center);
+		@include positioning(relative,auto,100%,2px,auto);
 }
+
+header {
+	
+	position: relative;
+	display: grid;
+	grid-template: 1fr/1fr;
+	align-items: center;
+	background: transparent;
+	height: 700px;
+	border: 3px solid red;
+	width: 100%;
+}
+
 
 section {
 	background-color: $wht;
@@ -31,14 +43,6 @@ section {
 	position: relative;
 }
 
-header {
-	position: relative;
-	display: grid;
-	grid-template: 1fr/1fr;
-	align-items: center;
-	background: transparent;
-	height: 700px;
-}
 
 .headerbackground {
 	background: url('/images/Website_Background_2.jpg') center no-repeat;
@@ -73,6 +77,19 @@ section#socialmedia {
 section#contact {
 	height: 500px;
 }
+
+section#portfolio {
+	height: auto;
+	background-color: green;
+	display: grid;
+	grid-template: 300px 1fr/1fr;
+}
+
+div.portfolio {
+	display: grid;
+	grid-template: repeat(9,1fr)/1fr;
+}
+
 nav {
 	display: grid;
 	grid-template: repeat(7, 1fr)/1fr;
@@ -158,7 +175,45 @@ section#about {
 	height: 320px;
 }
 
-@media only screen and (min-width: 520px) {}
+div.appblock {
+	background: linear-gradient(135deg, #009bec, #91ffa3), linear-gradient(#c4c4c4,#c4c4c4);
+	opacity: 0.7;
+	border: solid 1px rgba(0,0,0,1);
+	box-shadow: 3px 6px #888888;
+	height: 250px;
+}
+
+div.thumbnail {
+	width: 100%;
+	height: 55%;
+	background: linear-gradient(135deg, #009bec, #91ffa3), linear-gradient(#c4c4c4,#c4c4c4);
+	opacity: 0.7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+div.appcaption {
+	width: 100%;
+	height: 30%;
+	border-top: solid 1px rgba(211,211,211,1);
+}
+
+div.appfooter {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 15%;
+	border-top: solid 1px rgba(211,211,211,1);
+}
+
+@media only screen and (min-width: 520px) {
+	div.portfolio {
+		grid-template: repeat(6,1fr)/repeat(2,1fr);
+	}
+}
 
 @media only screen and (min-width: 768px) {
 	section#menu {
@@ -166,6 +221,10 @@ section#about {
 		height: auto;
 		justify-items: center;
 		background-color: #3d3e41;
+	}
+	
+	div.portfolio {
+		grid-template: repeat(4,1fr)/repeat(3,1fr);
 	}
 
 	menu {
