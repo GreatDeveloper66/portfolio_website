@@ -1,4 +1,5 @@
 $wht: #FFFFFF;
+$bannercolor: #07BFDC;
 @mixin display($display, $gridtemplate,$alignitems,$justifyitems){
 	display: $display;
 	grid-template-rows: $gridtemplate;
@@ -60,31 +61,21 @@ nav {
 	background-color: transparent;
 
 }
-
 section#portfolio {
-	
-	height: auto;
-	background-color: green;
-	display: grid;
 	grid-template: 75px 1fr/1fr;
+	height: auto;
 	margin-top: -310px;
-	@display(grid,75px 1fr/1fr,space-between,center);
 }
-
 div.portfolio {
-	display: grid;
-	grid-template: repeat(9,1fr)/1fr;
+	@include display(grid,repeat(9,1fr)/1fr,default,default);
+	grid-gap: 40px;
 }
-
 section#socialmedia {
 	height: 500px;
 }
 section#contact {
 	height: 500px;
 }
-
-
-
 nav button {
 	background-color: #3d3e41;
 	border: rgb(255, 255, 255);
@@ -95,7 +86,6 @@ nav button {
 	min-height: 45px;
 	text-align: center;
 }
-
 .banner {
 	display: grid;
 	grid-template: 1fr/1fr;
@@ -103,27 +93,22 @@ nav button {
 	align-items: center;
 	height: 100%;
 }
-
 .titleblock {
 	text-align: center;
 }
-
 button {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	transition: all 0.3s ease;
 
 }
-
 button:hover,
 .active {
 	filter: brightness(150%);
 }
-
 button:hover,
 div.bars:hover {
 	cursor: pointer;
 }
-
 .bars {
 	display: grid;
 	justify-items: center;
@@ -135,18 +120,15 @@ div.bars:hover {
 	height: 34px;
 	width: 43px;
 }
-
 .bar {
 	background-color: #FFFFFF;
 	height: 4px;
 	margin: 2px;
 	width: 60%;
 }
-
 section#about {
 	height: 700px;
 }
-
 .slideup,
 .slidedown {
 	max-height: 34px;
@@ -156,12 +138,10 @@ section#about {
 	-moz-transition: all 0.6s ease-in-out;
 	transition: all 0.6s ease-in-out;
 }
-
 .slidedown {
 	max-height: 320px;
 	height: 320px;
 }
-
 div.appblock {
 	background: linear-gradient(135deg, #009bec, #91ffa3), linear-gradient(#c4c4c4,#c4c4c4);
 	opacity: 0.7;
@@ -169,7 +149,6 @@ div.appblock {
 	box-shadow: 3px 6px #888888;
 	height: 250px;
 }
-
 div.thumbnail {
 	width: 100%;
 	height: 55%;
@@ -180,13 +159,11 @@ div.thumbnail {
 	justify-content: center;
 
 }
-
 div.appcaption {
 	width: 100%;
 	height: 30%;
 	border-top: solid 1px rgba(211,211,211,1);
 }
-
 div.appfooter {
 	display: flex;
 	align-items: center;
@@ -195,7 +172,15 @@ div.appfooter {
 	height: 15%;
 	border-top: solid 1px rgba(211,211,211,1);
 }
-
+h1 {
+	font-size: 50px;
+}
+h2 {
+	font-size: 40px;
+	width: 100%;
+	text-align: center;
+	background-color: $bannercolor;
+}
 @media only screen and (min-width: 520px) {
 	div.portfolio {
 		grid-template: repeat(6,1fr)/repeat(2,1fr);
@@ -209,19 +194,12 @@ div.appfooter {
 		justify-items: center;
 		background-color: #3d3e41;
 	}
-	
 	div.portfolio {
 		grid-template: repeat(4,1fr)/repeat(3,1fr);
 	}
-
-	menu {
-		background-color: #3d3e41;
-	}
-
 	.bars {
 		display: none;
 	}
-
 	nav {
 		grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-gap: 25px;
@@ -231,11 +209,9 @@ div.appfooter {
 		height: auto;
 		overflow-y: visible;
 	}
-	
 	section#portfolio {
 		margin-top: 0;
 	}
-
 }
 
 
