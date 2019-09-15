@@ -28,11 +28,6 @@ window.onload = () => {
 			smoothScroll(elem.getAttribute("href"));
 		});
 	});
-	/*
-			let arr = [document.getElementById("accordian"), ...Array.from(document.querySelectorAll("nav a"))];
-			toggleDropDown(arr, document.querySelector("nav"), "slidedown", "slideup");
-		*/
-
 
 	window.addEventListener('scroll', function (e) {
 		scrollLoop();
