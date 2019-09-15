@@ -73,18 +73,24 @@ div.portfolio {
 	grid-gap: 40px;
 }
 section#about {
-	grid-template: 20px 1fr 1fr/1fr;
+	grid-template: 30px 1fr/1fr;
+	border: 4px solid red;
 }
-
-div.aboutblock {
-	
+div.aboutBlock {
+	display: grid;
+	grid-template: 1fr/1fr;
+	border: 4px solid red;
 }
-
-div.skillblock {
+div.portraitBlock {
+	display: none;
+	border: 4px solid blue;
+}
+div.starBlock {
 	border-top: solid grey 3px;
 	padding: 5px;
-}
+	grid-template: repeat(6,1fr)/1fr 1fr;
 
+}
 section#socialmedia {
 	height: 500px;
 }
@@ -155,7 +161,7 @@ div.bars:hover {
 	max-height: 320px;
 	height: 320px;
 }
-div.appBlock, div.aboutBlock {
+div.appBlock, div.skillBlock {
 	background: linear-gradient(135deg, #009bec, #91ffa3), linear-gradient(#c4c4c4,#c4c4c4);
 	opacity: 0.7;
 	border: solid 1px rgba(0,0,0,1);
@@ -233,8 +239,21 @@ h3 {
 	section#portfolio {
 		margin-top: 0;
 	}
+	div.portraitBlock {
+		display: grid;
+	}
+	div.aboutBlock {
+		grid-template: 1fr/1fr 1fr;
+	}
+	div.starBlock {
+		grid-template: repeat(4,1fr)/repeat(3,1fr);
+	}
 }
 
 
-@media only screen and (min-width:1024px) {}
+@media only screen and (min-width:1024px) {
+	div.starBlock {
+		grid-template: repeat(4,1fr)/repeat(3,1fr);
+	}
+}
 
