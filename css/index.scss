@@ -46,12 +46,11 @@ section {
 	background-color: $wht;
 }
 section#menu {
-	position: sticky;
+	@include positioning(sticky, 300px, 160px, 2x, default);
 	align-items: stretch;
 	top: 0px;
 	background-color: transparent;
 	z-index: 3;
-	@include positioning(sticky, 300px, 160px, 2x, default);
 	margin-right: 0px;
 }
 nav {
@@ -70,6 +69,10 @@ div.portfolio {
 	@include display(grid,repeat(9,1fr)/1fr,default,default);
 	grid-gap: 40px;
 }
+section#about {
+	
+}
+
 section#socialmedia {
 	height: 500px;
 }
@@ -126,9 +129,7 @@ div.bars:hover {
 	margin: 2px;
 	width: 60%;
 }
-section#about {
-	height: 700px;
-}
+
 .slideup,
 .slidedown {
 	max-height: 34px;
