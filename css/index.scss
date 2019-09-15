@@ -208,6 +208,128 @@ h3 {
 	font-size: 40px;
 	text-align: center;
 }
+
+div.contactbackground {
+	background-image: url("../images/bg-3a.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	border: 10px solid red;
+	z-index: -1;
+	top: -100px;
+}
+
+footer {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-auto-rows: auto;
+	justify-items: center;
+	align-items: start;
+	top: auto;
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	height: 260px;
+	color: #ccc;
+	font-style: italic;
+	padding: 5px;
+	background-color: #FFFFFF;
+}
+
+footer div.copyright {
+	color: #666;
+	font-size: 12px;
+	align-self: end;
+}
+
+footer div.content p {
+	font-size: 14px;
+	color: #666;
+	line-height: 1.6em;
+}
+
+footer div.content h2 {
+	font-weight: bold;
+	color: #666;
+	font-size: 32px;
+}
+
+form {
+	display: grid;
+	grid-template: repeat(8, 1fr)/1fr;
+	grid-auto-rows: auto;
+	grid-gap: 30px;
+	max-width: 400px;
+	height: 450px;
+	grid-template-areas: "messagebox"
+		"messagebox"
+		"messagebox"
+		"inputbox"
+		"inputbox"
+		"textbox"
+		"textbox"
+		"sendbutton";
+}
+
+form div.messagebox {
+	grid-area: messagebox;
+}
+
+form div.textbox {
+	grid-area: textbox;
+}
+
+form div.inputbox {
+	grid-area: inputbox;
+}
+
+form div.sendbutton {
+	grid-area: sendbutton;
+}
+
+textarea, input {
+	width: 100%;
+	border-radius: 5px;
+	padding: 3px;
+	margin: 3px;
+	background: #F2F2F2 none repeat scroll 00;
+	opacity: 0.4;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+div.textbox textarea {
+	height: 100%;
+}
+div.messagebox textarea {
+	height: 100%;
+}
+input {
+	height: 20%;
+	margin-bottom: 5px;
+}
+
+form button {
+	background-color: #262628;
+	color: #FFF;
+	margin-top: 20px;
+	padding: 10px 30px;
+	border-radius: 10px;
+	font-size: 18px;
+	transition: all 0.5s;
+}
+
+form button:hover {
+		background-color: #FFFFFF;
+		color: #000000;
+}
+
+div.socialmedia {
+	border: solid 2px rgba(211,211,211,1);
+	box-shadow: 2px 5px rgba(169,169,169,0.9);
+}
 @media only screen and (min-width: 520px) {
 	div.portfolio {
 		grid-template: repeat(6,1fr)/repeat(2,1fr);
@@ -247,6 +369,26 @@ h3 {
 	}
 	div.starBlock {
 		grid-template: repeat(4,1fr)/repeat(3,1fr);
+	}
+	
+	form {
+		display: grid;
+		height: 300px;
+		max-width: 600px;
+		grid-template: repeat(8, 1fr)/1fr 1fr;
+		grid-template-areas: "messagebox messagebox"
+			"messagebox messagebox"
+			"messagebox messagebox"
+			"inputbox textbox"
+			"inputbox textbox"
+			"inputbox textbox"
+			"inputbox textbox"
+			". sendbutton";
+	}
+	
+	input {
+		height: 15%;
+		margin-bottom: 14px;
 	}
 }
 
