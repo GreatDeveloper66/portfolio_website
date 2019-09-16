@@ -46,6 +46,15 @@ header {
 	@include absolutePos(-1, 0, auto, 0, 0, "");
 }
 
+header {
+	div.banner {
+		h1,h3 {
+			
+			text-shadow: 3px 3px 3px grey;
+		}
+	}
+}
+
 main {
 	width: 100%;
 }
@@ -131,10 +140,7 @@ nav button {
 	justify-items: center;
 	align-items: center;
 	height: 100%;
-}
-
-.titleblock {
-	text-align: center;
+		text-align: center;
 }
 
 button {
