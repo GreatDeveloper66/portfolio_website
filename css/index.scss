@@ -49,8 +49,8 @@ header {
 header {
 	div.banner {
 		h1,h3 {
-			
-			text-shadow: 3px 3px 3px grey;
+			color: white;
+			text-shadow: 5px 5px 5px grey;
 		}
 	}
 }
@@ -124,14 +124,18 @@ section#contact {
 }
 
 nav button {
+	background-color: blue;
+	/*
 	background-color: #3d3e41;
-	border: rgb(255, 255, 255);
-	border: 0.5px solid rgba(255, 255, 255, 0.3);
+	*/
+	border: #FFFFFF;
+	border: 2px solid rgba(255, 255, 255, 0.3);
 	color: #FFFFFF;
 	font-size: 25px;
 	width: 100%;
-	min-height: 45px;
+	min-height: 35px;
 	text-align: center;
+	box-shadow: 4px 4px 4px grey;
 }
 
 .banner {
@@ -260,12 +264,13 @@ div.contactbackground {
 
 footer {
 	@include display(grid, 1fr 1fr/1fr, start, center);
-	@include positioning(relative, 75px, 100%, 5px, auto);
+	@include positioning(absolute, 75px, 100%, 5px, auto);
 	background-color: #D3D3D3;
 	opacity: 0.9;
 	text-align: center;
 	font-style: italic;
-	margin-bottom: 0;
+	margin-bottom: -190px;
+	bottom: 0;
 
 	h2 {
 		font-weight: bold;
@@ -386,7 +391,7 @@ div.socialmedia {
 		width: 100%;
 		height: auto;
 		justify-items: center;
-		background-color: #3d3e41;
+		background-color: #000000;
 	}
 
 	div.portfolio {
@@ -399,14 +404,19 @@ div.socialmedia {
 
 	nav {
 		grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-gap: 25px;
+		grid-gap: 10px;
 		justify-self: center;
 		align-items: center;
-		justify-items: center;
+		justify-items: space-around;
 		height: auto;
 		overflow-y: visible;
+		margin-top: 10px;
+		margin-bottom: 12px;
 	}
-
+  
+	nav button {
+		font-size: 15px;
+	}
 	section#portfolio {
 		margin-top: 0;
 	}
@@ -444,9 +454,18 @@ div.socialmedia {
 	}
 }
 
+@media only screen and (min-width: 912px){
+	nav button {
+		font-size: 20px;
+		min-height: 35px;
+	}
+}
 
 @media only screen and (min-width:1024px) {
 	div.starBlock {
 		grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+	}
+	nav button {
+		font-size: 23px;
 	}
 }
