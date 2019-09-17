@@ -2,14 +2,12 @@
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 $wht: #FFFFFF;
 $bannercolor: #07BFDC;
-
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {
 	display: $display;
 	grid-template-rows: $gridtemplate;
 	align-items: $alignitems;
 	justify-items: $justifyitems;
 }
-
 @mixin positioning($position, $height, $width, $padding, $margin) {
 	position: $position;
 	height: $height;
@@ -17,7 +15,6 @@ $bannercolor: #07BFDC;
 	padding: $padding;
 	margin: $margin;
 }
-
 @mixin absolutePos($zindex, $top, $bottom, $right, $left, $content) {
 	z-index: $zindex;
 	top: $top;
@@ -26,27 +23,24 @@ $bannercolor: #07BFDC;
 	left: $left;
 	content: $content;
 }
-
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	@include display(grid, 1fr/1fr, center, center);
 	@include positioning(relative, auto, 100%, 2px, auto);
 	overflow-x: hidden;
 }
-
 header {
 	@include display(grid, 1fr/1fr, center, center);
 	@include positioning(relative, 600px, 100%, 2px, auto);
 }
-
 .headerbackground {
 	background: url('/images/Website_Background_2.jpg') center no-repeat;
 	background-size: cover;
 	@include positioning(absolute, 100%, 100%, 2px, auto);
 	@include absolutePos(-1, 0, auto, 0, 0, "");
 }
-
 header {
+	border: 3px solid blue;
 	div.banner {
 		h1,h3 {
 			color: white;
@@ -54,17 +48,14 @@ header {
 		}
 	}
 }
-
 main {
 	width: 100%;
 }
-
 section {
 	@include display(grid, 1fr/1fr, center, center);
 	@include positioning(relative, auto, auto, 2px, auto);
 	background-color: $wht;
 }
-
 section#menu {
 	@include positioning(sticky, 300px, 160px, 2x, default);
 	align-items: stretch;
@@ -73,7 +64,6 @@ section#menu {
 	z-index: 3;
 	margin-right: 0px;
 }
-
 nav {
 	@include display(grid, repeat(7, 1fr)/1fr, default, default);
 	height: 34px;
@@ -81,10 +71,10 @@ nav {
 	background-color: transparent;
 
 }
-
 section#portfolio {
-	grid-template: 75px 1fr/1fr;
+	grid-template: 75px auto/1fr;
 	height: auto;
+	border: 3px solid red;
 	margin-top: -310px;
 }
 
