@@ -371,9 +371,7 @@ div.socialmedia {
 }
 
 @media only screen and (min-width: 520px) {
-	div.portfolio {
-		grid-template: repeat(6, 1fr)/repeat(2, 1fr);
-	}
+	
 }
 
 @media only screen and (min-width: 768px) {
@@ -383,11 +381,12 @@ div.socialmedia {
 		justify-items: center;
 		background-color: #000000;
 	}
-
+	
 	div.portfolio {
-		grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+		grid-template: repeat(6, 1fr)/repeat(2, 1fr);
 	}
 
+	
 	.bars {
 		display: none;
 	}
@@ -449,6 +448,10 @@ div.socialmedia {
 		font-size: 20px;
 		min-height: 35px;
 	}
+	div.portfolio {
+		grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+	}
+
 }
 
 @media only screen and (min-width:1024px) {
