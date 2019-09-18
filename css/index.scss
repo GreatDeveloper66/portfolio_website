@@ -45,7 +45,6 @@ header {
 	@include absolutePos(-1, 0, auto, 0, 0, "");
 }
 header {
-	border: 3px solid blue;
 	div.banner {
 		h1,h3 {
 			color: white;
@@ -81,7 +80,6 @@ nav {
 section#portfolio {
 	grid-template: 75px auto/1fr;
 	height: auto;
-	border: 3px solid red;
 	margin-top: -310px;
 }
 div.portfolio {
@@ -126,26 +124,23 @@ section#about {
 	padding: 3px;
 	margin-top: 20px;
 	grid-template: 75px 1fr/1fr;
-
 }
-
 div.aboutBlock {
 	display: grid;
-	grid-template: 1fr/1fr;
+	grid-template: auto/auto;
+	width: 90%;
+	max-width: 1100px;
 }
-
 div.portraitBlock {
 	display: none;
-	border: 4px solid blue;
 }
 
-div.starBlock {
+.starBlock {
+	display: grid;
 	border-top: solid grey 3px;
 	padding: 5px;
-	grid-template: repeat(6, 1fr)/1fr 1fr;
-
+	grid-template: repeat(6,1fr)/repeat(2,1fr);
 }
-
 section#socialmedia {
 	height: 500px;
 }
@@ -231,6 +226,19 @@ div.skillBlock {
 	opacity: 0.7;
 	border: solid 1px rgba(0, 0, 0, 1);
 	box-shadow: 3px 6px #888888;
+}
+
+.skillBlock {
+	h3 {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		color: black;
+		font-weight: bold;
+	}
+	p {
+		color: black;
+		font-weight: bold;
+	}
 }
 
 div.appBlock {
@@ -449,15 +457,17 @@ div.socialmedia {
 
 	div.portraitBlock {
 		display: grid;
+		img {
+			width: 300px;
+			height: 300px;
+		}
 	}
 
 	div.aboutBlock {
-		grid-template: 1fr/1fr 1fr;
+		grid-template: auto/auto auto;
 	}
 
-	div.starBlock {
-		grid-template: repeat(4, 1fr)/repeat(3, 1fr);
-	}
+	
 
 	form {
 		display: grid;
@@ -478,6 +488,11 @@ div.socialmedia {
 		height: 15%;
 		margin-bottom: 14px;
 	}
+	.starBlock {
+		i {
+			font-size: 15px;
+		}
+	}
 }
 
 @media only screen and (min-width: 912px){
@@ -488,14 +503,32 @@ div.socialmedia {
 	div.portfolio {
 		grid-template: repeat(4, 1fr)/repeat(3, 1fr);
 	}
+	
+	div.portraitBlock {
+		img {
+			width: 400px;
+			height: 400px;
+		}
+	}
+	
 
 }
 
 @media only screen and (min-width:1024px) {
-	div.starBlock {
+	.starBlock {
 		grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+	
+		i {
+			font-size: 13px;
+		}
 	}
 	nav button {
 		font-size: 23px;
+	}
+	div.portraitBlock {
+		img {
+			width: 400px;
+			height: 400px;
+		}
 	}
 }
