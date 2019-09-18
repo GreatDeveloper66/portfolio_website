@@ -464,53 +464,60 @@ div.socialmedia {
     margin-top: 0; }
   /* line 458, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   div.portraitBlock {
-    display: grid; }
-    /* line 460, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+    display: grid;
+    grid-template: auto 1fr/1fr;
+    jusity-items: center;
+    align-items: flex-start; }
+    /* line 463, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
     div.portraitBlock img {
       width: 300px;
       height: 300px; }
-  /* line 466, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+    /* line 467, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+    div.portraitBlock h3 {
+      margin-top: 5px;
+      margin-bottom: 5px; }
+  /* line 474, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   div.aboutBlock {
     grid-template: auto/auto auto; }
-  /* line 472, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 480, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   form {
     display: grid;
     height: 300px;
     max-width: 600px;
     grid-template: repeat(8, 1fr)/1fr 1fr;
     grid-template-areas: "messagebox messagebox" "messagebox messagebox" "messagebox messagebox" "inputbox textbox" "inputbox textbox" "inputbox textbox" "inputbox textbox" ". sendbutton"; }
-  /* line 487, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 495, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   input {
     height: 15%;
     margin-bottom: 14px; }
-  /* line 492, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 500, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   .starBlock i {
     font-size: 15px; } }
 
 @media only screen and (min-width: 912px) {
-  /* line 499, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 507, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   nav button {
     font-size: 20px;
     min-height: 35px; }
-  /* line 503, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 511, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   div.portfolio {
     grid-template: repeat(4, 1fr)/repeat(3, 1fr); }
-  /* line 508, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 516, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   div.portraitBlock img {
     width: 400px;
     height: 400px; } }
 
 @media only screen and (min-width: 1024px) {
-  /* line 518, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 526, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   .starBlock {
     grid-template: repeat(4, 1fr)/repeat(3, 1fr); }
-    /* line 521, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+    /* line 529, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
     .starBlock i {
       font-size: 13px; }
-  /* line 525, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 533, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   nav button {
     font-size: 23px; }
-  /* line 529, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
+  /* line 537, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/index.scss */
   div.portraitBlock img {
     width: 400px;
     height: 400px; } }
