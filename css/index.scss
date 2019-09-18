@@ -30,7 +30,7 @@ i{
 }
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	@include display(grid, 1fr/1fr, center, center);
+	@include display(grid, auto auto auto/1fr, center, center);
 	@include positioning(relative, auto, 100%, 2px, auto);
 	overflow-x: hidden;
 }
@@ -55,6 +55,8 @@ header {
 }
 main {
 	width: 100%;
+	display: grid;
+	grid-template: repeat(4,auto)/1fr;
 }
 section {
 	@include display(grid, 1fr/1fr, center, center);
@@ -120,7 +122,10 @@ div.appfooter {
 	
 }
 section#about {
-	grid-template: 30px 1fr/1fr;
+	margin: 3px;
+	padding: 3px;
+	margin-top: 20px;
+	grid-template: 75px 1fr/1fr;
 
 }
 
@@ -292,7 +297,6 @@ footer {
 	opacity: 0.9;
 	text-align: center;
 	font-style: italic;
-	margin-bottom: -190px;
 	bottom: 0;
 
 	h2 {
