@@ -134,17 +134,28 @@ div.aboutBlock {
 div.portraitBlock {
 	display: none;
 }
-
 .starBlock {
 	display: grid;
 	border-top: solid grey 3px;
 	padding: 5px;
 	grid-template: repeat(6,1fr)/repeat(2,1fr);
 }
-section#socialmedia {
-	height: 500px;
+section#socialMedia {
+	grid-template: 75px 1fr/1fr;
+	margin: 3px;
+	padding: 3px;
+	width: 97%;
 }
 
+div.socialNav {
+	display: grid;
+	grid-template: repeat(5,1fr)/repeat(1,1fr);
+	justify-items: center;
+	align-items: center;
+	width: 95%;
+	border: 3px solid green;
+
+}
 section#contact {
 	height: 500px;
 }
@@ -474,7 +485,25 @@ div.socialmedia {
 	div.aboutBlock {
 		grid-template: auto/auto auto;
 	}
-
+ 
+	div.socialNav {
+		grid-template: repeat(1,1fr)/repeat(5,1fr);
+		width: 90%;
+		max-width: 1000px;
+		justify-items: center;
+		align-items: center;
+		.mediaButton {
+			text-align: center;
+			a {
+			text-decoration: none;
+		}
+			p {
+				text-align: center;
+			}
+			
+		}
+		
+	}
 	
 
 	form {
