@@ -298,7 +298,12 @@ h3 {
 	text-align: center;
 }
 
-div.contactbackground {
+div.contactBackground {
+	background: url('../images/bg-3a.jpg') center no-repeat;
+	background-size: cover;
+	@include positioning(absolute, 100%, 100%, 2px, auto);
+	@include absolutePos(-1, 0, auto, 0, 0, "");
+	/*
 	background-image: url("../images/bg-3a.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -307,7 +312,10 @@ div.contactbackground {
 	position: absolute;
 	z-index: -1;
 	top: -100px;
+	*/
 }
+
+
 
 footer {
 	@include display(grid, 1fr 1fr/1fr, start, center);
