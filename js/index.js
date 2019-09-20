@@ -14,8 +14,10 @@ window.onload = () => {
 	function scrollLoop() {
 		let scrollRate = 0.4;
 		let element = document.querySelector("div.headerbackground");
+  let element2 = document.querySelector("div.contactBackground");
 		const setTranslate = (xPos, yPos, el) => el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
 		setTranslate(0, window.scrollY * scrollRate, element);
+  setTranslate(0, window.scrollY * scrollRate, element2);
 		requestAnimationFrame(scrollLoop);
 	}
 

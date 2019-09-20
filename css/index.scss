@@ -321,13 +321,17 @@ section#contact {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	background-color: transparent;
+  .formcontainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }    
 }
 div.contactBackground {
 	background: url('../images/ocean.jpg') center no-repeat;
 	background-size: cover;
 	position: absolute;
 	z-index: -2;
-	top: 0px;
+	top: -2000px;
 	height: 100%;
 	width: 100%;
 	border: 3px solid blue;
@@ -404,15 +408,12 @@ form button:hover {
 		justify-items: center;
 		background-color: #000000;
 	}
-	
 	div.portfolio {
 		grid-template: repeat(6, 1fr)/repeat(2, 1fr);
 	}
-
 	.bars {
 		display: none;
 	}
-
 	nav {
 		grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
 		grid-gap: 10px;
@@ -423,15 +424,13 @@ form button:hover {
 		overflow-y: visible;
 		margin-top: 10px;
 		margin-bottom: 12px;
-	}
-  
+	}  
 	nav button {
 		font-size: 15px;
 	}
 	section#portfolio {
 		margin-top: 0;
 	}
-
 	div.portraitBlock {
 		display: grid;
 		grid-template: auto 1fr/1fr;
@@ -446,7 +445,6 @@ form button:hover {
 			margin-bottom: 5px;
 		}
 	}
-
 	div.aboutBlock {
 		grid-template: auto/auto auto;
 	}
@@ -476,6 +474,9 @@ form button:hover {
 	footer {
 		grid-template: auto/repeat(3,1fr);
 	}
+  div.contactBackground {
+    top: -850px;
+  }
 }
 @media only screen and (min-width: 912px){
 	nav button {
