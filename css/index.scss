@@ -6,7 +6,6 @@ i{
 	font-size: 30px;
 	color: blue;
 }
-
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {
 	display: $display;
 	grid-template-rows: $gridtemplate;
@@ -140,8 +139,6 @@ div.portraitBlock {
 	padding: 5px;
 	grid-template: repeat(6,1fr)/repeat(2,1fr);
 }
-
-
 div.socialNav {
 	display: grid;
 	grid-template: repeat(1,1fr)/repeat(5,1fr);
@@ -161,7 +158,6 @@ div.socialNav {
 		}
 		}
 }
-
 nav button {
 	background-color: blue;
 	border: #FFFFFF;
@@ -173,7 +169,6 @@ nav button {
 	text-align: center;
 	box-shadow: 4px 4px 4px grey;
 }
-
 .banner {
 	display: grid;
 	grid-template: 1fr/1fr;
@@ -182,23 +177,19 @@ nav button {
 	height: 100%;
 		text-align: center;
 }
-
 button {
 	font-family: 'Roboto', Helvetica, Arial, sans-serif;
 	transition: all 0.3s ease;
 
 }
-
 button:hover,
 .active {
 	filter: brightness(150%);
 }
-
 button:hover,
 div.bars:hover {
 	cursor: pointer;
 }
-
 .bars {
 	display: grid;
 	justify-items: center;
@@ -210,14 +201,12 @@ div.bars:hover {
 	height: 34px;
 	width: 43px;
 }
-
 .bar {
 	background-color: #FFFFFF;
 	height: 4px;
 	margin: 2px;
 	width: 60%;
 }
-
 .slideup,
 .slidedown {
 	max-height: 34px;
@@ -227,12 +216,10 @@ div.bars:hover {
 	-moz-transition: all 0.6s ease-in-out;
 	transition: all 0.6s ease-in-out;
 }
-
 .slidedown {
 	max-height: 320px;
 	height: 320px;
 }
-
 div.appBlock,
 div.skillBlock {
 	background: linear-gradient(135deg, #009bec, #91ffa3), linear-gradient(#c4c4c4, #c4c4c4);
@@ -240,7 +227,6 @@ div.skillBlock {
 	border: solid 1px rgba(0, 0, 0, 1);
 	box-shadow: 3px 6px #888888;
 }
-
 .skillBlock {
 	h3 {
 		margin-top: 5px;
@@ -253,11 +239,9 @@ div.skillBlock {
 		font-weight: bold;
 	}
 }
-
 div.appBlock {
 	height: 250px;
 }
-
 div.thumbnail {
 	width: 100%;
 	height: 55%;
@@ -268,13 +252,11 @@ div.thumbnail {
 	justify-content: center;
 
 }
-
 div.appcaption {
 	width: 100%;
 	height: 30%;
 	border-top: solid 1px rgba(211, 211, 211, 1);
 }
-
 div.appfooter {
 	display: flex;
 	align-items: center;
@@ -283,30 +265,19 @@ div.appfooter {
 	height: 15%;
 	border-top: solid 1px rgba(211, 211, 211, 1);
 }
-
 h1 {
 	font-size: 50px;
 }
-
 h2 {
 	font-size: 40px;
 	width: 100%;
 	text-align: center;
 	background-color: $bannercolor;
 }
-
 h3 {
 	font-size: 40px;
 	text-align: center;
 }
-
-div.contactBackground {
-	background: url('../images/bg-3a.jpg') center no-repeat;
-	background-size: cover;
-	@include positioning(absolute, 100%, 100%, 2px, auto);
-	@include absolutePos(-1, 0, auto, 0, 0, "");
-}
-
 footer {
 	@include display(grid, auto/repeat(3,1fr), center, space-around);
 	@include positioning(relative, 75px, 100%, 5px, auto);
@@ -345,11 +316,22 @@ footer {
 		}
 	}
 }
-
 section#contact {
 	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: transparent;
 }
-
+div.contactBackground {
+	background: url('../images/ocean.jpg') center no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: -2;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	border: 3px solid blue;
+}
 form {
 	display: grid;
 	grid-template: repeat(8, 1fr)/1fr;
@@ -366,23 +348,18 @@ form {
 		"textbox"
 		"sendbutton";
 }
-
 form div.messagebox {
 	grid-area: messagebox;
 }
-
 form div.textbox {
 	grid-area: textbox;
 }
-
 form div.inputbox {
 	grid-area: inputbox;
 }
-
 form div.sendbutton {
 	grid-area: sendbutton;
 }
-
 textarea,
 input {
 	width: 100%;
@@ -394,20 +371,16 @@ input {
 	font-size: 15px;
 	font-weight: 500;
 }
-
 div.textbox textarea {
 	height: 100%;
 }
-
 div.messagebox textarea {
 	height: 100%;
 }
-
 input {
 	height: 20%;
 	margin-bottom: 5px;
 }
-
 form button {
 	background-color: #262628;
 	color: #FFF;
@@ -417,16 +390,13 @@ form button {
 	font-size: 18px;
 	transition: all 0.5s;
 }
-
 form button:hover {
 	background-color: #FFFFFF;
 	color: #000000;
 }
-
 @media only screen and (min-width: 520px) {
 	
 }
-
 @media only screen and (min-width: 768px) {
 	section#menu {
 		width: 100%;
@@ -480,7 +450,6 @@ form button:hover {
 	div.aboutBlock {
 		grid-template: auto/auto auto;
 	}
- 
 	form {
 		display: grid;
 		height: 300px;
@@ -495,7 +464,6 @@ form button:hover {
 			"inputbox textbox"
 			". sendbutton";
 	}
-
 	input {
 		height: 15%;
 		margin-bottom: 14px;
@@ -509,7 +477,6 @@ form button:hover {
 		grid-template: auto/repeat(3,1fr);
 	}
 }
-
 @media only screen and (min-width: 912px){
 	nav button {
 		font-size: 20px;
@@ -526,7 +493,6 @@ form button:hover {
 		}
 	}
 }
-
 @media only screen and (min-width:1024px) {
 	.starBlock {
 		grid-template: repeat(4, 1fr)/repeat(3, 1fr);
