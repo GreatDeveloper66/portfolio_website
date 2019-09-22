@@ -318,24 +318,19 @@ footer {
 }
 section#contact {
 	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: transparent;
+	background: url('../images/ocean.jpg') center no-repeat;
+	background-size: cover;
+ background-attachment: fixed;
+ border: 3px solid red;
+  h2 {
+    margin-top: -10px;
+  }
   .formcontainer {
     padding-top: 20px;
     padding-bottom: 20px;
   }    
 }
-div.contactBackground {
-	background: url('../images/ocean.jpg') center no-repeat;
-	background-size: cover;
-	position: absolute;
-	z-index: -2;
-	top: -2000px;
-	height: 100%;
-	width: 100%;
-	border: 3px solid blue;
-}
+
 form {
 	display: grid;
 	grid-template: repeat(8, 1fr)/1fr;
@@ -474,9 +469,7 @@ form button:hover {
 	footer {
 		grid-template: auto/repeat(3,1fr);
 	}
-  div.contactBackground {
-    top: -850px;
-  }
+  
 }
 @media only screen and (min-width: 912px){
 	nav button {
