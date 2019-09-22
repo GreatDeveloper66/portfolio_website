@@ -366,7 +366,6 @@ input {
 	padding: 3px;
 	margin: 3px;
 	background: #F2F2F2 none repeat scroll 00;
-	opacity: 0.4;
 	font-size: 15px;
 	font-weight: 500;
 }
@@ -375,6 +374,10 @@ div.textbox textarea {
 }
 div.messagebox textarea {
 	height: 100%;
+}
+
+textarea#messagebox {
+  font-size: 21px;
 }
 input {
 	height: 20%;
