@@ -3,12 +3,11 @@
 $wht: #FFFFFF;
 $bannercolor: #07BFDC;
 i{
-	font-size: 30px;
 	color: blue;
 }
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {
 	display: $display;
-	grid-template-rows: $gridtemplate;
+	grid-template: $gridtemplate;
 	align-items: $alignitems;
 	justify-items: $justifyitems;
 }
@@ -148,25 +147,6 @@ div.portraitBlock {
 	padding: 5px;
 	grid-template: repeat(6,1fr)/repeat(2,1fr);
 }
-div.socialNav {
-	display: grid;
-	grid-template: repeat(1,1fr)/repeat(5,1fr);
-	justify-items: center;
-	align-items: center;
-	width: 45%;
-	.mediaButton {
-			text-align: center;
-			a {
-			text-decoration: none;
-		}
-			p {
-				text-align: center;
-			}
-		i {
-			font-size: 10px;
-		}
-		}
-}
 nav button {
 	background-color: blue;
 	border: #FFFFFF;
@@ -288,7 +268,7 @@ h3 {
 	text-align: center;
 }
 footer {
-	@include display(grid, auto/repeat(3,1fr), center, space-around);
+	@include display(grid, auto/auto auto auto, center, center);
 	@include positioning(relative, 75px, 100%, 5px, auto);
 	background-color: #D3D3D3;
 	opacity: 0.9;
@@ -300,17 +280,29 @@ footer {
 		font-weight: bold;
 		color: #000000;
 		background-color: transparent;
-		font-size: 30px;
+		font-size: 10px;
 		margin-top: 0;
 		margin-bottom: 0;
+  width: auto;
 	}
-
+.socialNav {
+    display: grid;
+    width: 200px;
+    grid-template: auto/repeat(6,1fr);
+    justify-items: space-around;
+    align-items: center;
+  .mediaButton {
+    i {
+      font-size: 20px;
+    }
+  }
+  }
+ 
 	div.content {
 		display: flex;
 		justify-content: space-around;
 		align-items: flex-end;
-		width: 460px;
-		
+		width: auto;
 
 		p {
 			font-size: 10px;
@@ -414,11 +406,19 @@ section#socialMedia {
     margin-top: 20px;
     display: grid;
     grid-template: repeat(3,1fr)/repeat(2,1fr);
-    
     justify-items: center;
-    i {
+    .mediaButton {
+      text-align: center;
+      font-size: 25px;
+      a {
+        text-decoration: none;
+      }
+      i {
       font-size: 120px;
     }
+      
+    }
+    
   }
 }
 @media only screen and (min-width: 520px) {
@@ -496,10 +496,25 @@ section#socialMedia {
 			font-size: 15px;
 		}
 	}
-	footer {
-		grid-template: auto/repeat(3,1fr);
-	}
-  
+ section#socialMedia {
+   .socialNav {
+     .mediaButton {
+       a {
+         i {
+           font-size: 200px;
+         }
+       }
+     }
+   }
+  } 
+  footer {
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
 }
 @media only screen and (min-width: 912px){
 	nav button {
