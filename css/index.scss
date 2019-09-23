@@ -69,7 +69,6 @@ section#menu {
 	z-index: 3;
 	margin-right: 0px;
 }
-
 nav {
 	@include display(grid, repeat(7, 1fr)/1fr, default, default);
 	height: 34px;
@@ -81,10 +80,16 @@ section#portfolio {
 	grid-template: 75px auto/1fr;
 	height: auto;
 	margin-top: -310px;
-}
-div.portfolio {
+ width: 100%;
+ background: url('../images/desk.jpg') center no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ div.portfolio {
 	@include display(grid, repeat(9, 1fr)/1fr, default, default);
 	grid-gap: 40px;
+ width: 75%;
+ max-width: 400px;
+}
 }
 div.thumbnail{
 	h3 {
@@ -325,7 +330,6 @@ section#contact {
 	background: url('../images/ocean.jpg') center no-repeat;
 	background-size: cover;
  background-attachment: fixed;
- border: 3px solid red;
   h2 {
     margin-top: -10px;
   }
@@ -334,7 +338,6 @@ section#contact {
     padding-bottom: 20px;
   }    
 }
-
 form {
 	display: grid;
 	grid-template: repeat(8, 1fr)/1fr;
@@ -379,7 +382,6 @@ div.textbox textarea {
 div.messagebox textarea {
 	height: 100%;
 }
-
 textarea#messagebox {
   font-size: 21px;
 }
@@ -404,7 +406,9 @@ section#socialMedia {
     width: 100%;
     display: grid; 
     grid-template: 75px auto/1fr;
-    background-color: rgba(135,206,250,0.4);
+    background: url('../images/socialmedia.jpg') center no-repeat;
+	   background-size: cover;
+    background-attachment: fixed;
   .socialNav {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -417,7 +421,6 @@ section#socialMedia {
     }
   }
 }
-
 @media only screen and (min-width: 520px) {
 	
 }
@@ -427,10 +430,6 @@ section#socialMedia {
 		height: auto;
 		justify-items: center;
 		background-color: #000000;
-	}
-  
-	div.portfolio {
-		grid-template: repeat(6, 1fr)/repeat(2, 1fr);
 	}
 	.bars {
 		display: none;
@@ -451,6 +450,11 @@ section#socialMedia {
 	}
 	section#portfolio {
 		margin-top: 0;
+  div.portfolio {
+		grid-template: repeat(6, 1fr)/repeat(2, 1fr);
+  width: 90%;
+  max-width: 1200px;
+	}
 	}
 	div.portraitBlock {
 		display: grid;
@@ -502,9 +506,12 @@ section#socialMedia {
 		font-size: 20px;
 		min-height: 35px;
 	}
-	div.portfolio {
-		grid-template: repeat(4, 1fr)/repeat(3, 1fr);
-	}
+  section#portfolio {
+    	div.portfolio {
+		   grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+	} 
+  }
+
 	
 	div.portraitBlock {
 		img {
