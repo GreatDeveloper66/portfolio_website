@@ -7,10 +7,12 @@
 /*jshint esversion:6*/
 /*global event*/
 /*global requestAnimationFrame*/
+/*global CSS*/
 import toggleDropDown from '/js/toggleDropDown.js';
 import smoothScroll from '/js/scroll.js';
 
 window.onload = () => {
+  
 	function scrollLoop() {
 		let scrollRate = 0.4;
 		let element = document.querySelector("div.headerbackground");
@@ -20,6 +22,7 @@ window.onload = () => {
   setTranslate(0, window.scrollY * scrollRate, element2);
 		requestAnimationFrame(scrollLoop);
 	}
+ 
 
 	document.getElementById("accordian").addEventListener("click", function (e) {
 		toggleDropDown(this, document.querySelector("nav"), "slidedown", "slideup");
@@ -27,7 +30,9 @@ window.onload = () => {
 	Array.from(document.querySelectorAll("nav a")).forEach(elem => {
 		elem.addEventListener("click", function (e) {
 			toggleDropDown(this, document.querySelector("nav"), "slidedown", "slideup");
-			smoothScroll(elem.getAttribute("href"));
+   if(!CSS.supports("scroll-behavior","smooth")){
+     smoothScroll(elem.getAttribute("href"));
+   }
 		});
 	});
 

@@ -2,6 +2,10 @@
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 $wht: #FFFFFF;
 $bannercolor: #07BFDC;
+html {
+  scroll-behavior: smooth;
+}
+
 i{
 	color: blue;
 }
@@ -31,6 +35,7 @@ body {
 	@include display(grid, auto auto auto/1fr, center, center);
 	@include positioning(relative, auto, 100%, 2px, auto);
 	overflow-x: hidden;
+ scroll-behavior: smooth;
 }
 header {
 	@include display(grid, 1fr/1fr, center, center);
