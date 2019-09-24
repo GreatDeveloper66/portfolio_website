@@ -124,7 +124,7 @@ div.appfooter {
 	
 }
 section#about {
-  background: url('../images/ocean2.jpg') center no-repeat;
+  background: url('../images/ocean3.jpg') center no-repeat;
 	 background-size: cover;
   background-attachment: fixed;
 	 margin: 3px;
@@ -137,6 +137,7 @@ div.aboutBlock {
 	grid-template: auto/auto;
 	width: 90%;
 	max-width: 1100px;
+ margin-bottom: 50px;
 }
 div.portraitBlock {
 	display: none;
