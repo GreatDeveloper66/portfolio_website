@@ -2,13 +2,6 @@
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 $wht: #FFFFFF;
 $bannercolor: #07BFDC;
-html {
-  scroll-behavior: smooth;
-}
-
-i{
-	color: blue;
-}
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {
 	display: $display;
 	grid-template: $gridtemplate;
@@ -30,6 +23,11 @@ i{
 	left: $left;
 	content: $content;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	font-family: "Open Sans", Helvetica, Arial, sans-serif;
 	@include display(grid, auto auto auto/1fr, center, center);
@@ -43,16 +41,14 @@ header {
  background: url('/images/Website_Background_2.jpg') center no-repeat;
  background-size: cover;
  background-attachment: fixed;
-}
-
-header {
-	div.banner {
+ div.banner {
 		h1,h3 {
 			color: white;
 			text-shadow: 5px 5px 5px rgba(128,128,128,0.7);
 		}
-	}
+	}  
 }
+
 main {
 	width: 100%;
 	display: grid;
