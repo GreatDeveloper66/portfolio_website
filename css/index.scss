@@ -110,9 +110,9 @@ div.appcaption {
 }
 div.appfooter {
 	p{
-		font-size: 9px;
-	color: black;
-	font-weight: bold;
+		font-size: 12px;
+	 color: blue;
+	 font-weight: bold;
 	}
 	a {
 		text-decoration:none;
@@ -262,6 +262,10 @@ h2 {
 	width: 100%;
 	text-align: center;
 	background-color: $bannercolor;
+ margin-top: 0;
+ padding-top: 10px;
+ padding-bottom: 10px;
+  
 }
 h3 {
 	font-size: 40px;
@@ -281,8 +285,6 @@ footer {
 		color: #000000;
 		background-color: transparent;
 		font-size: 10px;
-		margin-top: 0;
-		margin-bottom: 0;
   width: auto;
 	}
 .socialNav {
@@ -322,9 +324,6 @@ section#contact {
 	background: url('../images/ocean.jpg') center no-repeat;
 	background-size: cover;
  background-attachment: fixed;
-  h2 {
-    margin-top: -10px;
-  }
   .formcontainer {
     padding-top: 20px;
     padding-bottom: 20px;
