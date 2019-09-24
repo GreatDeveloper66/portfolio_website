@@ -46,7 +46,7 @@ header {
 	div.banner {
 		h1,h3 {
 			color: white;
-			text-shadow: 5px 5px 5px grey;
+			text-shadow: 5px 5px 5px rgba(128,128,128,0.7);
 		}
 	}
 }
@@ -88,6 +88,7 @@ section#portfolio {
 	grid-gap: 40px;
  width: 75%;
  max-width: 400px;
+ margin-bottom: 20px;
 }
 }
 div.thumbnail{
@@ -157,7 +158,7 @@ nav button {
 	width: 100%;
 	min-height: 35px;
 	text-align: center;
-	box-shadow: 4px 4px 4px grey;
+	box-shadow: 4px 4px 4px rgba(128,128,128,0.7);
 }
 .banner {
 	display: grid;
