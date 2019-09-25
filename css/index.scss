@@ -2,26 +2,68 @@
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 $wht: #FFFFFF;
 $bannercolor: #07BFDC;
+
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {
-	display: $display;
-	grid-template: $gridtemplate;
-	align-items: $alignitems;
-	justify-items: $justifyitems;
+  display: $display;
+  grid-template: $gridtemplate;
+  align-items: $alignitems;
+  justify-items: $justifyitems;
 }
+
 @mixin positioning($position, $height, $width, $padding, $margin) {
-	position: $position;
-	height: $height;
-	width: $width;
-	padding: $padding;
-	margin: $margin;
+  position: $position;
+  height: $height;
+  width: $width;
+  padding: $padding;
+  margin: $margin;
 }
+
 @mixin absolutePos($zindex, $top, $bottom, $right, $left, $content) {
-	z-index: $zindex;
-	top: $top;
-	bottom: $bottom;
-	right: $right;
-	left: $left;
-	content: $content;
+  z-index: $zindex;
+  top: $top;
+  bottom: $bottom;
+  right: $right;
+  left: $left;
+  content: $content;
+}
+
+@mixin smColors {
+  .mediaButton:nth-child(1){
+    a {
+      color: lightblue;
+    }
+    
+  }
+  .mediaButton:nth-child(2){
+    a {
+      color: darkblue;
+    }
+    
+  }
+  .mediaButton:nth-child(3){
+    a {
+      color: green;
+    }
+    
+  }
+  .mediaButton:nth-child(4){
+    a {
+      color: black;
+    }
+    
+  }
+  .mediaButton:nth-child(5){
+    a {
+      color: orangered;
+    }
+    
+  }
+  .mediaButton:nth-child(6){
+    a {
+      color: lightblue;
+    }
+    
+  }
 }
 
 html {
@@ -29,530 +71,616 @@ html {
 }
 
 body {
-	font-family: "Open Sans", Helvetica, Arial, sans-serif;
-	@include display(grid, auto auto auto/1fr, center, center);
-	@include positioning(relative, auto, 100%, 2px, auto);
-	overflow-x: hidden;
- scroll-behavior: smooth;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  @include display(grid, auto auto auto/1fr, center, center);
+  @include positioning(relative, auto, 100%, 2px, auto);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
+
 header {
-	@include display(grid, 1fr/1fr, center, center);
-	@include positioning(relative, 600px, 100%, 2px, auto);
- background: url('/images/Website_Background_2.jpg') center no-repeat;
- background-size: cover;
- background-attachment: fixed;
- div.banner {
-		h1,h3 {
-			color: white;
-			text-shadow: 5px 5px 5px rgba(128,128,128,0.7);
-		}
-	}  
+  @include display(grid, 1fr/1fr, center, center);
+  @include positioning(relative, 600px, 100%, 2px, auto);
+  background: url('/images/Website_Background_2.jpg') center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  div.banner {
+
+    h1,
+    h3 {
+      color: white;
+      text-shadow: 5px 5px 5px rgba(128, 128, 128, 0.7);
+    }
+  }
 }
 
 main {
-	width: 100%;
-	display: grid;
-	grid-template: repeat(4,auto)/1fr;
+  width: 100%;
+  display: grid;
+  grid-template: repeat(4, auto)/1fr;
 }
+
 section {
-	@include display(grid, 1fr/1fr, center, center);
-	@include positioning(relative, auto, auto, 2px, auto);
-	background-color: $wht;
+  @include display(grid, 1fr/1fr, center, center);
+  @include positioning(relative, auto, auto, 2px, auto);
+  background-color: $wht;
 }
+
 section#menu {
-	@include positioning(sticky, 300px, 160px, 2x, default);
-	align-items: stretch;
-	top: 0px;
-	background-color: transparent;
-	z-index: 3;
-	margin-right: 0px;
+  @include positioning(sticky, 300px, 160px, 2x, default);
+  align-items: stretch;
+  top: 0px;
+  background-color: transparent;
+  z-index: 3;
+  margin-right: 0px;
 }
+
 nav {
-	@include display(grid, repeat(7, 1fr)/1fr, default, default);
-	height: 34px;
-	overflow-y: hidden;
-	background-color: transparent;
+  @include display(grid, repeat(7, 1fr)/1fr, default, default);
+  height: 34px;
+  overflow-y: hidden;
+  background-color: transparent;
 
 }
+
 section#portfolio {
-	grid-template: 75px auto/1fr;
-	height: auto;
-	margin-top: -310px;
- width: 100%;
- background: url('../images/desk.jpg') center no-repeat;
- background-size: cover;
- background-attachment: fixed;
- div.portfolio {
-	@include display(grid, repeat(9, 1fr)/1fr, default, default);
-	grid-gap: 40px;
- width: 75%;
- max-width: 400px;
- margin-bottom: 20px;
-}
-}
-div.thumbnail{
-	h3 {
-	color: darkblue;
+  grid-template: 75px auto/1fr;
+  height: auto;
+  margin-top: -310px;
+  width: 100%;
+  background: url('../images/desk.jpg') center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  div.portfolio {
+    @include display(grid, repeat(9, 1fr)/1fr, default, default);
+    grid-gap: 40px;
+    width: 75%;
+    max-width: 400px;
+    margin-bottom: 20px;
   }
-	a {
-		text-decoration: none;
-	}
-} 
+}
+
+div.thumbnail {
+  h3 {
+    color: darkblue;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
 div.appcaption {
-	 display: flex;
-		align-items: center;
-	h5 {
-		text-align: center;
-		font-size: 20px;
-		margin: auto;
-	
-	}
+  display: flex;
+  align-items: center;
+
+  h5 {
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+
+  }
 }
+
 div.appfooter {
-	p{
-		font-size: 12px;
-	 color: blue;
-	 font-weight: bold;
-	}
-	a {
-		text-decoration:none;
-		color: blue;
-	}
-	i {
-		font-size: 20px;
-	}
-	
+  p {
+    font-size: 12px;
+    color: blue;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 20px;
+  }
+
 }
+
 section#about {
   background: url('../images/ocean3.jpg') center no-repeat;
-	 background-size: cover;
+  background-size: cover;
   background-attachment: fixed;
-	 margin: 3px;
-	 padding: 3px;
-	 margin-top: 20px;
-	 grid-template: 75px 1fr/1fr;
+  margin: 3px;
+  padding: 3px;
+  margin-top: 20px;
+  grid-template: 75px 1fr/1fr;
 }
+
 div.aboutBlock {
-	display: grid;
-	grid-template: auto/auto;
-	width: 90%;
-	max-width: 1100px;
- margin-bottom: 50px;
+  display: grid;
+  grid-template: auto/auto;
+  width: 90%;
+  max-width: 1100px;
+  margin-bottom: 50px;
 }
+
 div.portraitBlock {
-	display: none;
+  display: none;
 }
+
 .starBlock {
-	display: grid;
-	border-top: solid grey 3px;
-	padding: 5px;
-	grid-template: repeat(6,1fr)/repeat(2,1fr);
+  display: grid;
+  border-top: solid grey 3px;
+  padding: 5px;
+  grid-template: repeat(6, 1fr)/repeat(2, 1fr);
 }
+
 nav button {
-	background-color: rgba(147, 32, 32, 1);
-	border: #FFFFFF;
-	border: 2px solid rgba(255, 255, 255, 0.3);
-	color: #FFFFFF;
-	font-size: 25px;
-	width: 100%;
-	min-height: 35px;
-	text-align: center;
-	box-shadow: 4px 4px 4px rgba(128,128,128,0.7);
+  background-color: rgba(147, 32, 32, 1);
+  border: #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+  font-size: 25px;
+  width: 100%;
+  min-height: 35px;
+  text-align: center;
+  box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.7);
 }
+
 .banner {
-	display: grid;
-	grid-template: 1fr/1fr;
-	justify-items: center;
-	align-items: center;
-	height: 100%;
-		text-align: center;
+  display: grid;
+  grid-template: 1fr/1fr;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
 }
+
 button {
-	font-family: 'Roboto', Helvetica, Arial, sans-serif;
-	transition: all 0.3s ease;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  transition: all 0.3s ease;
 
 }
+
 button:hover,
 .active {
-	filter: brightness(150%);
+  filter: brightness(150%);
 }
+
 button:hover,
 div.bars:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
+
 .bars {
-	display: grid;
-	justify-items: center;
-	align-items: center;
-	justify-self: end;
-	grid-gap: 5px;
-	background-color: #3d3e41;
-	border-radius: 4px;
-	height: 34px;
-	width: 43px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-self: end;
+  grid-gap: 5px;
+  background-color: #3d3e41;
+  border-radius: 4px;
+  height: 34px;
+  width: 43px;
 }
+
 .bar {
-	background-color: #FFFFFF;
-	height: 4px;
-	margin: 2px;
-	width: 60%;
+  background-color: #FFFFFF;
+  height: 4px;
+  margin: 2px;
+  width: 60%;
 }
+
 .slideup,
 .slidedown {
-	max-height: 34px;
-	height: 34px;
-	overflow-y: hidden;
-	-webkit-transition: all 0.6s ease-in-out;
-	-moz-transition: all 0.6s ease-in-out;
-	transition: all 0.6s ease-in-out;
+  max-height: 34px;
+  height: 34px;
+  overflow-y: hidden;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
+
 .slidedown {
-	max-height: 320px;
-	height: 320px;
+  max-height: 320px;
+  height: 320px;
 }
+
 div.appBlock,
 div.skillBlock {
-	background: linear-gradient(135deg, #009bec, #91ffa3), linear-gradient(#c4c4c4, #c4c4c4);
-	opacity: 0.85;
-	border: solid 1px rgba(0, 0, 0, 1);
-	box-shadow: 3px 6px #888888;
+  background: linear-gradient(135deg, #009bec, #91ffa3), linear-gradient(#c4c4c4, #c4c4c4);
+  opacity: 0.85;
+  border: solid 1px rgba(0, 0, 0, 1);
+  box-shadow: 3px 6px #888888;
 }
+
 .skillBlock {
-	h3 {
-		margin-top: 5px;
-		margin-bottom: 5px;
-		color: black;
-		font-weight: bold;
-	}
-	p {
-		color: black;
-		font-weight: bold;
-	}
-}
-div.appBlock {
-	height: 250px;
-}
-div.thumbnail {
-	width: 100%;
-	height: 55%;
-	background: linear-gradient(135deg, #009bec, #91ffa3), linear-gradient(#c4c4c4, #c4c4c4);
-	opacity: 0.85;
-	display: flex;
-	align-items: center;
-	justify-content: center;
   h3 {
-    color: rgba(0,0,0,1);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: bold;
+  }
+
+  p {
+    color: black;
+    font-weight: bold;
+  }
+}
+
+div.appBlock {
+  height: 250px;
+}
+
+div.thumbnail {
+  width: 100%;
+  height: 55%;
+  background: linear-gradient(135deg, #009bec, #91ffa3), linear-gradient(#c4c4c4, #c4c4c4);
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    color: rgba(0, 0, 0, 1);
   }
 
 }
-div.appcaption {
-	width: 100%;
-	height: 30%;
-	border-top: solid 1px rgba(211, 211, 211, 1);
-}
-div.appfooter {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	height: 15%;
-	border-top: solid 1px rgba(211, 211, 211, 1);
-}
-h1 {
-	font-size: 50px;
-}
-h2 {
-	font-size: 40px;
-	width: 100%;
-	text-align: center;
-	background-color: $bannercolor;
- margin-top: 0;
- padding-top: 10px;
- padding-bottom: 10px;
-  
-}
-h3 {
-	font-size: 40px;
-	text-align: center;
-}
-footer {
-	@include display(grid, auto/auto auto auto, center, center);
-	@include positioning(relative, 75px, 100%, 5px, auto);
-	background-color: #D3D3D3;
-	opacity: 0.9;
-	text-align: center;
-	font-style: italic;
-	bottom: 0;
 
-	h2 {
-		font-weight: bold;
-		color: #000000;
-		background-color: transparent;
-		font-size: 10px;
-  width: auto;
-	}
-.socialNav {
+div.appcaption {
+  width: 100%;
+  height: 30%;
+  border-top: solid 1px rgba(211, 211, 211, 1);
+}
+
+div.appfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 15%;
+  border-top: solid 1px rgba(211, 211, 211, 1);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+  width: 100%;
+  text-align: center;
+  background-color: $bannercolor;
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+h3 {
+  font-size: 40px;
+  text-align: center;
+}
+
+footer {
+  @include display(grid, auto/auto auto auto, center, center);
+  @include positioning(relative, 75px, 100%, 5px, auto);
+  background-color: #D3D3D3;
+  opacity: 0.9;
+  text-align: center;
+  font-style: italic;
+  bottom: 0;
+
+  h2 {
+    font-weight: bold;
+    color: #000000;
+    background-color: transparent;
+    font-size: 10px;
+    width: auto;
+  }
+
+  .socialNav {
     display: grid;
     width: 200px;
-    grid-template: auto/repeat(6,1fr);
+    grid-template: auto/repeat(6, 1fr);
     justify-items: space-around;
     align-items: center;
-  .mediaButton {
-    i {
-      font-size: 20px;
-    }
-  }
-  }
- 
-	div.content {
-		display: flex;
-		justify-content: space-around;
-		align-items: flex-end;
-		width: auto;
+    @include smColors;
 
-		p {
-			font-size: 10px;
-			font-weight: bold;
-			color: #000000;
-			line-height: 1.6em;
-			
-		}
-		img {
-			width: 80px;
-	  height: 20px;
-		}
-	}
+    .mediaButton {
+      
+
+      i {
+        font-size: 20px;
+      }
+    }
+
+  }
 }
+
+div.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: auto;
+
+  p {
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1.6em;
+
+  }
+
+  img {
+    width: 80px;
+    height: 20px;
+  }
+}
+
 section#contact {
-	width: 100%;
-	background: url('../images/ocean.jpg') center no-repeat;
-	background-size: cover;
- background-attachment: fixed;
+  width: 100%;
+  background: url('../images/ocean.jpg') center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
   .formcontainer {
     padding-top: 20px;
     padding-bottom: 20px;
-  }    
+  }
 }
+
 form {
-	display: grid;
-	grid-template: repeat(8, 1fr)/1fr;
-	grid-auto-rows: auto;
-	grid-gap: 30px;
-	max-width: 400px;
-	height: 450px;
-	grid-template-areas: "messagebox"
-		"messagebox"
-		"messagebox"
-		"inputbox"
-		"inputbox"
-		"textbox"
-		"textbox"
-		"sendbutton";
+  display: grid;
+  grid-template: repeat(8, 1fr)/1fr;
+  grid-auto-rows: auto;
+  grid-gap: 30px;
+  max-width: 400px;
+  height: 450px;
+  grid-template-areas: "messagebox"
+    "messagebox"
+    "messagebox"
+    "inputbox"
+    "inputbox"
+    "textbox"
+    "textbox"
+    "sendbutton";
 }
+
 form div.messagebox {
-	grid-area: messagebox;
+  grid-area: messagebox;
 }
+
 form div.textbox {
-	grid-area: textbox;
+  grid-area: textbox;
 }
+
 form div.inputbox {
-	grid-area: inputbox;
+  grid-area: inputbox;
 }
+
 form div.sendbutton {
-	grid-area: sendbutton;
+  grid-area: sendbutton;
 }
+
 textarea,
 input {
-	width: 100%;
-	border-radius: 5px;
-	padding: 3px;
-	margin: 3px;
-	background: #F2F2F2 none repeat scroll 00;
-	font-size: 15px;
-	font-weight: 500;
+  width: 100%;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 3px;
+  background: #F2F2F2 none repeat scroll 00;
+  font-size: 15px;
+  font-weight: 500;
 }
+
 div.textbox textarea {
-	height: 100%;
+  height: 100%;
 }
+
 div.messagebox textarea {
-	height: 100%;
+  height: 100%;
 }
+
 textarea#messagebox {
   font-size: 21px;
 }
+
 input {
-	height: 20%;
-	margin-bottom: 5px;
+  height: 20%;
+  margin-bottom: 5px;
 }
+
 form button {
-	background-color: #262628;
-	color: #FFF;
-	margin-top: 20px;
-	padding: 10px 30px;
-	border-radius: 10px;
-	font-size: 18px;
-	transition: all 0.5s;
+  background-color: #262628;
+  color: #FFF;
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: all 0.5s;
 }
+
 form button:hover {
-	background-color: #FFFFFF;
-	color: #000000;
+  background-color: #FFFFFF;
+  color: #000000;
 }
+
 section#socialMedia {
-    width: 100%;
-    display: grid; 
-    grid-template: 75px auto/1fr;
-    background: url('../images/socialmedia.jpg') center no-repeat;
-	   background-size: cover;
-    background-attachment: fixed;
+  width: 100%;
+  display: grid;
+  grid-template: 75px auto/1fr;
+  background: url('../images/socialmedia.jpg') center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
   .socialNav {
     margin-bottom: 20px;
     margin-top: 20px;
     display: grid;
-    grid-template: repeat(3,1fr)/repeat(2,1fr);
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
     justify-items: center;
+    @include smColors;
+
     .mediaButton {
       text-align: center;
       font-size: 25px;
+
       a {
         text-decoration: none;
       }
       i {
-      font-size: 120px;
+        font-size: 120px;
+      }
+
     }
-      
-    }
-    
+
   }
 }
-@media only screen and (min-width: 520px) {
-	
-}
+
+@media only screen and (min-width: 520px) {}
+
 @media only screen and (min-width: 768px) {
-	section#menu {
-		width: 100%;
-		height: auto;
-		justify-items: center;
-		background-color: #000000;
-	}
-	.bars {
-		display: none;
-	}
-	nav {
-		grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
-		grid-gap: 10px;
-		justify-self: center;
-		align-items: center;
-		justify-items: space-around;
-		height: auto;
-		overflow-y: visible;
-		margin-top: 10px;
-		margin-bottom: 12px;
-	}  
-	nav button {
-		font-size: 15px;
-	}
-	section#portfolio {
-		margin-top: 0;
-  div.portfolio {
-		grid-template: repeat(6, 1fr)/repeat(2, 1fr);
-  width: 90%;
-  max-width: 1200px;
-	}
-	}
-	div.portraitBlock {
-		display: grid;
-		grid-template: auto 1fr/1fr;
-		jusity-items: center;
-		align-items: flex-start;
-		img {
-			width: 300px;
-			height: 300px;
-		}
-		h3 {
-			margin-top: 5px;
-			margin-bottom: 5px;
-		}
-	}
-	div.aboutBlock {
-		grid-template: auto/auto auto;
-	}
-	form {
-		display: grid;
-		height: 300px;
-		max-width: 600px;
-		grid-template: repeat(8, 1fr)/1fr 1fr;
-		grid-template-areas: "messagebox messagebox"
-			"messagebox messagebox"
-			"messagebox messagebox"
-			"inputbox textbox"
-			"inputbox textbox"
-			"inputbox textbox"
-			"inputbox textbox"
-			". sendbutton";
-	}
-	input {
-		height: 15%;
-		margin-bottom: 14px;
-	}
-	.starBlock {
-		i {
-			font-size: 15px;
-		}
-	}
- section#socialMedia {
-   .socialNav {
-     .mediaButton {
-       a {
-         i {
-           font-size: 200px;
-         }
-       }
-     }
-   }
-  } 
+  section#menu {
+    width: 100%;
+    height: auto;
+    justify-items: center;
+    background-color: #000000;
+  }
+
+  .bars {
+    display: none;
+  }
+
+  nav {
+    grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-self: center;
+    align-items: center;
+    justify-items: space-around;
+    height: auto;
+    overflow-y: visible;
+    margin-top: 10px;
+    margin-bottom: 12px;
+  }
+
+  nav button {
+    font-size: 15px;
+  }
+
+  section#portfolio {
+    margin-top: 0;
+
+    div.portfolio {
+      grid-template: repeat(6, 1fr)/repeat(2, 1fr);
+      width: 90%;
+      max-width: 1200px;
+    }
+  }
+
+  div.portraitBlock {
+    display: grid;
+    grid-template: auto 1fr/1fr;
+    jusity-items: center;
+    align-items: flex-start;
+
+    img {
+      width: 300px;
+      height: 300px;
+    }
+
+    h3 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  div.aboutBlock {
+    grid-template: auto/auto auto;
+  }
+
+  form {
+    display: grid;
+    height: 300px;
+    max-width: 600px;
+    grid-template: repeat(8, 1fr)/1fr 1fr;
+    grid-template-areas: "messagebox messagebox"
+      "messagebox messagebox"
+      "messagebox messagebox"
+      "inputbox textbox"
+      "inputbox textbox"
+      "inputbox textbox"
+      "inputbox textbox"
+      ". sendbutton";
+  }
+
+  input {
+    height: 15%;
+    margin-bottom: 14px;
+  }
+
+  .starBlock {
+    i {
+      font-size: 15px;
+    }
+  }
+
+  section#socialMedia {
+    .socialNav {
+      .mediaButton {
+        a {
+          i {
+            font-size: 200px;
+          }
+        }
+      }
+    }
+  }
+
   footer {
     h2 {
       font-size: 16px;
     }
+
     p {
       font-size: 14px;
     }
   }
 }
-@media only screen and (min-width: 912px){
-	nav button {
-		font-size: 20px;
-		min-height: 35px;
-	}
-  section#portfolio {
-    	div.portfolio {
-		   grid-template: repeat(4, 1fr)/repeat(3, 1fr);
-	} 
+
+@media only screen and (min-width: 912px) {
+  nav button {
+    font-size: 20px;
+    min-height: 35px;
   }
 
-	
-	div.portraitBlock {
-		img {
-			width: 400px;
-			height: 400px;
-		}
-	}
+  section#portfolio {
+    div.portfolio {
+      grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+    }
+  }
+
+
+  div.portraitBlock {
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
 }
+
 @media only screen and (min-width:1024px) {
-	.starBlock {
-		grid-template: repeat(4, 1fr)/repeat(3, 1fr);
-	
-		i {
-			font-size: 13px;
-		}
-	}
-	nav button {
-		font-size: 23px;
-	}
-	div.portraitBlock {
-		img {
-			width: 400px;
-			height: 400px;
-		}
-	}
+  .starBlock {
+    grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+
+    i {
+      font-size: 13px;
+    }
+  }
+
+  nav button {
+    font-size: 23px;
+  }
+
+  div.portraitBlock {
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
 }
