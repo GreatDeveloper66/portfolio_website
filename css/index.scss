@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat');
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
-$wht: #FFFFFF;
-$bannercolor: #07BFDC;
+:root {
+  --wht: #FFFFFF;
+  --bannercolor: #07BFDC;
+}
 
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {
   display: $display;
@@ -26,6 +28,14 @@ $bannercolor: #07BFDC;
   left: $left;
   content: $content;
 }
+
+.genericDisplay {
+  @include display(grid, 1fr/1fr, center, center);
+}
+.genericPositioning {
+  @include positioning(relative, auto, auto, 2px, 2px);
+}
+
 
 @mixin smColors {
   .mediaButton:nth-child(1){
@@ -104,7 +114,7 @@ main {
 section {
   @include display(grid, 1fr/1fr, center, center);
   @include positioning(relative, auto, auto, 2px, auto);
-  background-color: $wht;
+  background-color: var(--wht);
 }
 
 section#menu {
@@ -345,7 +355,7 @@ h2 {
   font-size: 40px;
   width: 100%;
   text-align: center;
-  background-color: $bannercolor;
+  background-color: var(--bannercolor);
   margin-top: 0;
   padding-top: 10px;
   padding-bottom: 10px;
