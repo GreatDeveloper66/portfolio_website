@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat');
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+
 :root {
   --wht: #FFFFFF;
   --bannercolor: #07BFDC;
@@ -23,12 +24,14 @@
   --formColor: #262628;
   --shadowColor: #888888;
 }
+
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {
   display: $display;
   grid-template: $gridtemplate;
   align-items: $alignitems;
   justify-items: $justifyitems;
 }
+
 @mixin positioning($position, $height, $width, $padding, $margin) {
   position: $position;
   height: $height;
@@ -36,6 +39,7 @@
   padding: $padding;
   margin: $margin;
 }
+
 @mixin absolutePos($zindex, $top, $bottom, $right, $left, $content) {
   z-index: $zindex;
   top: $top;
@@ -44,53 +48,62 @@
   left: $left;
   content: $content;
 }
+
 @mixin backgroundPic($pic) {
   background: url($pic) center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
+
 .genericDisplay {
   @include display(grid, 1fr/1fr, center, center);
 }
+
 .genericPositioning {
   @include positioning(relative, auto, auto, 2px, 2px);
 }
+
 @mixin smColors {
-  .mediaButton:nth-child(1){
+  .mediaButton:nth-child(1) {
     a {
       color: var(--gitlabcolor);
     }
-    
+
   }
-  .mediaButton:nth-child(2){
+
+  .mediaButton:nth-child(2) {
     a {
       color: var(--facebookcolor);
     }
-    
+
   }
-  .mediaButton:nth-child(3){
+
+  .mediaButton:nth-child(3) {
     a {
-      color:var(--fcccolor);
+      color: var(--fcccolor);
     }
-    
+
   }
-  .mediaButton:nth-child(4){
+
+  .mediaButton:nth-child(4) {
     a {
-      color:(--githubcolor);
+      color: (--githubcolor);
     }
-    
+
   }
-  .mediaButton:nth-child(5){
+
+  .mediaButton:nth-child(5) {
     a {
       color: var(--twittercolor);
     }
-    
+
   }
-  .mediaButton:nth-child(6){
+
+  .mediaButton:nth-child(6) {
     a {
       color: var(--codefightscolor);
     }
-    
+
   }
 }
 
@@ -110,8 +123,9 @@ header {
   @include display(grid, 1fr/1fr, center, center);
   @include positioning(relative, 600px, 100%, 2px, auto);
   @include backgroundPic('/images/Website_Background_2.jpg');
-  
+
   div.banner {
+
     h1,
     h3 {
       color: var(--textcolor);
@@ -133,27 +147,52 @@ section {
 }
 
 section#menu {
-  @include positioning(sticky, 300px, 160px, 2x, default);
+  @include positioning(sticky, 300px, 200px, 2x, default);
+  overflow-x: hidden;
   align-items: stretch;
   top: 0px;
   background-color: transparent;
   z-index: 3;
   margin-right: 0px;
+  h2 {
+    display: none;
+  }
 }
 
 nav {
   @include display(grid, repeat(7, 1fr)/1fr, default, default);
-  height: 34px;
+  height: 45px;
   overflow-y: hidden;
+  overflow-x: hidden;
   background-color: transparent;
+
+  a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: var(--textcolor);
+
+    .button {
+      background-color: var(--navbuttoncolor);
+      border: var(--textcolor);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      font-size: 25px;
+      width: 100%;
+      min-height: 35px;
+      text-align: center;
+      box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.7);
+    }
+
+  }
 
 }
 
 section#portfolio {
-  @include display(grid, 75px auto/1fr,default,default);
+  @include display(grid, 75px auto/1fr, default, default);
   @include positioning(relative, auto, 100%, 2px, 2px);
   @include backgroundPic('../images/desk.jpg');
   margin-top: -310px;
+
   div.portfolio {
     @include display(grid, repeat(9, 1fr)/1fr, default, default);
     grid-gap: 40px;
@@ -229,17 +268,7 @@ div.portraitBlock {
   grid-template: repeat(6, 1fr)/repeat(2, 1fr);
 }
 
-nav button {
-  background-color: var(--navbuttoncolor);
-  border: var(--textcolor);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  color: var(--textcolor);
-  font-size: 25px;
-  width: 100%;
-  min-height: 35px;
-  text-align: center;
-  box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.7);
-}
+
 
 .banner {
   @include display(grid, 1fr/1fr, center, center);
@@ -247,24 +276,24 @@ nav button {
   text-align: center;
 }
 
-button {
+.button {
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
   transition: all 0.3s ease;
 
 }
 
-button:hover,
+.button:hover,
 .active {
   filter: brightness(150%);
 }
 
-button:hover,
+.button:hover,
 div.bars:hover {
   cursor: pointer;
 }
 
 .bars {
-  @include display(grid, 1fr/1fr,center, center);
+  @include display(grid, 1fr/1fr, center, center);
   justify-self: end;
   grid-gap: 5px;
   background-color: var(--barcolor);
@@ -389,12 +418,12 @@ footer {
   }
 
   .socialNav {
-    @include display(grid, auto/repeat(6,1fr),space-around,center);
+    @include display(grid, auto/repeat(6, 1fr), space-around, center);
     width: 200px;
     @include smColors;
 
     .mediaButton {
-      
+
 
       i {
         font-size: 20px;
@@ -427,6 +456,7 @@ div.content {
 section#contact {
   width: 100%;
   @include backgroundPic('../images/ocean.jpg');
+
   .formcontainer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -448,6 +478,25 @@ form {
     "textbox"
     "textbox"
     "sendbutton";
+
+  a {
+    text-decoration: none;
+    .button {
+      background-color: var(--formColor);
+      color: var(--textcolor);
+      width: 25%;
+      margin-top: 20px;
+      padding: 10px 30px;
+      border-radius: 10px;
+      font-size: 18px;
+      transition: all 0.5s;
+      text-align: center;
+      &:hover {
+        background-color: var(--textcolor);
+        color: var(--solidBlack);
+      }
+    }
+  }
 }
 
 form div.messagebox {
@@ -494,21 +543,6 @@ input {
   margin-bottom: 5px;
 }
 
-form button {
-  background-color: var(--formColor);
-  color: var(--textcolor);
-  margin-top: 20px;
-  padding: 10px 30px;
-  border-radius: 10px;
-  font-size: 18px;
-  transition: all 0.5s;
-}
-
-form button:hover {
-  background-color: var(--textcolor);
-  color: var(--solidBlack);
-}
-
 section#socialMedia {
   width: 100%;
   display: grid;
@@ -532,6 +566,7 @@ section#socialMedia {
       a {
         text-decoration: none;
       }
+
       i {
         font-size: 120px;
       }
