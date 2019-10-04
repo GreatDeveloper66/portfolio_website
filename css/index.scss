@@ -434,9 +434,7 @@ footer {
 }
 
 div.content {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  @include display(grid,1fr/1fr,space-around, center);
   width: auto;
 
   p {
