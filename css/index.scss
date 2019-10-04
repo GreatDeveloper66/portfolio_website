@@ -161,7 +161,7 @@ section#menu {
 
 nav {
   @include display(grid, repeat(7, 1fr)/1fr, default, default);
-  height: 45px;
+  height: 34px;
   overflow-y: hidden;
   overflow-x: hidden;
   background-color: transparent;
