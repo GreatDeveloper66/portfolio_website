@@ -389,11 +389,8 @@ footer {
   }
 
   .socialNav {
-    display: grid;
+    @include display(grid, auto/repeat(6,1fr),space-around,center);
     width: 200px;
-    grid-template: auto/repeat(6, 1fr);
-    justify-items: space-around;
-    align-items: center;
     @include smColors;
 
     .mediaButton {
