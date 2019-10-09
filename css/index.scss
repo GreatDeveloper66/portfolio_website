@@ -22,7 +22,8 @@
   --solidBlack: #000000;
   --footerColor: #D3D3D3;
   --formColor: #262628;
-  --shadowColor: #888888;
+  --shadowColor: #383838;
+  --navbarBackground: #FFA348;
 }
 
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {
@@ -180,7 +181,7 @@ nav {
       width: 100%;
       min-height: 35px;
       text-align: center;
-      box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.7);
+      box-shadow: 1px var(--shadowColor);
     }
 
   }
@@ -581,7 +582,7 @@ section#socialMedia {
     width: 100%;
     height: auto;
     justify-items: center;
-    background-color: var(--textcolor);
+    background-color: var(--navbarBackground);
   }
 
   .bars {
