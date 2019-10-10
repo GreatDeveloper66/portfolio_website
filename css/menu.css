@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat");
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+/* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+:root {
+  --wht: #FFFFFF;
+  --bannercolor: #07BFDC;
+  --gitlabcolor: #FF4500;
+  --facebookcolor: #4682B4;
+  --fccccolor: #228B22;
+  --githubcolor: #00003F;
+  --twittercolor: #4155f5;
+  --codefightscolor: #CEC8EF;
+  --textcolor: #FFFFFF;
+  --thumbnailcolor: #000080;
+  --appcolor: #4169E1;
+  --navbuttoncolor: #932020;
+  --barcolor: #3d3e41;
+  --coolblack: #000027;
+  --transitionColorA: #009BEC;
+  --transitionColorB: #91FFA3;
+  --transitionColorC: #C4C4C4;
+  --solidBlack: #000000;
+  --footerColor: #D3D3D3;
+  --formColor: #262628;
+  --shadowColor: #383838;
+  --navbarBackground: #FFA348; }
+
+/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+.genericDisplay {
+  display: grid;
+  grid-template: 1;
+  align-items: center;
+  justify-items: center; }
+
+/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+.genericPositioning {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 2px;
+  margin: 2px; }
+
+/* line 5, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+section#menu {
+  position: sticky;
+  height: 300px;
+  width: 200px;
+  padding: 2x;
+  margin: default;
+  overflow-x: hidden;
+  align-items: stretch;
+  top: 0px;
+  background-color: transparent;
+  z-index: 3;
+  margin-right: 0px; }
+  /* line 13, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  section#menu h2 {
+    display: none; }
+
+/* line 18, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+nav {
+  display: grid;
+  grid-template: repeat(7, 1fr)/1fr;
+  align-items: default;
+  justify-items: default;
+  height: 34px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: transparent; }
+  /* line 25, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  nav a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: var(--textcolor); }
+    /* line 31, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+    nav a .button {
+      background-color: var(--navbuttoncolor);
+      border: var(--textcolor);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      font-size: 25px;
+      width: 100%;
+      min-height: 35px;
+      text-align: center;
+      box-shadow: 1px var(--shadowColor); }
+
+/* line 47, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+.bars {
+  display: grid;
+  grid-template: 1;
+  align-items: center;
+  justify-items: center;
+  justify-self: end;
+  grid-gap: 5px;
+  background-color: var(--barcolor);
+  border-radius: 4px;
+  height: 34px;
+  width: 43px; }
+
+/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+.bar {
+  background-color: var(--textcolor);
+  height: 4px;
+  margin: 2px;
+  width: 60%; }
+
+/* line 65, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+.slideup,
+.slidedown {
+  max-height: 34px;
+  height: 34px;
+  overflow-y: hidden;
+  -webkit-transition: all 0.6s ease-in-out;
+  -moz-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out; }
+
+/* line 75, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+.slidedown {
+  max-height: 320px;
+  height: 320px; }
+
+/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat");
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+/* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+:root {
+  --wht: #FFFFFF;
+  --bannercolor: #07BFDC;
+  --gitlabcolor: #FF4500;
+  --facebookcolor: #4682B4;
+  --fccccolor: #228B22;
+  --githubcolor: #00003F;
+  --twittercolor: #4155f5;
+  --codefightscolor: #CEC8EF;
+  --textcolor: #FFFFFF;
+  --thumbnailcolor: #000080;
+  --appcolor: #4169E1;
+  --navbuttoncolor: #932020;
+  --barcolor: #3d3e41;
+  --coolblack: #000027;
+  --transitionColorA: #009BEC;
+  --transitionColorB: #91FFA3;
+  --transitionColorC: #C4C4C4;
+  --solidBlack: #000000;
+  --footerColor: #D3D3D3;
+  --formColor: #262628;
+  --shadowColor: #383838;
+  --navbarBackground: #FFA348; }
+
+/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+.genericDisplay {
+  display: grid;
+  grid-template: 1;
+  align-items: center;
+  justify-items: center; }
+
+/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+.genericPositioning {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 2px;
+  margin: 2px; }
+
+/* line 5, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
+section#socialMedia {
+  width: 100%;
+  display: grid;
+  grid-template: 75px auto/1fr;
+  background: url("../images/socialmedia.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  /* line 13, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
+  section#socialMedia .socialNav {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+    justify-items: center; }
+    /* line 66, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    section#socialMedia .socialNav .mediaButton:nth-child(1) a {
+      color: var(--gitlabcolor); }
+    /* line 73, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    section#socialMedia .socialNav .mediaButton:nth-child(2) a {
+      color: var(--facebookcolor); }
+    /* line 80, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    section#socialMedia .socialNav .mediaButton:nth-child(3) a {
+      color: var(--fcccolor); }
+    /* line 87, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    section#socialMedia .socialNav .mediaButton:nth-child(4) a {
+      color: --githubcolor; }
+    /* line 94, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    section#socialMedia .socialNav .mediaButton:nth-child(5) a {
+      color: var(--twittercolor); }
+    /* line 101, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    section#socialMedia .socialNav .mediaButton:nth-child(6) a {
+      color: var(--codefightscolor); }
+    /* line 21, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
+    section#socialMedia .socialNav .mediaButton {
+      text-align: center;
+      font-size: 25px; }
+      /* line 25, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
+      section#socialMedia .socialNav .mediaButton a {
+        text-decoration: none; }
+      /* line 29, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
+      section#socialMedia .socialNav .mediaButton i {
+        font-size: 120px; }
+
+/*# sourceMappingURL=socialmedia.css.map */

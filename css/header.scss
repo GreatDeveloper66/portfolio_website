@@ -6,6 +6,12 @@ header {
   @include display(grid, 1fr/1fr, center, center);
   @include positioning(relative, 600px, 100%, 2px, auto);
   @include backgroundPic('/images/Website_Background_2.jpg');
+  
+  .banner {
+    @include display(grid, 1fr/1fr, center, center);
+    height: 100%;
+    text-align: center;
+  }
 
   div.banner {
 
@@ -16,3 +22,4 @@ header {
     }
   }
 }
+
