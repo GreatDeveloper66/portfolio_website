@@ -130,4 +130,11 @@ div.appfooter {
   height: 15%;
   border-top: solid 1px lightgray; }
 
+/* line 94, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+div.appBlock {
+  background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
+  opacity: 0.85;
+  border: solid 1px black;
+  box-shadow: 3px 6px var(--shadowColor); }
+
 /*# sourceMappingURL=portfolio.css.map */

@@ -81,4 +81,11 @@ div.portraitBlock {
   color: var(--coolblack);
   font-weight: bold; }
 
+/* line 47, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+div.skillBlock {
+  background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
+  opacity: 0.85;
+  border: solid 1px black;
+  box-shadow: 3px 6px var(--shadowColor); }
+
 /*# sourceMappingURL=about.css.map */

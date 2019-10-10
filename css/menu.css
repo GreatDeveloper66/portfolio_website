@@ -119,4 +119,8 @@ nav {
   max-height: 320px;
   height: 320px; }
 
+/* line 80, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+div.bars:hover {
+  cursor: pointer; }
+
 /*# sourceMappingURL=menu.css.map */
