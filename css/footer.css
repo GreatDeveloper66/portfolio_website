@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat");
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+/* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+:root {
+  --wht: #FFFFFF;
+  --bannercolor: #07BFDC;
+  --gitlabcolor: #FF4500;
+  --facebookcolor: #4682B4;
+  --fccccolor: #228B22;
+  --githubcolor: #00003F;
+  --twittercolor: #4155f5;
+  --codefightscolor: #CEC8EF;
+  --textcolor: #FFFFFF;
+  --thumbnailcolor: #000080;
+  --appcolor: #4169E1;
+  --navbuttoncolor: #932020;
+  --barcolor: #3d3e41;
+  --coolblack: #000027;
+  --transitionColorA: #009BEC;
+  --transitionColorB: #91FFA3;
+  --transitionColorC: #C4C4C4;
+  --solidBlack: #000000;
+  --footerColor: #D3D3D3;
+  --formColor: #262628;
+  --shadowColor: #383838;
+  --navbarBackground: #FFA348; }
+
+/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+.genericDisplay {
+  display: grid;
+  grid-template: 1;
+  align-items: center;
+  justify-items: center; }
+
+/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+.genericPositioning {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 2px;
+  margin: 2px; }
+
+/* line 5, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/footer.scss */
+footer {
+  display: grid;
+  grid-template: auto/auto auto auto;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  height: 75px;
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+  background-color: var(--footerColor);
+  opacity: 0.9;
+  text-align: center;
+  font-style: italic;
+  bottom: 0; }
+  /* line 14, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/footer.scss */
+  footer h2 {
+    font-weight: bold;
+    color: var(--solidBlack);
+    background-color: transparent;
+    font-size: 10px;
+    width: auto; }
+  /* line 22, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/footer.scss */
+  footer .socialNav {
+    display: grid;
+    grid-template: auto/repeat(6, 1fr);
+    align-items: space-around;
+    justify-items: center;
+    width: 200px; }
+    /* line 66, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    footer .socialNav .mediaButton:nth-child(1) a {
+      color: var(--gitlabcolor); }
+    /* line 73, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    footer .socialNav .mediaButton:nth-child(2) a {
+      color: var(--facebookcolor); }
+    /* line 80, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    footer .socialNav .mediaButton:nth-child(3) a {
+      color: var(--fcccolor); }
+    /* line 87, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    footer .socialNav .mediaButton:nth-child(4) a {
+      color: --githubcolor; }
+    /* line 94, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    footer .socialNav .mediaButton:nth-child(5) a {
+      color: var(--twittercolor); }
+    /* line 101, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    footer .socialNav .mediaButton:nth-child(6) a {
+      color: var(--codefightscolor); }
+    /* line 30, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/footer.scss */
+    footer .socialNav .mediaButton i {
+      font-size: 20px; }
+
+/* line 38, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/footer.scss */
+div.content {
+  display: grid;
+  grid-template: 1;
+  align-items: space-around;
+  justify-items: center;
+  width: auto; }
+  /* line 42, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/footer.scss */
+  div.content p {
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--solidBlack);
+    line-height: 1.6em; }
+  /* line 50, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/footer.scss */
+  div.content img {
+    width: 80px;
+    height: 20px; }
+
+/*# sourceMappingURL=footer.css.map */
