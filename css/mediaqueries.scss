@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat');
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+@import 'library.scss';
+
+@media only screen and (min-width: 520px) {}
+
+@media only screen and (min-width: 768px) {
+  
+  
+  section#menu {
+    width: 100%;
+    height: auto;
+    justify-items: center;
+    background-color: var(--navbarBackground);
+  }
+
+  .bars {
+    display: none;
+  }
+
+  nav {
+    grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-self: center;
+    align-items: center;
+    justify-items: space-around;
+    height: auto;
+    overflow-y: visible;
+    margin-top: 10px;
+    margin-bottom: 12px;
+  }
+
+  nav button {
+    font-size: 15px;
+  }
+
+  section#portfolio {
+    margin-top: 0;
+
+    div.portfolio {
+      grid-template: repeat(6, 1fr)/repeat(2, 1fr);
+      width: 90%;
+      max-width: 1200px;
+    }
+  }
+
+  div.portraitBlock {
+    display: grid;
+    grid-template: auto 1fr/1fr;
+    jusity-items: center;
+    align-items: flex-start;
+
+    img {
+      width: 300px;
+      height: 300px;
+    }
+
+    h3 {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  div.aboutBlock {
+    grid-template: auto/auto auto;
+  }
+
+  form {
+    display: grid;
+    height: 300px;
+    max-width: 600px;
+    grid-template: repeat(8, 1fr)/1fr 1fr;
+    grid-template-areas: "messagebox messagebox"
+      "messagebox messagebox"
+      "messagebox messagebox"
+      "inputbox textbox"
+      "inputbox textbox"
+      "inputbox textbox"
+      "inputbox textbox"
+      ". sendbutton";
+  }
+
+  input {
+    height: 15%;
+    margin-bottom: 14px;
+  }
+
+  .starBlock {
+    i {
+      font-size: 15px;
+    }
+  }
+
+  section#socialMedia {
+    .socialNav {
+      .mediaButton {
+        a {
+          i {
+            font-size: 200px;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    h2 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (min-width: 912px) {
+  nav button {
+    font-size: 20px;
+    min-height: 35px;
+  }
+
+  section#portfolio {
+    div.portfolio {
+      grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+    }
+  }
+
+
+  div.portraitBlock {
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .starBlock {
+    grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+
+    i {
+      font-size: 13px;
+    }
+  }
+
+  nav button {
+    font-size: 23px;
+  }
+
+  div.portraitBlock {
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+}
