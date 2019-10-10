@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat');
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+@import 'library.scss';
+
+header {
+  @include display(grid, 1fr/1fr, center, center);
+  @include positioning(relative, 600px, 100%, 2px, auto);
+  @include backgroundPic('/images/Website_Background_2.jpg');
+
+  div.banner {
+
+    h1,
+    h3 {
+      color: var(--textcolor);
+      text-shadow: 5px 5px 5px rgba(128, 128, 128, 0.7);
+    }
+  }
+}

@@ -1,0 +1,106 @@
+:root {
+  --wht: #FFFFFF;
+  --bannercolor: #07BFDC;
+  --gitlabcolor: #FF4500;
+  --facebookcolor: #4682B4;
+  --fccccolor: #228B22;
+  --githubcolor: #00003F;
+  --twittercolor: #4155f5;
+  --codefightscolor: #CEC8EF;
+  --textcolor: #FFFFFF;
+  --thumbnailcolor: #000080;
+  --appcolor: #4169E1;
+  --navbuttoncolor: #932020;
+  --barcolor: #3d3e41;
+  --coolblack: #000027;
+  --transitionColorA: #009BEC;
+  --transitionColorB: #91FFA3;
+  --transitionColorC: #C4C4C4;
+  --solidBlack: #000000;
+  --footerColor: #D3D3D3;
+  --formColor: #262628;
+  --shadowColor: #383838;
+  --navbarBackground: #FFA348;
+}
+
+@mixin display($display, $gridtemplate, $alignitems, $justifyitems) {
+  display: $display;
+  grid-template: $gridtemplate;
+  align-items: $alignitems;
+  justify-items: $justifyitems;
+}
+
+@mixin positioning($position, $height, $width, $padding, $margin) {
+  position: $position;
+  height: $height;
+  width: $width;
+  padding: $padding;
+  margin: $margin;
+}
+
+@mixin absolutePos($zindex, $top, $bottom, $right, $left, $content) {
+  z-index: $zindex;
+  top: $top;
+  bottom: $bottom;
+  right: $right;
+  left: $left;
+  content: $content;
+}
+
+@mixin backgroundPic($pic) {
+  background: url($pic) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.genericDisplay {
+  @include display(grid, 1fr/1fr, center, center);
+}
+
+.genericPositioning {
+  @include positioning(relative, auto, auto, 2px, 2px);
+}
+
+@mixin smColors {
+  .mediaButton:nth-child(1) {
+    a {
+      color: var(--gitlabcolor);
+    }
+
+  }
+
+  .mediaButton:nth-child(2) {
+    a {
+      color: var(--facebookcolor);
+    }
+
+  }
+
+  .mediaButton:nth-child(3) {
+    a {
+      color: var(--fcccolor);
+    }
+
+  }
+
+  .mediaButton:nth-child(4) {
+    a {
+      color: (--githubcolor);
+    }
+
+  }
+
+  .mediaButton:nth-child(5) {
+    a {
+      color: var(--twittercolor);
+    }
+
+  }
+
+  .mediaButton:nth-child(6) {
+    a {
+      color: var(--codefightscolor);
+    }
+
+  }
+}
