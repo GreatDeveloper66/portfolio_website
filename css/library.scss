@@ -6,7 +6,7 @@
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -22,6 +22,7 @@
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
   --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080;
 }
 
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {

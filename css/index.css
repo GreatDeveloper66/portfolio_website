@@ -25,7 +25,7 @@
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -40,16 +40,17 @@
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
-  --bannerShade: rgba(128, 128, 128, 0.7); }
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
 
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -66,7 +67,7 @@
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -81,16 +82,17 @@
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
-  --bannerShade: rgba(128, 128, 128, 0.7); }
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
 
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -135,7 +137,7 @@ header {
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -150,16 +152,17 @@ header {
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
-  --bannerShade: rgba(128, 128, 128, 0.7); }
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
 
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -181,29 +184,29 @@ section#about {
     width: 90%;
     max-width: 1100px;
     margin-bottom: 50px; }
-    /* line 18, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+    /* line 17, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
     section#about .aboutBlock .portraitBlock {
       display: none; }
-    /* line 23, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+    /* line 21, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
     section#about .aboutBlock .skillBlock {
       background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
       opacity: 0.85;
       border: solid 1px black;
       box-shadow: 3px 6px var(--shadowColor);
       padding: 10px; }
-      /* line 30, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      /* line 28, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
       section#about .aboutBlock .skillBlock .starBlock {
         display: grid;
         border-top: solid grey 3px;
         padding: 5px;
         grid-template: repeat(6, 1fr)/repeat(2, 1fr); }
-      /* line 37, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      /* line 35, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
       section#about .aboutBlock .skillBlock h3 {
         margin-top: 5px;
         margin-bottom: 5px;
         color: var(--coolblack);
         font-weight: bold; }
-      /* line 44, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      /* line 42, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
       section#about .aboutBlock .skillBlock p {
         color: var(--coolblack);
         font-weight: bold;
@@ -218,7 +221,7 @@ section#about {
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -233,16 +236,17 @@ section#about {
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
-  --bannerShade: rgba(128, 128, 128, 0.7); }
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
 
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -281,22 +285,22 @@ footer {
     align-items: space-around;
     justify-items: center;
     width: 200px; }
-    /* line 67, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 68, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(1) a {
       color: var(--gitlabcolor); }
-    /* line 74, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 75, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(2) a {
       color: var(--facebookcolor); }
-    /* line 81, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 82, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(3) a {
       color: var(--fcccolor); }
-    /* line 88, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 89, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(4) a {
       color: --githubcolor; }
-    /* line 95, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 96, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(5) a {
       color: var(--twittercolor); }
-    /* line 102, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 103, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(6) a {
       color: var(--codefightscolor); }
     /* line 29, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/footer.scss */
@@ -330,7 +334,7 @@ footer {
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -345,16 +349,17 @@ footer {
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
-  --bannerShade: rgba(128, 128, 128, 0.7); }
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
 
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -443,7 +448,7 @@ section#contact {
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -458,16 +463,17 @@ section#contact {
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
-  --bannerShade: rgba(128, 128, 128, 0.7); }
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
 
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -490,22 +496,22 @@ section#socialMedia {
     display: grid;
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
     justify-items: center; }
-    /* line 67, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 68, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(1) a {
       color: var(--gitlabcolor); }
-    /* line 74, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 75, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(2) a {
       color: var(--facebookcolor); }
-    /* line 81, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 82, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(3) a {
       color: var(--fcccolor); }
-    /* line 88, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 89, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(4) a {
       color: --githubcolor; }
-    /* line 95, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 96, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(5) a {
       color: var(--twittercolor); }
-    /* line 102, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 103, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(6) a {
       color: var(--codefightscolor); }
     /* line 20, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
@@ -528,7 +534,7 @@ section#socialMedia {
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -543,16 +549,17 @@ section#socialMedia {
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
-  --bannerShade: rgba(128, 128, 128, 0.7); }
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
 
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -646,7 +653,7 @@ section#menu {
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -661,16 +668,17 @@ section#menu {
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
-  --bannerShade: rgba(128, 128, 128, 0.7); }
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
 
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -755,7 +763,7 @@ section#portfolio {
         /* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .appfooter p {
           font-size: 12px;
-          color: var(--appcolor);
+          color: var(--skillsColor);
           font-weight: bold; }
         /* line 67, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .appfooter a {
@@ -773,7 +781,7 @@ section#portfolio {
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -788,16 +796,17 @@ section#portfolio {
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
-  --bannerShade: rgba(128, 128, 128, 0.7); }
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
 
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;

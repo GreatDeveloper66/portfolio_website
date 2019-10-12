@@ -9,7 +9,7 @@
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -24,16 +24,17 @@
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
-  --bannerShade: rgba(128, 128, 128, 0.7); }
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
 
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -56,22 +57,22 @@ section#socialMedia {
     display: grid;
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
     justify-items: center; }
-    /* line 67, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 68, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(1) a {
       color: var(--gitlabcolor); }
-    /* line 74, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 75, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(2) a {
       color: var(--facebookcolor); }
-    /* line 81, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 82, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(3) a {
       color: var(--fcccolor); }
-    /* line 88, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 89, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(4) a {
       color: --githubcolor; }
-    /* line 95, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 96, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(5) a {
       color: var(--twittercolor); }
-    /* line 102, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 103, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(6) a {
       color: var(--codefightscolor); }
     /* line 20, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */

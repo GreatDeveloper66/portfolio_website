@@ -9,7 +9,7 @@
   --fccccolor: #228B22;
   --githubcolor: #00003F;
   --twittercolor: #4155f5;
-  --codefightscolor: #CEC8EF;
+  --codefightscolor: #FF3A22;
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
@@ -24,16 +24,17 @@
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #1561AD;
-  --bannerShade: rgba(128, 128, 128, 0.7); }
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
 
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -55,29 +56,29 @@ section#about {
     width: 90%;
     max-width: 1100px;
     margin-bottom: 50px; }
-    /* line 18, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+    /* line 17, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
     section#about .aboutBlock .portraitBlock {
       display: none; }
-    /* line 23, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+    /* line 21, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
     section#about .aboutBlock .skillBlock {
       background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
       opacity: 0.85;
       border: solid 1px black;
       box-shadow: 3px 6px var(--shadowColor);
       padding: 10px; }
-      /* line 30, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      /* line 28, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
       section#about .aboutBlock .skillBlock .starBlock {
         display: grid;
         border-top: solid grey 3px;
         padding: 5px;
         grid-template: repeat(6, 1fr)/repeat(2, 1fr); }
-      /* line 37, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      /* line 35, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
       section#about .aboutBlock .skillBlock h3 {
         margin-top: 5px;
         margin-bottom: 5px;
         color: var(--coolblack);
         font-weight: bold; }
-      /* line 44, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      /* line 42, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
       section#about .aboutBlock .skillBlock p {
         color: var(--coolblack);
         font-weight: bold;
