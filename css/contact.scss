@@ -1,94 +1,90 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat');
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 @import 'library.scss';
-
-
 section#contact {
   width: 100%;
   @include backgroundPic('../images/ocean.jpg');
-
   .formcontainer {
     padding-top: 20px;
     padding-bottom: 20px;
-  }
-}
+    form {
+      display: grid;
+      grid-template: repeat(8, 1fr)/1fr;
+      grid-auto-rows: auto;
+      grid-gap: 30px;
+      max-width: 400px;
+      height: 450px;
+      grid-template-areas: "messagebox"
+        "messagebox"
+        "messagebox"
+        "inputbox"
+        "inputbox"
+        "textbox"
+        "textbox"
+        "sendbutton";
 
-form {
-  display: grid;
-  grid-template: repeat(8, 1fr)/1fr;
-  grid-auto-rows: auto;
-  grid-gap: 30px;
-  max-width: 400px;
-  height: 450px;
-  grid-template-areas: "messagebox"
-    "messagebox"
-    "messagebox"
-    "inputbox"
-    "inputbox"
-    "textbox"
-    "textbox"
-    "sendbutton";
+      .messagebox {
+        grid-area: messagebox;
 
-  a {
-    text-decoration: none;
-    .button {
-      background-color: var(--formColor);
-      color: var(--textcolor);
-      width: 25%;
-      margin-top: 20px;
-      padding: 10px 30px;
-      border-radius: 10px;
-      font-size: 18px;
-      transition: all 0.5s;
-      text-align: center;
-      &:hover {
-        background-color: var(--textcolor);
-        color: var(--solidBlack);
+        textarea {
+          height: 100%;
+          font-size: 21px;
+          color: var(--coolBlack);
+        }
+      }
+
+      .textbox {
+        grid-area: textbox;
+
+        textarea {
+          height: 100%;
+        }
+      }
+
+      .inputbox {
+        grid-area: inputbox;
+      }
+
+      .sendbutton {
+        grid-area: sendbutton;
+      }
+
+      textarea,
+      input {
+        width: 100%;
+        border-radius: 5px;
+        padding: 3px;
+        margin: 3px;
+        background: #F2F2F2 none repeat scroll 00;
+        font-size: 15px;
+        font-weight: 500;
+      }
+
+      input {
+        height: 20%;
+        margin-bottom: 5px;
+      }
+
+      a {
+        text-decoration: none;
+
+        .button {
+          background-color: var(--formColor);
+          color: var(--textcolor);
+          width: 25%;
+          margin-top: 20px;
+          padding: 10px 30px;
+          border-radius: 10px;
+          font-size: 18px;
+          transition: all 0.5s;
+          text-align: center;
+
+          &:hover {
+            background-color: var(--textcolor);
+            color: var(--solidBlack);
+          }
+        }
       }
     }
   }
-}
-
-form div.messagebox {
-  grid-area: messagebox;
-}
-
-form div.textbox {
-  grid-area: textbox;
-}
-
-form div.inputbox {
-  grid-area: inputbox;
-}
-
-form div.sendbutton {
-  grid-area: sendbutton;
-}
-
-textarea,
-input {
-  width: 100%;
-  border-radius: 5px;
-  padding: 3px;
-  margin: 3px;
-  background: #F2F2F2 none repeat scroll 00;
-  font-size: 15px;
-  font-weight: 500;
-}
-
-div.textbox textarea {
-  height: 100%;
-}
-
-div.messagebox textarea {
-  height: 100%;
-}
-
-textarea#messagebox {
-  font-size: 21px;
-}
-
-input {
-  height: 20%;
-  margin-bottom: 5px;
 }

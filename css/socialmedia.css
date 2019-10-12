@@ -41,7 +41,7 @@
   padding: 2px;
   margin: 2px; }
 
-/* line 5, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
+/* line 4, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
 section#socialMedia {
   width: 100%;
   display: grid;
@@ -49,7 +49,7 @@ section#socialMedia {
   background: url("../images/socialmedia.jpg") center no-repeat;
   background-size: cover;
   background-attachment: fixed; }
-  /* line 13, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
+  /* line 12, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
   section#socialMedia .socialNav {
     margin-bottom: 20px;
     margin-top: 20px;
@@ -74,14 +74,14 @@ section#socialMedia {
     /* line 102, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(6) a {
       color: var(--codefightscolor); }
-    /* line 21, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
+    /* line 20, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
     section#socialMedia .socialNav .mediaButton {
       text-align: center;
       font-size: 25px; }
-      /* line 25, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
+      /* line 24, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
       section#socialMedia .socialNav .mediaButton a {
         text-decoration: none; }
-      /* line 29, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
+      /* line 28, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
       section#socialMedia .socialNav .mediaButton i {
         font-size: 120px; }
 

@@ -5,8 +5,6 @@
 @media only screen and (min-width: 520px) {}
 
 @media only screen and (min-width: 768px) {
-
-
   section#menu {
     width: 100%;
     height: auto;
@@ -44,9 +42,8 @@
     }
   }
 
-
   section#about {
-    
+
     .aboutBlock {
       grid-template: auto/auto auto;
 
@@ -82,26 +79,31 @@
     }
   }
 
-
-  form {
-    display: grid;
-    height: 300px;
-    max-width: 600px;
-    grid-template: repeat(8, 1fr)/1fr 1fr;
-    grid-template-areas: "messagebox messagebox"
-      "messagebox messagebox"
-      "messagebox messagebox"
-      "inputbox textbox"
-      "inputbox textbox"
-      "inputbox textbox"
-      "inputbox textbox"
-      ". sendbutton";
-  }
-
-  input {
+  section#contact {
+    .formcontainer {
+      form {
+        display: grid;
+        height: 300px;
+        max-width: 600px;
+        grid-template: repeat(8, 1fr)/1fr 1fr;
+        grid-template-areas: "messagebox messagebox"
+          "messagebox messagebox"
+          "messagebox messagebox"
+          "inputbox textbox"
+          "inputbox textbox"
+          "inputbox textbox"
+          "inputbox textbox"
+          ". sendbutton";
+        input {
     height: 15%;
     margin-bottom: 14px;
   }
+      }
+    }
+  }
+
+
+  
 
 
 
@@ -173,15 +175,16 @@
         }
       }
 
+      .starBlock {
+
+        i {
+          font-size: 16px;
+        }
+      }
+
     }
   }
 
-  .starBlock {
-    grid-template: repeat(4, 1fr)/repeat(3, 1fr);
 
-    i {
-      font-size: 13px;
-    }
-  }
 
 }
