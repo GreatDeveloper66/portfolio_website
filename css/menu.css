@@ -3,7 +3,7 @@
 /* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 :root {
   --wht: #FFFFFF;
-  --bannercolor: #07BFDC;
+  --bannercolor: #FC5226;
   --gitlabcolor: #FF4500;
   --facebookcolor: #4682B4;
   --fccccolor: #228B22;
@@ -13,7 +13,7 @@
   --textcolor: #FFFFFF;
   --thumbnailcolor: #000080;
   --appcolor: #4169E1;
-  --navbuttoncolor: #932020;
+  --navbuttoncolor: #1dbab4;
   --barcolor: #3d3e41;
   --coolblack: #000027;
   --transitionColorA: #009BEC;
@@ -23,7 +23,7 @@
   --footerColor: #D3D3D3;
   --formColor: #262628;
   --shadowColor: #383838;
-  --navbarBackground: #FFA348;
+  --navbarBackground: #1561AD;
   --bannerShade: rgba(128, 128, 128, 0.7); }
 
 /* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
@@ -54,7 +54,7 @@ section#menu {
   background-color: transparent;
   z-index: 3;
   margin-right: 0px; }
-  /* line 13, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  /* line 12, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
   section#menu .slideup,
   section#menu .slidedown {
     max-height: 34px;
@@ -63,11 +63,11 @@ section#menu {
     -webkit-transition: all 0.6s ease-in-out;
     -moz-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out; }
-  /* line 23, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  /* line 21, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
   section#menu .slidedown {
     max-height: 320px;
     height: 320px; }
-  /* line 29, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  /* line 25, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
   section#menu nav {
     display: grid;
     grid-template: repeat(7, 1fr)/1fr;
@@ -77,13 +77,13 @@ section#menu {
     overflow-y: hidden;
     overflow-x: hidden;
     background-color: transparent; }
-    /* line 36, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+    /* line 32, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
     section#menu nav a {
       text-decoration: none;
       width: 100%;
       height: 100%;
-      color: var(--textcolor); }
-      /* line 42, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+      color: var(--solidblack); }
+      /* line 38, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
       section#menu nav a .button {
         background-color: var(--navbuttoncolor);
         border: var(--textcolor);
@@ -93,7 +93,7 @@ section#menu {
         min-height: 35px;
         text-align: center;
         box-shadow: 1px var(--shadowColor); }
-    /* line 55, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+    /* line 51, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
     section#menu nav .bars {
       display: grid;
       grid-template: 1;
@@ -105,16 +105,16 @@ section#menu {
       border-radius: 4px;
       height: 34px;
       width: 43px; }
-      /* line 64, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+      /* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
       section#menu nav .bars:hover {
         cursor: pointer; }
-      /* line 68, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+      /* line 63, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
       section#menu nav .bars .bar {
         background-color: var(--textcolor);
         height: 4px;
         margin: 2px;
         width: 60%; }
-  /* line 82, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  /* line 71, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
   section#menu h2 {
     display: none; }
 
