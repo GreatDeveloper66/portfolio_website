@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat');
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 @import 'library.scss';
-
 @media only screen and (min-width: 520px) {}
-
 @media only screen and (min-width: 768px) {
   section#menu {
     width: 100%;
@@ -31,7 +29,6 @@
       }
     }
   }
-
   section#portfolio {
     margin-top: 0;
 
@@ -41,7 +38,6 @@
       max-width: 1200px;
     }
   }
-
   section#about {
 
     .aboutBlock {
@@ -78,7 +74,6 @@
 
     }
   }
-
   section#contact {
     .formcontainer {
       form {
@@ -94,19 +89,14 @@
           "inputbox textbox"
           "inputbox textbox"
           ". sendbutton";
+
         input {
-    height: 15%;
-    margin-bottom: 14px;
-  }
+          height: 15%;
+          margin-bottom: 14px;
+        }
       }
     }
   }
-
-
-  
-
-
-
   section#socialMedia {
     .socialNav {
       .mediaButton {
@@ -118,34 +108,32 @@
       }
     }
   }
-
   footer {
+    grid-template: 1fr/auto auto auto;
     h2 {
+      display: grid;
       font-size: 16px;
     }
-
-    p {
+    .content {
+      p {
+      display: grid;
       font-size: 14px;
     }
+    }  
   }
 }
-
 @media only screen and (min-width: 912px) {
-
   nav {
     button {
       font-size: 20px;
       min-height: 35px;
     }
   }
-
-
   section#portfolio {
     .portfolio {
       grid-template: repeat(4, 1fr)/repeat(3, 1fr);
     }
   }
-
   section#about {
     .aboutBlock {
       .portraitBlock {
@@ -157,15 +145,12 @@
     }
   }
 }
-
-
 @media only screen and (min-width:1024px) {
   nav {
     button {
       font-size: 23px;
     }
   }
-
   section#about {
     .aboutBlock {
       .portraitBlock {
@@ -184,7 +169,4 @@
 
     }
   }
-
-
-
 }
