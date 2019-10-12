@@ -487,7 +487,7 @@ section#socialMedia {
   padding: 2px;
   margin: 2px; }
 
-/* line 5, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+/* line 4, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
 section#menu {
   position: sticky;
   height: 300px;
@@ -501,74 +501,68 @@ section#menu {
   z-index: 3;
   margin-right: 0px; }
   /* line 13, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  section#menu .slideup,
+  section#menu .slidedown {
+    max-height: 34px;
+    height: 34px;
+    overflow-y: hidden;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out; }
+  /* line 23, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  section#menu .slidedown {
+    max-height: 320px;
+    height: 320px; }
+  /* line 29, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  section#menu nav {
+    display: grid;
+    grid-template: repeat(7, 1fr)/1fr;
+    align-items: default;
+    justify-items: default;
+    height: 34px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: transparent; }
+    /* line 36, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+    section#menu nav a {
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      color: var(--textcolor); }
+      /* line 42, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+      section#menu nav a .button {
+        background-color: var(--navbuttoncolor);
+        border: var(--textcolor);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        font-size: 25px;
+        width: 100%;
+        min-height: 35px;
+        text-align: center;
+        box-shadow: 1px var(--shadowColor); }
+    /* line 55, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+    section#menu nav .bars {
+      display: grid;
+      grid-template: 1;
+      align-items: center;
+      justify-items: center;
+      justify-self: end;
+      grid-gap: 5px;
+      background-color: var(--barcolor);
+      border-radius: 4px;
+      height: 34px;
+      width: 43px; }
+      /* line 64, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+      section#menu nav .bars:hover {
+        cursor: pointer; }
+      /* line 68, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+      section#menu nav .bars .bar {
+        background-color: var(--textcolor);
+        height: 4px;
+        margin: 2px;
+        width: 60%; }
+  /* line 82, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
   section#menu h2 {
     display: none; }
-
-/* line 18, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
-nav {
-  display: grid;
-  grid-template: repeat(7, 1fr)/1fr;
-  align-items: default;
-  justify-items: default;
-  height: 34px;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background-color: transparent; }
-  /* line 25, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
-  nav a {
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    color: var(--textcolor); }
-    /* line 31, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
-    nav a .button {
-      background-color: var(--navbuttoncolor);
-      border: var(--textcolor);
-      border: 2px solid rgba(255, 255, 255, 0.3);
-      font-size: 25px;
-      width: 100%;
-      min-height: 35px;
-      text-align: center;
-      box-shadow: 1px var(--shadowColor); }
-
-/* line 47, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
-.bars {
-  display: grid;
-  grid-template: 1;
-  align-items: center;
-  justify-items: center;
-  justify-self: end;
-  grid-gap: 5px;
-  background-color: var(--barcolor);
-  border-radius: 4px;
-  height: 34px;
-  width: 43px; }
-
-/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
-.bar {
-  background-color: var(--textcolor);
-  height: 4px;
-  margin: 2px;
-  width: 60%; }
-
-/* line 65, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
-.slideup,
-.slidedown {
-  max-height: 34px;
-  height: 34px;
-  overflow-y: hidden;
-  -webkit-transition: all 0.6s ease-in-out;
-  -moz-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out; }
-
-/* line 75, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
-.slidedown {
-  max-height: 320px;
-  height: 320px; }
-
-/* line 80, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
-div.bars:hover {
-  cursor: pointer; }
 
 /* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 :root {
@@ -845,96 +839,96 @@ div.skillBlock {
     height: auto;
     justify-items: center;
     background-color: var(--navbarBackground); }
-  /* line 17, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
-  .bars {
-    display: none; }
-  /* line 21, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
-  nav {
-    grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    justify-self: center;
-    align-items: center;
-    justify-items: space-around;
-    height: auto;
-    overflow-y: visible;
-    margin-top: 10px;
-    margin-bottom: 12px; }
-  /* line 33, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
-  nav button {
-    font-size: 15px; }
-  /* line 37, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+    /* line 16, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+    section#menu nav {
+      grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+      justify-self: center;
+      align-items: center;
+      justify-items: space-around;
+      height: auto;
+      overflow-y: visible;
+      margin-top: 10px;
+      margin-bottom: 12px; }
+      /* line 27, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+      section#menu nav button {
+        font-size: 15px; }
+      /* line 31, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+      section#menu nav .bars {
+        display: none; }
+  /* line 39, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   section#portfolio {
     margin-top: 0; }
-    /* line 40, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+    /* line 42, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
     section#portfolio div.portfolio {
       grid-template: repeat(6, 1fr)/repeat(2, 1fr);
       width: 90%;
       max-width: 1200px; }
-  /* line 47, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 49, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   div.portraitBlock {
     display: grid;
     grid-template: auto 1fr/1fr;
     jusity-items: center;
     align-items: flex-start; }
-    /* line 53, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+    /* line 55, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
     div.portraitBlock img {
       width: 300px;
       height: 300px; }
-    /* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+    /* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
     div.portraitBlock h3 {
       margin-top: 5px;
       margin-bottom: 5px; }
-  /* line 64, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 66, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   div.aboutBlock {
     grid-template: auto/auto auto; }
-  /* line 68, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 70, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   form {
     display: grid;
     height: 300px;
     max-width: 600px;
     grid-template: repeat(8, 1fr)/1fr 1fr;
     grid-template-areas: "messagebox messagebox" "messagebox messagebox" "messagebox messagebox" "inputbox textbox" "inputbox textbox" "inputbox textbox" "inputbox textbox" ". sendbutton"; }
-  /* line 83, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 85, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   input {
     height: 15%;
     margin-bottom: 14px; }
-  /* line 89, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 91, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   .starBlock i {
     font-size: 15px; }
-  /* line 98, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 100, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   section#socialMedia .socialNav .mediaButton a i {
     font-size: 200px; }
-  /* line 107, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 109, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   footer h2 {
     font-size: 16px; }
-  /* line 111, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 113, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   footer p {
     font-size: 14px; } }
 
 @media only screen and (min-width: 912px) {
-  /* line 118, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 122, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   nav button {
     font-size: 20px;
     min-height: 35px; }
-  /* line 124, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 130, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   section#portfolio div.portfolio {
     grid-template: repeat(4, 1fr)/repeat(3, 1fr); }
-  /* line 131, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 137, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   div.portraitBlock img {
     width: 400px;
     height: 400px; } }
 
 @media only screen and (min-width: 1024px) {
-  /* line 139, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
-  .starBlock {
-    grid-template: repeat(4, 1fr)/repeat(3, 1fr); }
-    /* line 142, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
-    .starBlock i {
-      font-size: 13px; }
-  /* line 147, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 146, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   nav button {
     font-size: 23px; }
-  /* line 152, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  /* line 151, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+  .starBlock {
+    grid-template: repeat(4, 1fr)/repeat(3, 1fr); }
+    /* line 154, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
+    .starBlock i {
+      font-size: 13px; }
+  /* line 160, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/mediaqueries.scss */
   div.portraitBlock img {
     width: 400px;
     height: 400px; } }

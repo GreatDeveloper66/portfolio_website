@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat');
 @import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 @import 'library.scss';
-
 section#menu {
   @include positioning(sticky, 300px, 200px, 2x, default);
   overflow-x: hidden;
@@ -10,73 +9,77 @@ section#menu {
   background-color: transparent;
   z-index: 3;
   margin-right: 0px;
+
+  .slideup,
+  .slidedown {
+    max-height: 34px;
+    height: 34px;
+    overflow-y: hidden;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+  }
+
+  .slidedown {
+    max-height: 320px;
+    height: 320px;
+  }
+
+
+  nav {
+    @include display(grid, repeat(7, 1fr)/1fr, default, default);
+    height: 34px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: transparent;
+
+    a {
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      color: var(--textcolor);
+
+      .button {
+        background-color: var(--navbuttoncolor);
+        border: var(--textcolor);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        font-size: 25px;
+        width: 100%;
+        min-height: 35px;
+        text-align: center;
+        box-shadow: 1px var(--shadowColor);
+      }
+
+    }
+
+    .bars {
+      @include display(grid, 1fr/1fr, center, center);
+      justify-self: end;
+      grid-gap: 5px;
+      background-color: var(--barcolor);
+      border-radius: 4px;
+      height: 34px;
+      width: 43px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .bar {
+        background-color: var(--textcolor);
+        height: 4px;
+        margin: 2px;
+        width: 60%;
+      }
+    }
+
+
+
+
+
+  }
+
   h2 {
     display: none;
   }
-}
-
-nav {
-  @include display(grid, repeat(7, 1fr)/1fr, default, default);
-  height: 34px;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background-color: transparent;
-
-  a {
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    color: var(--textcolor);
-
-    .button {
-      background-color: var(--navbuttoncolor);
-      border: var(--textcolor);
-      border: 2px solid rgba(255, 255, 255, 0.3);
-      font-size: 25px;
-      width: 100%;
-      min-height: 35px;
-      text-align: center;
-      box-shadow: 1px var(--shadowColor);
-    }
-
-  }
-
-}
-
-
-.bars {
-  @include display(grid, 1fr/1fr, center, center);
-  justify-self: end;
-  grid-gap: 5px;
-  background-color: var(--barcolor);
-  border-radius: 4px;
-  height: 34px;
-  width: 43px;
-}
-
-.bar {
-  background-color: var(--textcolor);
-  height: 4px;
-  margin: 2px;
-  width: 60%;
-}
-
-
-.slideup,
-.slidedown {
-  max-height: 34px;
-  height: 34px;
-  overflow-y: hidden;
-  -webkit-transition: all 0.6s ease-in-out;
-  -moz-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
-}
-
-.slidedown {
-  max-height: 320px;
-  height: 320px;
-}
-
-div.bars:hover {
-  cursor: pointer;
 }

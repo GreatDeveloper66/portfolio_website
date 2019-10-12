@@ -5,34 +5,36 @@
 @media only screen and (min-width: 520px) {}
 
 @media only screen and (min-width: 768px) {
-  
-  
+
+
   section#menu {
     width: 100%;
     height: auto;
     justify-items: center;
     background-color: var(--navbarBackground);
+
+    nav {
+      grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+      justify-self: center;
+      align-items: center;
+      justify-items: space-around;
+      height: auto;
+      overflow-y: visible;
+      margin-top: 10px;
+      margin-bottom: 12px;
+
+      button {
+        font-size: 15px;
+      }
+
+      .bars {
+        display: none;
+      }
+    }
   }
 
-  .bars {
-    display: none;
-  }
 
-  nav {
-    grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    justify-self: center;
-    align-items: center;
-    justify-items: space-around;
-    height: auto;
-    overflow-y: visible;
-    margin-top: 10px;
-    margin-bottom: 12px;
-  }
-
-  nav button {
-    font-size: 15px;
-  }
 
   section#portfolio {
     margin-top: 0;
@@ -115,10 +117,14 @@
 }
 
 @media only screen and (min-width: 912px) {
-  nav button {
-    font-size: 20px;
-    min-height: 35px;
+
+  nav {
+    button {
+      font-size: 20px;
+      min-height: 35px;
+    }
   }
+
 
   section#portfolio {
     div.portfolio {
@@ -136,16 +142,18 @@
 }
 
 @media only screen and (min-width:1024px) {
+  nav {
+    button {
+      font-size: 23px;
+    }
+  }
+
   .starBlock {
     grid-template: repeat(4, 1fr)/repeat(3, 1fr);
 
     i {
       font-size: 13px;
     }
-  }
-
-  nav button {
-    font-size: 23px;
   }
 
   div.portraitBlock {
