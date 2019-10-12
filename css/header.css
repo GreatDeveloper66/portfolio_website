@@ -23,16 +23,17 @@
   --footerColor: #D3D3D3;
   --formColor: #262628;
   --shadowColor: #383838;
-  --navbarBackground: #FFA348; }
+  --navbarBackground: #FFA348;
+  --bannerShade: rgba(128, 128, 128, 0.7); }
 
-/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -62,10 +63,10 @@ header {
     justify-items: center;
     height: 100%;
     text-align: center; }
-  /* line 18, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
-  header div.banner h1,
-  header div.banner h3 {
-    color: var(--textcolor);
-    text-shadow: 5px 5px 5px rgba(128, 128, 128, 0.7); }
+    /* line 15, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
+    header .banner h1,
+    header .banner h3 {
+      color: var(--textcolor);
+      text-shadow: 5px 5px 5px var(--bannerShade); }
 
 /*# sourceMappingURL=header.css.map */

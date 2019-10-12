@@ -21,6 +21,7 @@
   --formColor: #262628;
   --shadowColor: #383838;
   --navbarBackground: #FFA348;
+  --bannerShade: rgba(128, 128, 128, 0.7);
 }
 
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {

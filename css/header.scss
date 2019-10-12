@@ -6,23 +6,16 @@ header {
   @include display(grid, 1fr/1fr, center, center);
   @include positioning(relative, 600px, 100%, 2px, auto);
   @include backgroundPic('/images/Website_Background_2.jpg');
-  
+
   .banner {
     @include display(grid, 1fr/1fr, center, center);
     height: 100%;
     text-align: center;
-  }
-
-  div.banner {
 
     h1,
     h3 {
       color: var(--textcolor);
-      text-shadow: 5px 5px 5px rgba(128, 128, 128, 0.7);
+      text-shadow: 5px 5px 5px var(--bannerShade);
     }
   }
-}
-
-@media only screen and (min-width: 768px){
-  
 }

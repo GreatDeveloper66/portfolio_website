@@ -39,16 +39,17 @@
   --footerColor: #D3D3D3;
   --formColor: #262628;
   --shadowColor: #383838;
-  --navbarBackground: #FFA348; }
+  --navbarBackground: #FFA348;
+  --bannerShade: rgba(128, 128, 128, 0.7); }
 
-/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -79,16 +80,17 @@
   --footerColor: #D3D3D3;
   --formColor: #262628;
   --shadowColor: #383838;
-  --navbarBackground: #FFA348; }
+  --navbarBackground: #FFA348;
+  --bannerShade: rgba(128, 128, 128, 0.7); }
 
-/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -118,11 +120,11 @@ header {
     justify-items: center;
     height: 100%;
     text-align: center; }
-  /* line 18, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
-  header div.banner h1,
-  header div.banner h3 {
-    color: var(--textcolor);
-    text-shadow: 5px 5px 5px rgba(128, 128, 128, 0.7); }
+    /* line 15, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
+    header .banner h1,
+    header .banner h3 {
+      color: var(--textcolor);
+      text-shadow: 5px 5px 5px var(--bannerShade); }
 
 /* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 :root {
@@ -147,16 +149,17 @@ header {
   --footerColor: #D3D3D3;
   --formColor: #262628;
   --shadowColor: #383838;
-  --navbarBackground: #FFA348; }
+  --navbarBackground: #FFA348;
+  --bannerShade: rgba(128, 128, 128, 0.7); }
 
-/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -194,22 +197,22 @@ footer {
     align-items: space-around;
     justify-items: center;
     width: 200px; }
-    /* line 66, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 67, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(1) a {
       color: var(--gitlabcolor); }
-    /* line 73, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 74, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(2) a {
       color: var(--facebookcolor); }
-    /* line 80, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 81, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(3) a {
       color: var(--fcccolor); }
-    /* line 87, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 88, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(4) a {
       color: --githubcolor; }
-    /* line 94, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 95, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(5) a {
       color: var(--twittercolor); }
-    /* line 101, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 102, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     footer .socialNav .mediaButton:nth-child(6) a {
       color: var(--codefightscolor); }
     /* line 30, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/footer.scss */
@@ -257,16 +260,17 @@ div.content {
   --footerColor: #D3D3D3;
   --formColor: #262628;
   --shadowColor: #383838;
-  --navbarBackground: #FFA348; }
+  --navbarBackground: #FFA348;
+  --bannerShade: rgba(128, 128, 128, 0.7); }
 
-/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -380,16 +384,17 @@ input {
   --footerColor: #D3D3D3;
   --formColor: #262628;
   --shadowColor: #383838;
-  --navbarBackground: #FFA348; }
+  --navbarBackground: #FFA348;
+  --bannerShade: rgba(128, 128, 128, 0.7); }
 
-/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -412,22 +417,22 @@ section#socialMedia {
     display: grid;
     grid-template: repeat(3, 1fr)/repeat(2, 1fr);
     justify-items: center; }
-    /* line 66, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 67, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(1) a {
       color: var(--gitlabcolor); }
-    /* line 73, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 74, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(2) a {
       color: var(--facebookcolor); }
-    /* line 80, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 81, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(3) a {
       color: var(--fcccolor); }
-    /* line 87, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 88, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(4) a {
       color: --githubcolor; }
-    /* line 94, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 95, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(5) a {
       color: var(--twittercolor); }
-    /* line 101, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+    /* line 102, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
     section#socialMedia .socialNav .mediaButton:nth-child(6) a {
       color: var(--codefightscolor); }
     /* line 21, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/socialmedia.scss */
@@ -464,16 +469,17 @@ section#socialMedia {
   --footerColor: #D3D3D3;
   --formColor: #262628;
   --shadowColor: #383838;
-  --navbarBackground: #FFA348; }
+  --navbarBackground: #FFA348;
+  --bannerShade: rgba(128, 128, 128, 0.7); }
 
-/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -587,16 +593,17 @@ div.bars:hover {
   --footerColor: #D3D3D3;
   --formColor: #262628;
   --shadowColor: #383838;
-  --navbarBackground: #FFA348; }
+  --navbarBackground: #FFA348;
+  --bannerShade: rgba(128, 128, 128, 0.7); }
 
-/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -724,16 +731,17 @@ div.appBlock {
   --footerColor: #D3D3D3;
   --formColor: #262628;
   --shadowColor: #383838;
-  --navbarBackground: #FFA348; }
+  --navbarBackground: #FFA348;
+  --bannerShade: rgba(128, 128, 128, 0.7); }
 
-/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
@@ -812,16 +820,17 @@ div.skillBlock {
   --footerColor: #D3D3D3;
   --formColor: #262628;
   --shadowColor: #383838;
-  --navbarBackground: #FFA348; }
+  --navbarBackground: #FFA348;
+  --bannerShade: rgba(128, 128, 128, 0.7); }
 
-/* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericDisplay {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center; }
 
-/* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+/* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 .genericPositioning {
   position: relative;
   height: auto;
