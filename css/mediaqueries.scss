@@ -33,13 +33,10 @@
       }
     }
   }
-
-
-
   section#portfolio {
     margin-top: 0;
 
-    div.portfolio {
+    .portfolio {
       grid-template: repeat(6, 1fr)/repeat(2, 1fr);
       width: 90%;
       max-width: 1200px;
@@ -127,7 +124,7 @@
 
 
   section#portfolio {
-    div.portfolio {
+    .portfolio {
       grid-template: repeat(4, 1fr)/repeat(3, 1fr);
     }
   }
