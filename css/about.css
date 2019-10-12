@@ -60,27 +60,28 @@ section#about {
     /* line 19, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
     section#about .aboutBlock .portraitBlock {
       display: none; }
-      /* line 22, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
-      section#about .aboutBlock .portraitBlock .skillBlock {
-        background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
-        opacity: 0.85;
-        border: solid 1px black;
-        box-shadow: 3px 6px var(--shadowColor); }
-        /* line 28, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
-        section#about .aboutBlock .portraitBlock .skillBlock .starBlock {
-          display: grid;
-          border-top: solid grey 3px;
-          padding: 5px;
-          grid-template: repeat(6, 1fr)/repeat(2, 1fr); }
-        /* line 35, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
-        section#about .aboutBlock .portraitBlock .skillBlock h3 {
-          margin-top: 5px;
-          margin-bottom: 5px;
-          color: var(--coolblack);
-          font-weight: bold; }
-        /* line 42, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
-        section#about .aboutBlock .portraitBlock .skillBlock p {
-          color: var(--coolblack);
-          font-weight: bold; }
+    /* line 24, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+    section#about .aboutBlock .skillBlock {
+      background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
+      opacity: 0.85;
+      border: solid 1px black;
+      box-shadow: 3px 6px var(--shadowColor);
+      padding: 10px; }
+      /* line 31, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      section#about .aboutBlock .skillBlock .starBlock {
+        display: grid;
+        border-top: solid grey 3px;
+        padding: 5px;
+        grid-template: repeat(6, 1fr)/repeat(2, 1fr); }
+      /* line 38, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      section#about .aboutBlock .skillBlock h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: var(--coolblack);
+        font-weight: bold; }
+      /* line 45, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      section#about .aboutBlock .skillBlock p {
+        color: var(--coolblack);
+        font-weight: bold; }
 
 /*# sourceMappingURL=about.css.map */

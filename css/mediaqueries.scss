@@ -45,15 +45,26 @@
   }
 
 
+  section#about {
+    .aboutBlock {
+      grid-template: auto/auto auto;
 
-  .aboutBlock {
-    grid-template: auto/auto auto;
+      .portraitBlock {
+        display: grid;
+        grid-template: auto 1fr/1fr;
+        jusity-items: center;
+        align-items: flex-start;
 
-    .portraitBlock {
-      display: grid;
-      grid-template: auto 1fr/1fr;
-      jusity-items: center;
-      align-items: flex-start;
+        img {
+          width: 300px;
+          height: 300px;
+        }
+
+        h3 {
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+      }
 
       .starBlock {
         i {
@@ -61,19 +72,9 @@
         }
       }
 
-      img {
-        width: 300px;
-        height: 300px;
-      }
-
-      h3 {
-        margin-top: 5px;
-        margin-bottom: 5px;
-      }
     }
-
-
   }
+
 
   form {
     display: grid;
@@ -136,14 +137,18 @@
     }
   }
 
-
-  .portraitBlock {
-    img {
-      width: 400px;
-      height: 400px;
+  section#about {
+    .aboutBlock {
+      .portraitBlock {
+        img {
+          width: 400px;
+          height: 400px;
+        }
+      }
     }
   }
 }
+
 
 @media only screen and (min-width:1024px) {
   nav {
@@ -151,25 +156,24 @@
       font-size: 23px;
     }
   }
-
-
-
-  .portraitBlock {
-    img {
-      width: 400px;
-      height: 400px;
-    }
-
-    .starBlock {
-      grid-template: repeat(4, 1fr)/repeat(3, 1fr);
-
-      i {
-        font-size: 13px;
+  section#about {
+    .aboutBlock {
+      .portraitBlock {
+        img {
+          width: 400px;
+          height: 400px;
+        }
       }
+
     }
-
-
-
-
   }
+
+  .starBlock {
+    grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+
+    i {
+      font-size: 13px;
+    }
+  }
+
 }
