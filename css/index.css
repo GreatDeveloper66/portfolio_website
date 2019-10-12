@@ -122,11 +122,15 @@ header {
     justify-items: center;
     height: 100%;
     text-align: center; }
-    /* line 15, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
-    header .banner h1,
-    header .banner h3 {
-      color: var(--textcolor);
-      text-shadow: 5px 5px 5px var(--bannerShade); }
+    /* line 17, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
+    header .banner .titleblock h1,
+    header .banner .titleblock p {
+      color: var(--coolblack);
+      text-shadow: 5px 5px 5px var(--bannerShade);
+      background-color: transparent; }
+    /* line 23, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
+    header .banner .titleblock p {
+      font-size: 30px; }
 
 /* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 :root {

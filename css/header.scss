@@ -12,10 +12,17 @@ header {
     height: 100%;
     text-align: center;
 
-    h1,
-    h3 {
-      color: var(--textcolor);
-      text-shadow: 5px 5px 5px var(--bannerShade);
+    .titleblock {
+
+      h1,
+      p {
+        color: var(--coolblack);
+        text-shadow: 5px 5px 5px var(--bannerShade);
+        background-color: transparent;
+      }
+      p {
+        font-size: 30px;
+      }
     }
   }
 }
