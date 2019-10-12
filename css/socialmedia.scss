@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat');
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+@import 'library.scss';
+section#socialMedia {
+  width: 100%;
+  display: grid;
+  grid-template: 75px auto/1fr;
+  background: url('../images/socialmedia.jpg') center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .socialNav {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+    justify-items: center;
+    @include smColors;
+
+    .mediaButton {
+      text-align: center;
+      font-size: 25px;
+
+      a {
+        text-decoration: none;
+      }
+
+      i {
+        font-size: 120px;
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat");
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+/* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+:root {
+  --wht: #FFFFFF;
+  --bannercolor: #FC5226;
+  --gitlabcolor: #FF4500;
+  --facebookcolor: #4682B4;
+  --fccccolor: #228B22;
+  --githubcolor: #00003F;
+  --twittercolor: #4155f5;
+  --codefightscolor: #FF3A22;
+  --textcolor: #FFFFFF;
+  --thumbnailcolor: #000080;
+  --appcolor: #4169E1;
+  --navbuttoncolor: #1dbab4;
+  --barcolor: #3d3e41;
+  --coolblack: #000027;
+  --transitionColorA: #009BEC;
+  --transitionColorB: #91FFA3;
+  --transitionColorC: #C4C4C4;
+  --solidBlack: #000000;
+  --footerColor: #D3D3D3;
+  --formColor: #262628;
+  --shadowColor: #383838;
+  --navbarBackground: #1561AD;
+  --bannerShade: rgba(128, 128, 128, 0.7);
+  --skillsColor: #000080; }
+
+/* line 58, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+.genericDisplay {
+  display: grid;
+  grid-template: 1;
+  align-items: center;
+  justify-items: center; }
+
+/* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
+.genericPositioning {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 2px;
+  margin: 2px; }
+
+/* line 5, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
+header {
+  display: grid;
+  grid-template: 1;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  height: 600px;
+  width: 100%;
+  padding: 2px;
+  margin: auto;
+  background: url("/images/Website_Background_2.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  /* line 10, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
+  header .banner {
+    display: grid;
+    grid-template: 1;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    text-align: center; }
+    /* line 15, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
+    header .banner h1,
+    header .banner h3 {
+      color: var(--textcolor);
+      text-shadow: 5px 5px 5px var(--bannerShade); }
+
+/*# sourceMappingURL=header.css.map */

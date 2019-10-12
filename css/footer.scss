@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat');
+@import url('https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+@import 'library.scss';
+
+footer {
+  @include display(grid, auto/auto 1fr, center, center);
+  @include positioning(relative, 75px, 100%, 5px, auto);
+  background-color: var(--footerColor);
+  opacity: 0.9;
+  text-align: center;
+  font-style: italic;
+  bottom: 0;
+
+  h2 {
+    display:none;
+    font-weight: bold;
+    color: var(--solidBlack);
+    background-color: transparent;
+    font-size: 10px;
+    width: auto;
+  }
+
+  .socialNav {
+    @include display(grid, auto/repeat(6, 1fr), space-around, center);
+    width: 200px;
+    @include smColors;
+
+    .mediaButton {
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .content {
+    @include display(grid, auto/auto auto, center, center);
+    width: auto;
+
+    p {
+      display: none;
+      font-size: 12px;
+      font-weight: bold;
+      color: var(--solidBlack);
+      line-height: 1.6em;
+    }
+
+    img {
+      width: 80px;
+      height: 20px;
+    }
+  }
+}
