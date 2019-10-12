@@ -68,29 +68,4 @@ header {
     color: var(--textcolor);
     text-shadow: 5px 5px 5px rgba(128, 128, 128, 0.7); }
 
-@media only screen and (min-width: 768px) {
-  /* line 27, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
-  section#menu {
-    width: 100%;
-    height: auto;
-    justify-items: center;
-    background-color: var(--navbarBackground); }
-  /* line 34, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
-  .bars {
-    display: none; }
-  /* line 38, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
-  nav {
-    grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    justify-self: center;
-    align-items: center;
-    justify-items: space-around;
-    height: auto;
-    overflow-y: visible;
-    margin-top: 10px;
-    margin-bottom: 12px; }
-  /* line 50, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/header.scss */
-  nav button {
-    font-size: 15px; } }
-
 /*# sourceMappingURL=header.css.map */
