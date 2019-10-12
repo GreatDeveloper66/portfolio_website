@@ -46,42 +46,41 @@ section#about {
   background: url("../images/ocean3.jpg") center no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin: 3px;
-  padding: 3px;
-  margin-top: 20px;
+  width: 100%;
   grid-template: 75px 1fr/1fr; }
-  /* line 12, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+  /* line 11, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
   section#about .aboutBlock {
     display: grid;
     grid-template: auto/auto;
     width: 90%;
     max-width: 1100px;
     margin-bottom: 50px; }
-    /* line 19, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+    /* line 18, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
     section#about .aboutBlock .portraitBlock {
       display: none; }
-    /* line 24, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+    /* line 23, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
     section#about .aboutBlock .skillBlock {
       background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
       opacity: 0.85;
       border: solid 1px black;
       box-shadow: 3px 6px var(--shadowColor);
       padding: 10px; }
-      /* line 31, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      /* line 30, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
       section#about .aboutBlock .skillBlock .starBlock {
         display: grid;
         border-top: solid grey 3px;
         padding: 5px;
         grid-template: repeat(6, 1fr)/repeat(2, 1fr); }
-      /* line 38, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      /* line 37, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
       section#about .aboutBlock .skillBlock h3 {
         margin-top: 5px;
         margin-bottom: 5px;
         color: var(--coolblack);
         font-weight: bold; }
-      /* line 45, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
+      /* line 44, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/about.scss */
       section#about .aboutBlock .skillBlock p {
         color: var(--coolblack);
-        font-weight: bold; }
+        font-weight: bold;
+        font-size: 16px; }
 
 /*# sourceMappingURL=about.css.map */

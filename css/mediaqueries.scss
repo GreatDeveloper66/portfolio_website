@@ -46,6 +46,7 @@
 
 
   section#about {
+    
     .aboutBlock {
       grid-template: auto/auto auto;
 
@@ -66,11 +67,17 @@
         }
       }
 
-      .starBlock {
-        i {
-          font-size: 15px;
+      .skillBlock {
+        .starBlock {
+          grid-template: repeat(4, 1fr)/repeat(3, 1fr);
+
+          i {
+            font-size: 15px;
+          }
         }
+
       }
+
 
     }
   }
@@ -156,6 +163,7 @@
       font-size: 23px;
     }
   }
+
   section#about {
     .aboutBlock {
       .portraitBlock {
