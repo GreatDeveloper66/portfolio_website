@@ -118,13 +118,14 @@ section#portfolio {
         border-top: solid 1px lightgray; }
         /* line 61, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .appfooter p {
-          font-size: 12px;
+          text-transform: uppercase;
+          font-size: 10px;
           color: var(--skillsColor);
           font-weight: bold; }
-        /* line 67, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 68, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .appfooter a {
           text-decoration: none; }
-        /* line 71, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 72, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .appfooter i {
           font-size: 20px; }
 
