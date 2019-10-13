@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat");
-@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
 /* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 :root {
   --wht: #FFFFFF;
@@ -42,7 +41,7 @@
   padding: 2px;
   margin: 2px; }
 
-/* line 5, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+/* line 4, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
 section#portfolio {
   display: grid;
   grid-template: 75px auto/1fr;
@@ -57,7 +56,7 @@ section#portfolio {
   background-size: cover;
   background-attachment: fixed;
   margin-top: -310px; }
-  /* line 11, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+  /* line 10, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
   section#portfolio .portfolio {
     display: grid;
     grid-template: repeat(9, 1fr)/1fr;
@@ -67,14 +66,14 @@ section#portfolio {
     width: 75%;
     max-width: 400px;
     margin-bottom: 20px; }
-    /* line 18, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+    /* line 17, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
     section#portfolio .portfolio .appBlock {
       height: 250px;
       background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
       opacity: 0.85;
       border: solid 1px black;
       box-shadow: 3px 6px var(--shadowColor); }
-      /* line 25, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+      /* line 24, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
       section#portfolio .portfolio .appBlock .thumbnail {
         display: grid;
         grid-template: 1;
@@ -82,16 +81,16 @@ section#portfolio {
         justify-items: center;
         width: 100%;
         height: 55%; }
-        /* line 30, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 29, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .thumbnail h3 {
           color: var(--solidBlack); }
-        /* line 34, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 33, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .thumbnail h3 {
           color: var(--thumbnailcolor); }
-        /* line 38, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 37, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .thumbnail a {
           text-decoration: none; }
-      /* line 43, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+      /* line 42, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
       section#portfolio .portfolio .appBlock .appcaption {
         display: grid;
         grid-template: 1;
@@ -100,12 +99,12 @@ section#portfolio {
         width: 100%;
         height: 30%;
         border-top: solid 1px lightgray; }
-        /* line 49, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 48, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .appcaption h5 {
           text-align: center;
           font-size: 20px;
           margin: auto; }
-      /* line 57, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+      /* line 56, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
       section#portfolio .portfolio .appBlock .appfooter {
         display: grid;
         grid-template: 1fr/1fr 1fr;
@@ -114,23 +113,23 @@ section#portfolio {
         width: 100%;
         height: 15%;
         border-top: solid 1px lightgray; }
-        /* line 63, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .appfooter p {
           text-transform: uppercase;
           font-size: 10px;
           color: var(--skillsColor);
           font-weight: bold; }
-        /* line 70, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 69, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .appfooter a {
           text-decoration: none; }
-        /* line 74, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 73, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .appBlock .appfooter i {
           font-size: 20px; }
     /* line 81, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
     section#portfolio .portfolio .underConstruction {
       height: 250px;
       background-image: url("../images/underconstruction.png");
-      background-size: cover;
+      background-size: contain;
       background-position: center;
       border: solid 1px black;
       box-shadow: 3px 6px var(--shadowColor); }
@@ -145,13 +144,13 @@ section#portfolio {
         /* line 94, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .underConstruction .thumbnail h3 {
           color: var(--solidBlack); }
-        /* line 98, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 99, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .underConstruction .thumbnail h3 {
           color: var(--thumbnailcolor); }
-        /* line 102, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 104, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .underConstruction .thumbnail a {
           text-decoration: none; }
-      /* line 107, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+      /* line 109, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
       section#portfolio .portfolio .underConstruction .appcaption {
         display: grid;
         grid-template: 1;
@@ -160,12 +159,12 @@ section#portfolio {
         width: 100%;
         height: 30%;
         border-top: solid 1px lightgray; }
-        /* line 113, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 115, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .underConstruction .appcaption h5 {
           text-align: center;
           font-size: 20px;
           margin: auto; }
-      /* line 121, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+      /* line 124, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
       section#portfolio .portfolio .underConstruction .appfooter {
         display: grid;
         grid-template: 1fr/1fr 1fr;
@@ -174,16 +173,16 @@ section#portfolio {
         width: 100%;
         height: 15%;
         border-top: solid 1px lightgray; }
-        /* line 127, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 130, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .underConstruction .appfooter p {
           text-transform: uppercase;
           font-size: 10px;
           color: var(--skillsColor);
           font-weight: bold; }
-        /* line 134, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 138, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .underConstruction .appfooter a {
           text-decoration: none; }
-        /* line 138, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
+        /* line 142, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/portfolio.scss */
         section#portfolio .portfolio .underConstruction .appfooter i {
           font-size: 20px; }
 

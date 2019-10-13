@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat");
-@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
 /* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 :root {
   --wht: #FFFFFF;
@@ -42,7 +41,7 @@
   padding: 2px;
   margin: 2px; }
 
-/* line 4, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+/* line 3, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
 section#menu {
   position: sticky;
   height: 300px;
@@ -55,7 +54,7 @@ section#menu {
   background-color: transparent;
   z-index: 3;
   margin-right: 0px; }
-  /* line 12, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  /* line 11, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
   section#menu .slideup,
   section#menu .slidedown {
     max-height: 34px;
@@ -64,11 +63,11 @@ section#menu {
     -webkit-transition: all 0.6s ease-in-out;
     -moz-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out; }
-  /* line 21, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  /* line 20, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
   section#menu .slidedown {
     max-height: 320px;
     height: 320px; }
-  /* line 25, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  /* line 24, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
   section#menu nav {
     display: grid;
     grid-template: repeat(7, 1fr)/1fr;
@@ -78,13 +77,13 @@ section#menu {
     overflow-y: hidden;
     overflow-x: hidden;
     background-color: transparent; }
-    /* line 32, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+    /* line 31, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
     section#menu nav a {
       text-decoration: none;
       width: 100%;
       height: 100%;
       color: var(--solidblack); }
-      /* line 38, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+      /* line 37, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
       section#menu nav a .button {
         background-color: var(--navbuttoncolor);
         border: var(--textcolor);
@@ -94,7 +93,7 @@ section#menu {
         min-height: 35px;
         text-align: center;
         box-shadow: 1px var(--shadowColor); }
-    /* line 51, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+    /* line 50, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
     section#menu nav .bars {
       display: grid;
       grid-template: 1;
@@ -106,16 +105,16 @@ section#menu {
       border-radius: 4px;
       height: 34px;
       width: 43px; }
-      /* line 60, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+      /* line 59, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
       section#menu nav .bars:hover {
         cursor: pointer; }
-      /* line 63, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+      /* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
       section#menu nav .bars .bar {
         background-color: var(--textcolor);
         height: 4px;
         margin: 2px;
         width: 60%; }
-  /* line 71, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
+  /* line 70, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/menu.scss */
   section#menu h2 {
     display: none; }
 

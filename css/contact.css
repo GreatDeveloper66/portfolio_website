@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat");
-@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
 /* line 1, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/library.scss */
 :root {
   --wht: #FFFFFF;
@@ -42,17 +41,17 @@
   padding: 2px;
   margin: 2px; }
 
-/* line 4, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+/* line 3, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
 section#contact {
   width: 100%;
   background: url("../images/ocean.jpg") center no-repeat;
   background-size: cover;
   background-attachment: fixed; }
-  /* line 7, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+  /* line 6, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
   section#contact .formcontainer {
     padding-top: 20px;
     padding-bottom: 20px; }
-    /* line 10, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+    /* line 9, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
     section#contact .formcontainer form {
       display: grid;
       grid-template: repeat(8, 1fr)/1fr;
@@ -61,27 +60,27 @@ section#contact {
       max-width: 400px;
       height: 450px;
       grid-template-areas: "messagebox" "messagebox" "messagebox" "inputbox" "inputbox" "textbox" "textbox" "sendbutton"; }
-      /* line 26, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+      /* line 25, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
       section#contact .formcontainer form .messagebox {
         grid-area: messagebox; }
-        /* line 29, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+        /* line 28, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
         section#contact .formcontainer form .messagebox textarea {
           height: 100%;
           font-size: 21px;
           color: var(--coolBlack); }
-      /* line 36, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+      /* line 35, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
       section#contact .formcontainer form .textbox {
         grid-area: textbox; }
-        /* line 39, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+        /* line 38, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
         section#contact .formcontainer form .textbox textarea {
           height: 100%; }
-      /* line 44, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+      /* line 43, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
       section#contact .formcontainer form .inputbox {
         grid-area: inputbox; }
-      /* line 48, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+      /* line 47, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
       section#contact .formcontainer form .sendbutton {
         grid-area: sendbutton; }
-      /* line 52, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+      /* line 51, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
       section#contact .formcontainer form textarea,
       section#contact .formcontainer form input {
         width: 100%;
@@ -91,14 +90,14 @@ section#contact {
         background: #F2F2F2 none repeat scroll 00;
         font-size: 15px;
         font-weight: 500; }
-      /* line 63, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+      /* line 62, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
       section#contact .formcontainer form input {
         height: 20%;
         margin-bottom: 5px; }
-      /* line 68, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+      /* line 67, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
       section#contact .formcontainer form a {
         text-decoration: none; }
-        /* line 71, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+        /* line 70, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
         section#contact .formcontainer form a .button {
           background-color: var(--formColor);
           color: var(--textcolor);
@@ -109,7 +108,7 @@ section#contact {
           font-size: 18px;
           transition: all 0.5s;
           text-align: center; }
-          /* line 82, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
+          /* line 81, /Users/adam/Desktop/My_Documents/Coding/Projects/Portfolio_Website/css/contact.scss */
           section#contact .formcontainer form a .button:hover {
             background-color: var(--textcolor);
             color: var(--solidBlack); }
