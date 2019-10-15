@@ -3,6 +3,7 @@
 section#contact {
   width: 100%;
   @include backgroundPic('../images/ocean.jpg');
+  /*
   .formcontainer {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -83,6 +84,29 @@ section#contact {
             color: var(--solidBlack);
           }
         }
+      }
+    }
+  }
+  */
+  .contactcontainer {
+    @include display(grid, repeat(3,1fr)/1fr,center,center);
+    width: 90%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    .emailbox, .phonebox, .resumebox {
+      @include display(grid, 1fr 1fr/1fr, center, center);
+      
+      
+    }
+    h3 {
+      font-size: 30px;
+      color: var(--coolblack);
+    }
+    i {
+      font-size: 100px;
+      &:hover {
+        cursor: pointer;
       }
     }
   }

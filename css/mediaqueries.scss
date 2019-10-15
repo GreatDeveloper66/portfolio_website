@@ -85,6 +85,14 @@
   }
 
   section#contact {
+    
+    .contactcontainer {
+      grid-template: 1fr/1fr 1fr 1fr;
+      width: 75%;
+      max-width: 1000px;
+      margin-bottom: 100px;
+    }
+    /*
     .formcontainer {
       form {
         display: grid;
@@ -106,6 +114,7 @@
         }
       }
     }
+    */
   }
 
   section#socialMedia {
