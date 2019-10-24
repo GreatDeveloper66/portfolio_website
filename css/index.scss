@@ -25,6 +25,7 @@
   --navbarBackground: #1561AD;
   --bannerShade: rgba(128, 128, 128, 0.7);
   --skillsColor: #000080;
+  --appblockColor: #CE2029;
 }
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {
   display: $display;
@@ -404,7 +405,6 @@ section#portfolio {
     width: 75%;
     max-width: 400px;
     margin-bottom: 20px;
-
     .appBlock {
       height: 250px;
       background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
@@ -418,11 +418,7 @@ section#portfolio {
         height: 55%;
 
         h3 {
-          color: var(--solidBlack);
-        }
-
-        h3 {
-          color: var(--thumbnailcolor);
+          color: var(--appblockColor);
         }
 
         a {
@@ -453,7 +449,7 @@ section#portfolio {
         p {
           text-transform: uppercase;
           font-size: 10px;
-          color: var(--skillsColor);
+          color: var(--appblockColor);
           font-weight: bold;
         }
 
@@ -467,8 +463,6 @@ section#portfolio {
 
       }
     }
-    
-
     .underConstruction {
       height: 250px;
       background-image: url('../images/under_construction.png');
