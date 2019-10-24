@@ -285,7 +285,7 @@ section#about {
   }
 }
 footer {
-  @include display(grid, auto/auto 1fr, center, center);
+  @include display(grid, auto/auto auto, center, center);
   @include positioning(relative, 75px, 100%, 5px, auto);
   background-color: var(--footerColor);
   opacity: 0.9;
@@ -294,7 +294,6 @@ footer {
   bottom: 0;
 
   h2 {
-    display:none;
     font-weight: bold;
     color: var(--solidBlack);
     background-color: transparent;
@@ -315,11 +314,9 @@ footer {
   }
 
   .content {
-    @include display(grid, auto/auto auto, center, center);
-    width: auto;
+   display: none;
 
     p {
-      display: none;
       font-size: 12px;
       font-weight: bold;
       color: var(--solidBlack);
@@ -639,13 +636,15 @@ section#portfolio {
     grid-template: 1fr/auto auto auto;
 
     h2 {
-      display: grid;
       font-size: 16px;
     }
 
     .content {
+      @include display(grid, auto/auto, center, center);
+      width: 95%;
+      max-width: 400px;
       p {
-        display: grid;
+        @include display(grid, auto/auto, center, center);
         font-size: 14px;
       }
     }

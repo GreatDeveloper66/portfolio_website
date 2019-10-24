@@ -262,7 +262,7 @@ section#about .aboutBlock .skillBlock p {
 
 footer {
   display: grid;
-  grid-template: auto/auto 1fr;
+  grid-template: auto/auto auto;
   align-items: center;
   justify-items: center;
   position: relative;
@@ -277,7 +277,6 @@ footer {
   bottom: 0;
 }
 footer h2 {
-  display: none;
   font-weight: bold;
   color: var(--solidBlack);
   background-color: transparent;
@@ -313,14 +312,9 @@ footer .socialNav .mediaButton i {
   font-size: 20px;
 }
 footer .content {
-  display: grid;
-  grid-template: auto/auto auto;
-  align-items: center;
-  justify-items: center;
-  width: auto;
+  display: none;
 }
 footer .content p {
-  display: none;
   font-size: 12px;
   font-weight: bold;
   color: var(--solidBlack);
@@ -625,11 +619,21 @@ section#portfolio .portfolio .underConstruction .appfooter i {
     grid-template: 1fr/auto auto auto;
   }
   footer h2 {
-    display: grid;
     font-size: 16px;
+  }
+  footer .content {
+    display: grid;
+    grid-template: auto/auto;
+    align-items: center;
+    justify-items: center;
+    width: 95%;
+    max-width: 400px;
   }
   footer .content p {
     display: grid;
+    grid-template: auto/auto;
+    align-items: center;
+    justify-items: center;
     font-size: 14px;
   }
 }
