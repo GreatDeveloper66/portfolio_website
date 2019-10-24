@@ -245,6 +245,7 @@ section#about {
   @include backgroundPic('../images/ocean3.jpg');
   width: 100%;
   grid-template: 75px 1fr/1fr;
+  margin-top: -310px;
   .aboutBlock {
     display: grid;
     grid-template: auto/auto;
@@ -390,7 +391,6 @@ section#portfolio {
   @include display(grid, 75px auto/1fr, default, default);
   @include positioning(relative, auto, 100%, 2px, 2px);
   @include backgroundPic('../images/desk.jpg');
-  margin-top: -310px;
   .portfolio {
     @include display(grid, repeat(9, 1fr)/1fr, default, default);
     grid-gap: 40px;
@@ -564,8 +564,6 @@ section#portfolio {
   }
 
   section#portfolio {
-    margin-top: 0;
-
     .portfolio {
       grid-template: repeat(6, 1fr)/repeat(2, 1fr);
       width: 90%;
@@ -574,6 +572,7 @@ section#portfolio {
   }
 
   section#about {
+    margin-top: 0;
 
     .aboutBlock {
       grid-template: auto/auto auto;

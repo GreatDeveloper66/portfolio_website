@@ -224,6 +224,7 @@ section#about {
   background-attachment: fixed;
   width: 100%;
   grid-template: 75px 1fr/1fr;
+  margin-top: -310px;
 }
 section#about .aboutBlock {
   display: grid;
@@ -415,7 +416,6 @@ section#portfolio {
   background: url("../images/desk.jpg") center no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  margin-top: -310px;
 }
 section#portfolio .portfolio {
   display: grid;
@@ -571,15 +571,15 @@ section#portfolio .portfolio .underConstruction .appfooter i {
     display: none;
   }
 
-  section#portfolio {
-    margin-top: 0;
-  }
   section#portfolio .portfolio {
     grid-template: repeat(6, 1fr)/repeat(2, 1fr);
     width: 90%;
     max-width: 1200px;
   }
 
+  section#about {
+    margin-top: 0;
+  }
   section#about .aboutBlock {
     grid-template: auto/auto auto;
   }
