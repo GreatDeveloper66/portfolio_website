@@ -280,7 +280,10 @@ section#about {
       p {
         color: var(--coolblack);
         font-weight: bold;
-        font-size: 16px;
+        font-size: 20px;
+      }
+      i {
+        font-size: 30px;
       }
     }
   }
@@ -528,7 +531,9 @@ section#portfolio {
 
   }
 }
-@media only screen and (min-width: 520px) {}
+@media only screen and (min-width: 520px) {
+ 
+}
 @media only screen and (min-width: 768px) {
   section#menu {
     width: 100%;
@@ -595,12 +600,19 @@ section#portfolio {
       }
 
       .skillBlock {
+        p {
+            font-size: 30px;
+          }
         .starBlock {
           grid-template: repeat(4, 1fr)/repeat(3, 1fr);
 
-          i {
+          i{
+            font-size: 25px;
+          }
+          p {
             font-size: 15px;
           }
+          
         }
 
       }
@@ -698,13 +710,16 @@ section#portfolio {
           height: 400px;
         }
       }
+      .skillBlock {
+         .starBlock {
 
-      .starBlock {
-
-        i {
-          font-size: 16px;
+        i, p {
+          font-size: 26px;
         }
+        
       }
+      }
+     
 
     }
   }
