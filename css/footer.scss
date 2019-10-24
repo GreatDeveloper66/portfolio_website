@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:900|Lato:700|Playfair+Display|Domine|Montserrat');
-@import 'library.scss';
 
 footer {
   @include display(grid, auto/auto 1fr, center, center);
