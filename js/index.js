@@ -12,17 +12,6 @@ import toggleDropDown from '/js/toggleDropDown.js';
 import smoothScroll from '/js/scroll.js';
 
 window.onload = () => {
-  /*
-	function scrollLoop() {
-		let scrollRate = 0.4;
-		let element = document.querySelector("div.headerbackground");
-  let element2 = document.querySelector("div.contactBackground");
-		const setTranslate = (xPos, yPos, el) => el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
-		setTranslate(0, window.scrollY * scrollRate, element);
-  setTranslate(0, window.scrollY * scrollRate, element2);
-		requestAnimationFrame(scrollLoop);
-	}
- */
 
 	document.getElementById("accordian").addEventListener("click", function (e) {
 		toggleDropDown(this, document.querySelector("nav"), "slidedown", "slideup");
@@ -35,11 +24,7 @@ window.onload = () => {
    }
 		});
 	});
-/*
-	window.addEventListener('scroll', function (e) {
-		scrollLoop();
-	});
-*/
+
 	window.onresize = () => {
 		if (window.innerWidth > 768) {
 			let navbar = document.querySelector("nav");
