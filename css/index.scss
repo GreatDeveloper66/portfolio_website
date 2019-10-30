@@ -285,7 +285,7 @@ section#about {
       p {
         color: var(--coolblack);
         font-weight: bold;
-        font-size: 20px;
+        font-size: 17px;
       }
       i {
         font-size: 30px;
@@ -349,8 +349,8 @@ section#contact {
     padding: 5px;
     .emailbox, .phonebox, .resumebox {
       @include display(grid, 1fr 1fr/1fr, center, center);
-      
-      
+
+
     }
     h3 {
       font-size: 30px;
@@ -478,7 +478,7 @@ section#portfolio {
 
         h3 {
           color: var(--gitlabcolor);
-          
+
         }
 
         a {
@@ -496,7 +496,7 @@ section#portfolio {
           text-align: center;
           font-size: 20px;
           margin: auto;
-        
+
 
         }
       }
@@ -512,7 +512,7 @@ section#portfolio {
           font-size: 10px;
           color: var(--skillsColor);
           font-weight: bold;
-          
+
         }
 
         a {
@@ -525,12 +525,12 @@ section#portfolio {
 
       }
     }
-    
+
 
   }
 }
 @media only screen and (min-width: 520px) {
- 
+
 }
 @media only screen and (min-width: 768px) {
   section#menu {
@@ -610,7 +610,7 @@ section#portfolio {
           p {
             font-size: 15px;
           }
-          
+
         }
 
       }
@@ -620,7 +620,7 @@ section#portfolio {
   }
 
   section#contact {
-    
+
     .contactcontainer {
       grid-template: 1fr/1fr 1fr 1fr;
       width: 75%;
@@ -714,10 +714,10 @@ section#portfolio {
         i, p {
           font-size: 26px;
         }
-        
+
       }
       }
-     
+
 
     }
   }
