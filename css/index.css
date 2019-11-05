@@ -421,9 +421,7 @@ section#portfolio {
   width: 100%;
   padding: 2px;
   margin: 2px;
-  background: url("../images/desk.jpg") center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: transparent;
 }
 section#portfolio .portfolio {
   display: grid;

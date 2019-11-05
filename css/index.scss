@@ -398,7 +398,7 @@ section#socialMedia {
 section#portfolio {
   @include display(grid, 75px auto/1fr, default, default);
   @include positioning(relative, auto, 100%, 2px, 2px);
-  @include backgroundPic('../images/desk.jpg');
+  background: transparent;
   .portfolio {
     @include display(grid, repeat(9, 1fr)/1fr, default, default);
     grid-gap: 40px;
