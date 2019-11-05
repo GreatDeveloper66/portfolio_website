@@ -217,12 +217,12 @@ section#menu h2 {
 }
 
 section#about {
-  background: url("../images/ocean3.jpg") center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   width: 100%;
   grid-template: 75px 1fr/1fr;
   margin-top: -310px;
+  background: url("../images/ocean3.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 section#about .aboutBlock {
   display: grid;
@@ -368,9 +368,12 @@ section#socialMedia {
   width: 100%;
   display: grid;
   grid-template: 75px auto/1fr;
-  background: url("../images/socialmedia.jpg") center no-repeat;
+  background: transparent;
+  /*
+  background: url('../images/socialmedia.jpg') center no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  */
 }
 section#socialMedia .socialNav {
   margin-bottom: 20px;

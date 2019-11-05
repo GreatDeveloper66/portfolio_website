@@ -14,6 +14,7 @@ import scrollJQuery from '/js/scrollJQuery.js';
 
 window.onload = () => {
   $('.header-window').parallax({imageSrc: '/images/Website_Background_2.jpg',speed: 0.4});
+	$('section#socialMedia').parallax({imageSrc: '/images/socialmedia.jpg', speed: 0.3});
 
 	scrollJQuery();
 	document.getElementById("accordian").addEventListener("click", function (e) {

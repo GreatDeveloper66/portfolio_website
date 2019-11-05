@@ -154,7 +154,6 @@ header {
     @include display(grid, 1fr/1fr, center, center);
     height: 100%;
     text-align: center;
-
     .titleblock {
 
       h1,
@@ -241,10 +240,10 @@ section#menu {
   }
 }
 section#about {
-  @include backgroundPic('../images/ocean3.jpg');
   width: 100%;
   grid-template: 75px 1fr/1fr;
   margin-top: -310px;
+  @include backgroundPic('../images/ocean3.jpg');
   .aboutBlock {
     display: grid;
     grid-template: auto/auto;
@@ -366,9 +365,12 @@ section#socialMedia {
   width: 100%;
   display: grid;
   grid-template: 75px auto/1fr;
+  background: transparent;
+  /*
   background: url('../images/socialmedia.jpg') center no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  */
   .socialNav {
     margin-bottom: 20px;
     margin-top: 20px;
