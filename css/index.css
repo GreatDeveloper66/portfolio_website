@@ -220,9 +220,7 @@ section#about {
   width: 100%;
   grid-template: 75px 1fr/1fr;
   margin-top: -310px;
-  background: url("../images/ocean3.jpg") center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: transparent;
 }
 section#about .aboutBlock {
   display: grid;
@@ -333,9 +331,7 @@ footer .content img {
 
 section#contact {
   width: 100%;
-  background: url("../images/ocean.jpg") center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background: transparent;
 }
 section#contact .contactcontainer {
   display: grid;
