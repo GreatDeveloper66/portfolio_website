@@ -103,14 +103,12 @@
   }
 }
 html {
-  scroll-behavior: smooth;
 }
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   @include display(grid, auto auto auto/1fr, center, center);
   @include positioning(relative, auto, 100%, 2px, auto);
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 main {
   width: 100%;
@@ -243,7 +241,7 @@ section#about {
   width: 100%;
   grid-template: 75px 1fr/1fr;
   margin-top: -310px;
-  background: transparent;
+  @include backgroundPic('/images/ocean3.jpg');
   .aboutBlock {
     display: grid;
     grid-template: auto/auto;
@@ -337,7 +335,7 @@ footer {
 }
 section#contact {
   width: 100%;
-  background: transparent;
+  @include backgroundPic('/images/ocean.jpg');
   .contactcontainer {
     @include display(grid, repeat(3,1fr)/1fr,center,center);
     width: 90%;
@@ -398,7 +396,7 @@ section#socialMedia {
 section#portfolio {
   @include display(grid, 75px auto/1fr, default, default);
   @include positioning(relative, auto, 100%, 2px, 2px);
-  background: transparent;
+  @include backgroundPic('/images/desk.jpg');
   .portfolio {
     @include display(grid, repeat(9, 1fr)/1fr, default, default);
     grid-gap: 40px;
@@ -620,7 +618,7 @@ section#portfolio {
   }
 
   section#contact {
-
+    @include backgroundPic('/images/ocean.jpg');
     .contactcontainer {
       grid-template: 1fr/1fr 1fr 1fr;
       width: 75%;

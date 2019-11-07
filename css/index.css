@@ -43,10 +43,6 @@
   margin: 2px;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   display: grid;
@@ -59,7 +55,6 @@ body {
   padding: 2px;
   margin: auto;
   overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 main {
@@ -220,7 +215,9 @@ section#about {
   width: 100%;
   grid-template: 75px 1fr/1fr;
   margin-top: -310px;
-  background: transparent;
+  background: url("/images/ocean3.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 section#about .aboutBlock {
   display: grid;
@@ -331,7 +328,9 @@ footer .content img {
 
 section#contact {
   width: 100%;
-  background: transparent;
+  background: url("/images/ocean.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 section#contact .contactcontainer {
   display: grid;
@@ -417,7 +416,9 @@ section#portfolio {
   width: 100%;
   padding: 2px;
   margin: 2px;
-  background: transparent;
+  background: url("/images/desk.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 section#portfolio .portfolio {
   display: grid;
@@ -609,6 +610,11 @@ section#portfolio .portfolio .underConstruction .appfooter i {
     font-size: 15px;
   }
 
+  section#contact {
+    background: url("/images/ocean.jpg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   section#contact .contactcontainer {
     grid-template: 1fr/1fr 1fr 1fr;
     width: 75%;

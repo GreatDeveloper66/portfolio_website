@@ -13,13 +13,28 @@ import smoothScroll from '/js/scroll.js';
 import scrollJQuery from '/js/scrollJQuery.js';
 
 window.onload = () => {
-  $('.header-window').parallax({imageSrc: '/images/Website_Background_2.jpg',speed: 0.4});
-	$('section#socialMedia').parallax({imageSrc: '/images/socialmedia.jpg', speed: 0.4});
+	$('a[href*="#"]').on('click', function(e) {
+  e.preventDefault()
+
+  $('html, body').animate(
+    {
+      scrollTop: $($(this).attr('href')).offset().top,
+    },
+    2000,
+    'linear'
+  )
+})
+  $('.header-window').parallax({imageSrc: '/images/Website_Background_2.jpg',speed: 0.5});
+	$('section#socialMedia').parallax({imageSrc: '/images/socialmedia.jpg', speed: 0.5});
+	/*
 	$('section#portfolio').parallax({imageSrc: '/images/desk.jpg', speed:0.4});
 	$('section#about').parallax({imageSrc: '/images/ocean3.jpg', speed:0.4});
 	$('section#contact').parallax({imageSrc: '/images/ocean.jpg', speed:0.4});
+	*/
 
-	scrollJQuery();
+/*
+		scrollJQuery();
+	*/
 	document.getElementById("accordian").addEventListener("click", function (e) {
 		toggleDropDown(this, document.querySelector("nav"), "slidedown", "slideup");
 	});
