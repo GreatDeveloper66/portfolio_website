@@ -26,6 +26,8 @@
   --bannerShade: rgba(128, 128, 128, 0.7);
   --skillsColor: #000080;
   --appblockColor: #CE2029;
+  --defaultFont: "Open Sans", Helvetica, Arial, sans-serif;
+  --buttonFont: 'Roboto', Helvetica, Arial, sans-serif;
 }
 @mixin display($display, $gridtemplate, $alignitems, $justifyitems) {
   display: $display;
@@ -105,7 +107,7 @@
 html {
 }
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--defaultFont);
   @include display(grid, auto auto auto/1fr, center, center);
   @include positioning(relative, auto, 100%, 2px, auto);
   overflow-x: hidden;
@@ -121,7 +123,7 @@ section {
   background-color: var(--wht);
 }
 .button {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: var(--buttonFont);
   transition: all 0.3s ease;
 }
 .button:hover,
@@ -145,6 +147,11 @@ h3 {
   font-size: 40px;
   text-align: center;
 }
+
+p, i {
+  font-family: 'Lato', sans-serif;
+}
+
 header {
   @include display(grid, 1fr/1fr, center, center);
   @include positioning(relative, 550px, 100%, 2px, auto);
@@ -446,7 +453,7 @@ section#portfolio {
 
         p {
           text-transform: uppercase;
-          font-size: 10px;
+          font-size: 13px;
           color: var(--appblockColor);
           font-weight: bold;
         }
@@ -507,7 +514,7 @@ section#portfolio {
 
         p {
           text-transform: uppercase;
-          font-size: 10px;
+          font-size: 13px;
           color: var(--skillsColor);
           font-weight: bold;
 

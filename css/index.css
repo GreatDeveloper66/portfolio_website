@@ -26,6 +26,8 @@
   --bannerShade: rgba(128, 128, 128, 0.7);
   --skillsColor: #000080;
   --appblockColor: #CE2029;
+  --defaultFont: "Open Sans", Helvetica, Arial, sans-serif;
+  --buttonFont: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
 .genericDisplay {
@@ -44,7 +46,7 @@
 }
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: var(--defaultFont);
   display: grid;
   grid-template: auto auto auto/1fr;
   align-items: center;
@@ -77,7 +79,7 @@ section {
 }
 
 .button {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: var(--buttonFont);
   transition: all 0.3s ease;
 }
 
@@ -103,6 +105,10 @@ h2 {
 h3 {
   font-size: 40px;
   text-align: center;
+}
+
+p, i {
+  font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -476,7 +482,7 @@ section#portfolio .portfolio .appBlock .appfooter {
 }
 section#portfolio .portfolio .appBlock .appfooter p {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 13px;
   color: var(--appblockColor);
   font-weight: bold;
 }
@@ -533,7 +539,7 @@ section#portfolio .portfolio .underConstruction .appfooter {
 }
 section#portfolio .portfolio .underConstruction .appfooter p {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 13px;
   color: var(--skillsColor);
   font-weight: bold;
 }
