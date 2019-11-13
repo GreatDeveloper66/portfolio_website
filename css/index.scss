@@ -159,6 +159,9 @@ header {
     @include display(grid, 1fr/1fr, center, center);
     height: 100%;
     text-align: center;
+    .portraitBlock {
+      background: url('/images/Avatar.png');
+    }
     .titleblock {
 
       h1,
