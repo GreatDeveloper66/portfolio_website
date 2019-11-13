@@ -120,8 +120,8 @@ main {
 }
 section {
   @include display(grid, 1fr/1fr, center, center);
-  @include positioning(relative, auto, auto, 2px, auto);
-  background-color: var(--wht);
+  @include positioning(relative, auto, auto, 0, auto);
+  background-color: transparent;
 }
 .button {
   font-family: var(--buttonFont);

@@ -76,7 +76,7 @@ section {
   width: auto;
   padding: 2px;
   margin: auto;
-  background-color: var(--wht);
+  background-color: transparent;
 }
 
 .button {
