@@ -273,7 +273,6 @@ section#about .aboutBlock .skillBlock .starBlock .skillColumn {
   grid-template: 30px 30px 1fr/1fr;
   align-items: center;
   justify-items: center;
-  border: 3px solid green;
   width: 100%;
   height: 400px;
 }
@@ -288,10 +287,12 @@ section#about .aboutBlock .skillBlock .starBlock .skillColumn h2 {
   background-color: transparent;
   font-size: 25px;
   margin: auto;
-  border-bottom: 2px solid var(--shadowColor);
 }
 section#about .aboutBlock .skillBlock .starBlock .skillColumn .listbox {
   align-self: start;
+}
+section#about .aboutBlock .skillBlock .starBlock .skillColumn .listbox p {
+  font-size: 16px;
 }
 section#about .aboutBlock .skillBlock h3 {
   margin-top: 5px;
