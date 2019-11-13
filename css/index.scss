@@ -175,6 +175,9 @@ header {
     @include display(grid, 1fr/1fr, center, center);
     @include positioning(relative, 250px, 200px, 3px, auto);
     border: 3px solid blue;
+    img {
+      border: 3px solid red;
+    }
 }
 }
 section#menu {
