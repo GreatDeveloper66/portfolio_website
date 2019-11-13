@@ -110,7 +110,7 @@ html {
 body {
   font-family: var(--defaultFont);
   @include display(grid, auto auto auto/1fr, center, center);
-  @include positioning(relative, auto, 100%, 2px, auto);
+  @include positioning(relative, auto, auto, 0, auto);
   overflow-x: hidden;
 }
 main {
@@ -120,7 +120,7 @@ main {
 }
 section {
   @include display(grid, 1fr/1fr, center, center);
-  @include positioning(relative, auto, auto, 0, auto);
+  @include positioning(relative, auto, 100%, 0, auto);
   background-color: transparent;
 }
 .button {
@@ -427,7 +427,7 @@ section#socialMedia {
 }
 section#portfolio {
   @include display(grid, 75px auto/1fr, default, default);
-  @include positioning(relative, auto, 100%, 2px, 2px);
+  @include positioning(relative, auto, 100%, 0, 0);
   @include backgroundPic('/images/desk.jpg');
   .portfolio {
     @include display(grid, repeat(9, 1fr)/1fr, default, default);

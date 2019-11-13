@@ -54,8 +54,8 @@ body {
   justify-items: center;
   position: relative;
   height: auto;
-  width: 100%;
-  padding: 2px;
+  width: auto;
+  padding: 0;
   margin: auto;
   overflow-x: hidden;
 }
@@ -73,8 +73,8 @@ section {
   justify-items: center;
   position: relative;
   height: auto;
-  width: auto;
-  padding: 2px;
+  width: 100%;
+  padding: 0;
   margin: auto;
   background-color: transparent;
 }
@@ -457,8 +457,8 @@ section#portfolio {
   position: relative;
   height: auto;
   width: 100%;
-  padding: 2px;
-  margin: 2px;
+  padding: 0;
+  margin: 0;
   background: url("/images/desk.jpg") center no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -609,8 +609,6 @@ section#portfolio .portfolio .underConstruction .appfooter i {
     width: 95%;
     max-width: 1000px;
     overflow-y: visible;
-    margin-top: 10px;
-    margin-bottom: 10px;
   }
   section#menu nav a .button {
     text-align: center;
