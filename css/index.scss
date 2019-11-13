@@ -584,8 +584,7 @@ section#portfolio {
       width: 95%;
       max-width: 1000px;
       overflow-y: visible;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      padding: 5px 0 5px 0;
 
       a {
         .button {
@@ -716,6 +715,7 @@ section#portfolio {
   }
 
   section#about {
+    padding: 5px 0 5px 0;
     .aboutBlock {
       .portraitBlock {
         img {

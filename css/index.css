@@ -609,6 +609,7 @@ section#portfolio .portfolio .underConstruction .appfooter i {
     width: 95%;
     max-width: 1000px;
     overflow-y: visible;
+    padding: 5px 0 5px 0;
   }
   section#menu nav a .button {
     text-align: center;
@@ -706,6 +707,9 @@ section#portfolio .portfolio .underConstruction .appfooter i {
     grid-template: repeat(4, 1fr)/repeat(3, 1fr);
   }
 
+  section#about {
+    padding: 5px 0 5px 0;
+  }
   section#about .aboutBlock .portraitBlock img {
     width: 400px;
     height: 400px;
