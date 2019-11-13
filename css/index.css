@@ -270,7 +270,7 @@ section#about .aboutBlock .skillBlock .starBlock {
 }
 section#about .aboutBlock .skillBlock .starBlock .skillColumn {
   display: grid;
-  grid-template: 60px 60px 1fr/1fr;
+  grid-template: 70px 60px 1fr/1fr;
   align-items: center;
   justify-items: center;
   width: 100%;
@@ -593,11 +593,13 @@ section#portfolio .portfolio .underConstruction .appfooter i {
 }
 
 @media only screen and (min-width: 520px) {
+
+}
+@media only screen and (min-width: 768px) {
   header .portraitBlock {
     display: grid;
   }
-}
-@media only screen and (min-width: 768px) {
+
   section#menu {
     width: 100%;
     height: auto;
