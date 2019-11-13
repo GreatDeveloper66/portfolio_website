@@ -274,7 +274,7 @@ section#about .aboutBlock .skillBlock .starBlock .skillColumn {
   align-items: center;
   justify-items: center;
   width: 100%;
-  height: 600px;
+  height: auto;
 }
 section#about .aboutBlock .skillBlock .starBlock .skillColumn i {
   color: var(--skillHeadingColor);
