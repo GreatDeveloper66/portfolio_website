@@ -151,6 +151,9 @@ header .portraitBlock {
   margin: auto;
   border: 3px solid blue;
 }
+header .portraitBlock img {
+  border: 3px solid red;
+}
 
 section#menu {
   position: sticky;
