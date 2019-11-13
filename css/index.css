@@ -26,24 +26,16 @@
   --bannerShade: rgba(128, 128, 128, 0.7);
   --skillsColor: #000080;
   --appblockColor: #CE2029;
-  --skillHeadingColor: #BA4A00;
+  --skillHeadingColor: #7510F7;
   --defaultFont: "Open Sans", Helvetica, Arial, sans-serif;
   --buttonFont: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
-.genericDisplay {
+.genericDisplay, header .banner, header .portraitBlock, section#menu nav .bars, section#about .aboutBlock .skillBlock .starBlock .skillColumn h2, section#portfolio .portfolio .appBlock .thumbnail, section#portfolio .portfolio .appBlock .appcaption, section#portfolio .portfolio .underConstruction .thumbnail, section#portfolio .portfolio .underConstruction .appcaption {
   display: grid;
   grid-template: 1;
   align-items: center;
   justify-items: center;
-}
-
-.genericPositioning {
-  position: relative;
-  height: auto;
-  width: auto;
-  padding: 2px;
-  margin: 2px;
 }
 
 body {
@@ -124,10 +116,6 @@ header {
   margin: auto;
 }
 header .banner {
-  display: grid;
-  grid-template: 1;
-  align-items: center;
-  justify-items: center;
   height: 100%;
   text-align: center;
 }
@@ -144,10 +132,6 @@ header .banner .titleblock p {
   font-size: 25px;
 }
 header .portraitBlock {
-  display: grid;
-  grid-template: 1;
-  align-items: center;
-  justify-items: center;
   position: relative;
   height: 250px;
   width: 200px;
@@ -209,10 +193,6 @@ section#menu nav a .button {
   box-shadow: 1px var(--shadowColor);
 }
 section#menu nav .bars {
-  display: grid;
-  grid-template: 1;
-  align-items: center;
-  justify-items: center;
   justify-self: end;
   grid-gap: 5px;
   background-color: var(--barcolor);
@@ -282,10 +262,6 @@ section#about .aboutBlock .skillBlock .starBlock .skillColumn i {
   text-align: center;
 }
 section#about .aboutBlock .skillBlock .starBlock .skillColumn h2 {
-  display: grid;
-  grid-template: 1;
-  align-items: center;
-  justify-items: center;
   line-height: 60px;
   background-color: transparent;
   font-size: 35px;
@@ -486,10 +462,6 @@ section#portfolio .portfolio .appBlock {
   box-shadow: 3px 6px var(--shadowColor);
 }
 section#portfolio .portfolio .appBlock .thumbnail {
-  display: grid;
-  grid-template: 1;
-  align-items: center;
-  justify-items: center;
   width: 100%;
   height: 55%;
 }
@@ -500,10 +472,6 @@ section#portfolio .portfolio .appBlock .thumbnail a {
   text-decoration: none;
 }
 section#portfolio .portfolio .appBlock .appcaption {
-  display: grid;
-  grid-template: 1;
-  align-items: center;
-  justify-items: center;
   width: 100%;
   height: 30%;
   border-top: solid 1px lightgray;
@@ -543,10 +511,6 @@ section#portfolio .portfolio .underConstruction {
   box-shadow: 3px 6px var(--shadowColor);
 }
 section#portfolio .portfolio .underConstruction .thumbnail {
-  display: grid;
-  grid-template: 1;
-  align-items: center;
-  justify-items: center;
   width: 100%;
   height: 55%;
 }
@@ -557,10 +521,6 @@ section#portfolio .portfolio .underConstruction .thumbnail a {
   text-decoration: none;
 }
 section#portfolio .portfolio .underConstruction .appcaption {
-  display: grid;
-  grid-template: 1;
-  align-items: center;
-  justify-items: center;
   width: 100%;
   height: 30%;
   border-top: solid 1px lightgray;
@@ -593,13 +553,11 @@ section#portfolio .portfolio .underConstruction .appfooter i {
 }
 
 @media only screen and (min-width: 520px) {
-
-}
-@media only screen and (min-width: 768px) {
   header .portraitBlock {
     display: grid;
   }
-
+}
+@media only screen and (min-width: 768px) {
   section#menu {
     width: 100%;
     height: auto;
