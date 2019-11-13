@@ -139,6 +139,18 @@ header .banner .titleblock p {
 header .banner .titleblock p {
   font-size: 30px;
 }
+header .portraitBlock {
+  display: grid;
+  grid-template: 1;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+  height: 250px;
+  width: 200px;
+  padding: 3px;
+  margin: auto;
+  border: 3px solid blue;
+}
 
 section#menu {
   position: sticky;
@@ -370,11 +382,6 @@ section#socialMedia {
   display: grid;
   grid-template: 75px auto/1fr;
   background: transparent;
-  /*
-  background: url('../images/socialmedia.jpg') center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  */
 }
 section#socialMedia .socialNav {
   margin-bottom: 20px;
@@ -494,7 +501,7 @@ section#portfolio .portfolio .appBlock .appfooter i {
 }
 section#portfolio .portfolio .underConstruction {
   height: 250px;
-  background-image: url("../images/under_construction.png");
+  background-image: url("../images/under_construction.jpg");
   background-size: contain;
   background-position: center;
   border: solid 1px black;

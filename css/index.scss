@@ -159,11 +159,7 @@ header {
     @include display(grid, 1fr/1fr, center, center);
     height: 100%;
     text-align: center;
-    .portraitBlock {
-      background: url('/images/Avatar.png');
-    }
     .titleblock {
-
       h1,
       p {
         color: var(--coolblack);
@@ -175,6 +171,11 @@ header {
       }
     }
   }
+  .portraitBlock {
+    @include display(grid, 1fr/1fr, center, center);
+    @include positioning(relative, 250px, 200px, 3px, auto);
+    border: 3px solid blue;
+}
 }
 section#menu {
   @include positioning(sticky, 300px, 200px, 2x, default);
@@ -374,11 +375,7 @@ section#socialMedia {
   display: grid;
   grid-template: 75px auto/1fr;
   background: transparent;
-  /*
-  background: url('../images/socialmedia.jpg') center no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  */
+
   .socialNav {
     margin-bottom: 20px;
     margin-top: 20px;
