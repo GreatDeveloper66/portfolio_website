@@ -278,6 +278,7 @@ section#about .aboutBlock .skillBlock .starBlock .skillColumn {
 }
 section#about .aboutBlock .skillBlock .starBlock .skillColumn i {
   color: var(--skillHeadingColor);
+  font-size: 30px;
 }
 section#about .aboutBlock .skillBlock .starBlock .skillColumn h2 {
   display: grid;
@@ -285,14 +286,14 @@ section#about .aboutBlock .skillBlock .starBlock .skillColumn h2 {
   align-items: center;
   justify-items: center;
   background-color: transparent;
-  font-size: 25px;
+  font-size: 35px;
   margin: auto;
 }
 section#about .aboutBlock .skillBlock .starBlock .skillColumn .listbox {
   align-self: start;
 }
 section#about .aboutBlock .skillBlock .starBlock .skillColumn .listbox p {
-  font-size: 16px;
+  font-size: 25px;
 }
 section#about .aboutBlock .skillBlock h3 {
   margin-top: 5px;
