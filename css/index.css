@@ -133,7 +133,7 @@ header .banner {
 header .banner .titleblock h1,
 header .banner .titleblock p {
   color: var(--coolblack);
-  text-shadow: 5px 5px 5px var(--bannerShade);
+  text-shadow: 2px 2px 2px var(--bannerShade);
   background-color: transparent;
 }
 header .banner .titleblock h1 {
@@ -178,8 +178,8 @@ section#menu .slidedown {
   transition: all 0.6s ease-in-out;
 }
 section#menu .slidedown {
-  max-height: 320px;
-  height: 320px;
+  max-height: 290px;
+  height: 290px;
 }
 section#menu nav {
   display: grid;
@@ -579,6 +579,8 @@ section#portfolio .portfolio .underConstruction .appfooter i {
     align-items: center;
     justify-items: space-around;
     height: auto;
+    width: 95%;
+    max-width: 1000px;
     overflow-y: visible;
     margin-top: 10px;
     margin-bottom: 10px;
