@@ -113,7 +113,7 @@ p, i {
 
 header {
   display: grid;
-  grid-template: 1;
+  grid-template: 1fr 2fr/1fr;
   align-items: center;
   justify-items: center;
   position: relative;
@@ -136,8 +136,11 @@ header .banner .titleblock p {
   text-shadow: 5px 5px 5px var(--bannerShade);
   background-color: transparent;
 }
+header .banner .titleblock h1 {
+  font-size: 40px;
+}
 header .banner .titleblock p {
-  font-size: 30px;
+  font-size: 25px;
 }
 header .portraitBlock {
   display: grid;
@@ -149,10 +152,7 @@ header .portraitBlock {
   width: 200px;
   padding: 3px;
   margin: auto;
-  border: 3px solid blue;
-}
-header .portraitBlock img {
-  border: 3px solid red;
+  display: none;
 }
 
 section#menu {
@@ -560,6 +560,11 @@ section#portfolio .portfolio .underConstruction .appfooter i {
   font-size: 20px;
 }
 
+@media only screen and (min-width: 520px) {
+  header .portraitBlock {
+    display: grid;
+  }
+}
 @media only screen and (min-width: 768px) {
   section#menu {
     width: 100%;
