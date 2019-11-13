@@ -26,6 +26,7 @@
   --bannerShade: rgba(128, 128, 128, 0.7);
   --skillsColor: #000080;
   --appblockColor: #CE2029;
+  --skillHeadingColor: #BA4A00;
   --defaultFont: "Open Sans", Helvetica, Arial, sans-serif;
   --buttonFont: 'Roboto', Helvetica, Arial, sans-serif;
 }
@@ -283,10 +284,24 @@ section#about {
         padding: 5px;
         grid-template: repeat(3,1fr)/1fr;
         .skillColumn {
-          @include display(grid, 25px 1fr/1fr,center,center);
+          @include display(grid, 30px 30px 1fr/1fr,center,center);
           border: 3px solid green;
           width: 100%;
           height: 400px;
+          i {
+            color: var(--skillHeadingColor);
+          }
+          h2 {
+            @include display(grid, 1fr/1fr,center,center);
+            background-color: transparent;
+            font-size: 25px;
+            margin: auto;
+            border-bottom: 2px solid var(--shadowColor);
+          }
+          .listbox {
+            align-self: start;
+          }
+
         }
       }
 
