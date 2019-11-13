@@ -36,3 +36,15 @@ For more information about deploying to Heroku, see these Dev Center articles:
 - [Dev Center](https://devcenter.heroku.com)
 - [Articles on deploying static websites with PHP](https://devcenter.heroku.com/categories/php-support)
 - [How to Deploy Your Static Website on Heroku](https://medium.com/@adityaniloi/how-to-deploy-a-static-website-to-heroku-49d55e07cb94)
+
+###License
+
+This project is licensed under the MIT License-see the LICENSE.md file for more details.
+
+###Versioning
+
+We use SemVer for versioning. For the versions available, see the tags on this repository.
+
+###Author
+
+Code written and tested by Adam Shaffer(https://github.com/GreatDeveloper66)
