@@ -24,5 +24,7 @@
   },
   "homepage": "https://github.com/GreatDeveloper66/Portfolio_Website#readme",
   "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
