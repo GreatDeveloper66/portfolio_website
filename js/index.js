@@ -10,8 +10,7 @@ window.onload = () => {
     'linear'
   )
 })
-  // $('.header-window').parallax({imageSrc: '/images/Website_Background_2.jpg',speed: 0.5});
-	// $('section#socialMedia').parallax({imageSrc: '/images/socialmedia.jpg', speed: 0.5});
+  $('.header-window').parallax({imageSrc: '/images/Website_Background_2.jpg',speed: 0.5});
 
 	document.getElementById("accordian").addEventListener("click", function (e) {
 		toggleDropDown(this, document.querySelector("nav"), "slidedown", "slideup");
