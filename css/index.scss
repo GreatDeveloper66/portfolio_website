@@ -394,6 +394,7 @@ section#socialMedia {
   display: grid;
   grid-template: 75px auto/1fr;
   background: transparent;
+  @include backgroundPic('/images/socialmedia.jpg');
 
   .socialNav {
     margin-bottom: 20px;

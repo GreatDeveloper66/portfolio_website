@@ -393,6 +393,9 @@ section#socialMedia {
   display: grid;
   grid-template: 75px auto/1fr;
   background: transparent;
+  background: url("/images/socialmedia.jpg") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 section#socialMedia .socialNav {
   margin-bottom: 20px;
