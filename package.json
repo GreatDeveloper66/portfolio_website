@@ -25,6 +25,7 @@
   "homepage": "https://github.com/GreatDeveloper66/Portfolio_Website#readme",
   "devDependencies": {},
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "sass": "^1.26.5"
   }
 }

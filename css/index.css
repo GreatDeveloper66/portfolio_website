@@ -28,15 +28,13 @@
   --appblockColor: #CE2029;
   --skillHeadingColor: #7510F7;
   --defaultFont: "Open Sans", Helvetica, Arial, sans-serif;
-  --buttonFont: 'Roboto', Helvetica, Arial, sans-serif;
-}
+  --buttonFont: 'Roboto', Helvetica, Arial, sans-serif; }
 
 .genericDisplay, header .banner, header .portraitBlock, section#menu nav .bars, section#about .aboutBlock .skillBlock .starBlock .skillColumn h2, section#portfolio .portfolio .appBlock .thumbnail, section#portfolio .portfolio .appBlock .appcaption, section#portfolio .portfolio .underConstruction .thumbnail, section#portfolio .portfolio .underConstruction .appcaption {
   display: grid;
   grid-template: 1;
   align-items: center;
-  justify-items: center;
-}
+  justify-items: center; }
 
 body {
   font-family: var(--defaultFont);
@@ -49,14 +47,12 @@ body {
   width: auto;
   padding: 0;
   margin: auto;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 main {
   width: 100%;
   display: grid;
-  grid-template: repeat(4, auto)/1fr;
-}
+  grid-template: repeat(4, auto)/1fr; }
 
 section {
   display: grid;
@@ -68,22 +64,18 @@ section {
   width: 100%;
   padding: 0;
   margin: auto;
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 .button {
   font-family: var(--buttonFont);
-  transition: all 0.3s ease;
-}
+  transition: all 0.3s ease; }
 
 .button:hover,
 .active {
-  filter: brightness(150%);
-}
+  filter: brightness(150%); }
 
 h1 {
-  font-size: 50px;
-}
+  font-size: 50px; }
 
 h2 {
   font-size: 40px;
@@ -92,17 +84,14 @@ h2 {
   background-color: var(--bannercolor);
   margin-top: 0;
   padding-top: 10px;
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 h3 {
   font-size: 40px;
-  text-align: center;
-}
+  text-align: center; }
 
 p, i {
-  font-family: 'Lato', sans-serif;
-}
+  font-family: 'Lato', sans-serif; }
 
 header {
   display: grid;
@@ -113,32 +102,26 @@ header {
   height: 550px;
   width: 100%;
   padding: 2px;
-  margin: auto;
-}
-header .banner {
-  height: 100%;
-  text-align: center;
-}
-header .banner .titleblock h1,
-header .banner .titleblock p {
-  color: var(--coolblack);
-  text-shadow: 2px 2px 2px var(--bannerShade);
-  background-color: transparent;
-}
-header .banner .titleblock h1 {
-  font-size: 40px;
-}
-header .banner .titleblock p {
-  font-size: 25px;
-}
-header .portraitBlock {
-  position: relative;
-  height: 250px;
-  width: 200px;
-  padding: 3px;
-  margin: auto;
-  display: none;
-}
+  margin: auto; }
+  header .banner {
+    height: 100%;
+    text-align: center; }
+    header .banner .titleblock h1,
+    header .banner .titleblock p {
+      color: var(--coolblack);
+      text-shadow: 2px 2px 2px var(--bannerShade);
+      background-color: transparent; }
+    header .banner .titleblock h1 {
+      font-size: 40px; }
+    header .banner .titleblock p {
+      font-size: 25px; }
+  header .portraitBlock {
+    position: relative;
+    height: 250px;
+    width: 200px;
+    padding: 3px;
+    margin: auto;
+    display: none; }
 
 section#menu {
   position: sticky;
@@ -151,67 +134,57 @@ section#menu {
   top: 0px;
   background-color: transparent;
   z-index: 3;
-  margin-right: 0px;
-}
-section#menu .slideup,
-section#menu .slidedown {
-  max-height: 34px;
-  height: 34px;
-  overflow-y: hidden;
-  -webkit-transition: all 0.6s ease-in-out;
-  -moz-transition: all 0.6s ease-in-out;
-  transition: all 0.6s ease-in-out;
-}
-section#menu .slidedown {
-  max-height: 290px;
-  height: 290px;
-}
-section#menu nav {
-  display: grid;
-  grid-template: repeat(7, 1fr)/1fr;
-  align-items: default;
-  justify-items: default;
-  height: 34px;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  background-color: transparent;
-}
-section#menu nav a {
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  color: var(--solidblack);
-}
-section#menu nav a .button {
-  background-color: var(--navbuttoncolor);
-  border: var(--textcolor);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  font-size: 25px;
-  width: 100%;
-  min-height: 35px;
-  text-align: center;
-  box-shadow: 1px var(--shadowColor);
-}
-section#menu nav .bars {
-  justify-self: end;
-  grid-gap: 5px;
-  background-color: var(--barcolor);
-  border-radius: 4px;
-  height: 34px;
-  width: 43px;
-}
-section#menu nav .bars:hover {
-  cursor: pointer;
-}
-section#menu nav .bars .bar {
-  background-color: var(--textcolor);
-  height: 4px;
-  margin: 2px;
-  width: 60%;
-}
-section#menu h2 {
-  display: none;
-}
+  margin-right: 0px; }
+  section#menu .slideup,
+  section#menu .slidedown {
+    max-height: 34px;
+    height: 34px;
+    overflow-y: hidden;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out; }
+  section#menu .slidedown {
+    max-height: 290px;
+    height: 290px; }
+  section#menu nav {
+    display: grid;
+    grid-template: repeat(7, 1fr)/1fr;
+    align-items: default;
+    justify-items: default;
+    height: 34px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: transparent; }
+    section#menu nav a {
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      color: var(--solidblack); }
+      section#menu nav a .button {
+        background-color: var(--navbuttoncolor);
+        border: var(--textcolor);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        font-size: 25px;
+        width: 100%;
+        min-height: 35px;
+        text-align: center;
+        box-shadow: 1px var(--shadowColor); }
+    section#menu nav .bars {
+      justify-self: end;
+      grid-gap: 5px;
+      background-color: var(--barcolor);
+      border-radius: 4px;
+      height: 34px;
+      width: 43px; }
+      section#menu nav .bars:hover {
+        cursor: pointer; }
+      section#menu nav .bars .bar {
+        background-color: var(--textcolor);
+        height: 4px;
+        margin: 2px;
+        width: 60%; }
+  section#menu h2 {
+    display: none; }
 
 section#about {
   width: 100%;
@@ -219,76 +192,62 @@ section#about {
   margin-top: -310px;
   background: url("/images/ocean3.jpg") center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
-section#about .aboutBlock {
-  display: grid;
-  grid-template: auto/auto;
-  width: 90%;
-  max-width: 1100px;
-  margin-bottom: 50px;
-}
-section#about .aboutBlock .portraitBlock {
-  display: none;
-}
-section#about .aboutBlock .skillBlock {
-  background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
-  opacity: 0.85;
-  border: solid 1px black;
-  box-shadow: 3px 6px var(--shadowColor);
-  padding: 10px;
-}
-section#about .aboutBlock .skillBlock a {
-  text-decoration: none;
-  color: var(--gitlabcolor);
-}
-section#about .aboutBlock .skillBlock .starBlock {
-  display: grid;
-  border-top: solid grey 3px;
-  padding: 5px;
-  grid-template: repeat(3, 1fr)/1fr;
-}
-section#about .aboutBlock .skillBlock .starBlock .skillColumn {
-  display: grid;
-  grid-template: 70px 60px 1fr/1fr;
-  align-items: center;
-  justify-items: center;
-  width: 100%;
-  height: auto;
-}
-section#about .aboutBlock .skillBlock .starBlock .skillColumn i {
-  color: var(--skillHeadingColor);
-  font-size: 60px;
-  text-align: center;
-}
-section#about .aboutBlock .skillBlock .starBlock .skillColumn h2 {
-  line-height: 60px;
-  background-color: transparent;
-  font-size: 35px;
-  text-align: center;
-  margin: auto;
-}
-section#about .aboutBlock .skillBlock .starBlock .skillColumn .listbox {
-  align-self: start;
-}
-section#about .aboutBlock .skillBlock .starBlock .skillColumn .listbox p {
-  font-size: 25px;
-  text-align: center;
-}
-section#about .aboutBlock .skillBlock h3 {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  color: var(--coolblack);
-  font-weight: bold;
-}
-section#about .aboutBlock .skillBlock p {
-  color: var(--coolblack);
-  font-weight: bold;
-  font-size: 17px;
-}
-section#about .aboutBlock .skillBlock i {
-  font-size: 30px;
-}
+  background-attachment: fixed; }
+  section#about .aboutBlock {
+    display: grid;
+    grid-template: auto/auto;
+    width: 90%;
+    max-width: 1100px;
+    margin-bottom: 50px; }
+    section#about .aboutBlock .portraitBlock {
+      display: none; }
+    section#about .aboutBlock .skillBlock {
+      background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
+      opacity: 0.85;
+      border: solid 1px black;
+      box-shadow: 3px 6px var(--shadowColor);
+      padding: 10px; }
+      section#about .aboutBlock .skillBlock a {
+        text-decoration: none;
+        color: var(--gitlabcolor); }
+      section#about .aboutBlock .skillBlock .starBlock {
+        display: grid;
+        border-top: solid grey 3px;
+        padding: 5px;
+        grid-template: repeat(3, 1fr)/1fr; }
+        section#about .aboutBlock .skillBlock .starBlock .skillColumn {
+          display: grid;
+          grid-template: 70px 60px 1fr/1fr;
+          align-items: center;
+          justify-items: center;
+          width: 100%;
+          height: auto; }
+          section#about .aboutBlock .skillBlock .starBlock .skillColumn i {
+            color: var(--skillHeadingColor);
+            font-size: 60px;
+            text-align: center; }
+          section#about .aboutBlock .skillBlock .starBlock .skillColumn h2 {
+            line-height: 60px;
+            background-color: transparent;
+            font-size: 35px;
+            text-align: center;
+            margin: auto; }
+          section#about .aboutBlock .skillBlock .starBlock .skillColumn .listbox {
+            align-self: start; }
+            section#about .aboutBlock .skillBlock .starBlock .skillColumn .listbox p {
+              font-size: 25px;
+              text-align: center; }
+      section#about .aboutBlock .skillBlock h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: var(--coolblack);
+        font-weight: bold; }
+      section#about .aboutBlock .skillBlock p {
+        color: var(--coolblack);
+        font-weight: bold;
+        font-size: 17px; }
+      section#about .aboutBlock .skillBlock i {
+        font-size: 30px; }
 
 footer {
   display: grid;
@@ -304,89 +263,70 @@ footer {
   opacity: 0.9;
   text-align: center;
   font-style: italic;
-  bottom: 0;
-}
-footer h2 {
-  font-weight: bold;
-  color: var(--solidBlack);
-  background-color: transparent;
-  font-size: 10px;
-  width: auto;
-}
-footer .socialNav {
-  display: grid;
-  grid-template: auto/repeat(6, 1fr);
-  align-items: space-around;
-  justify-items: center;
-  width: 200px;
-}
-footer .socialNav .mediaButton:nth-child(1) a {
-  color: var(--gitlabcolor);
-}
-footer .socialNav .mediaButton:nth-child(2) a {
-  color: var(--facebookcolor);
-}
-footer .socialNav .mediaButton:nth-child(3) a {
-  color: var(--fcccolor);
-}
-footer .socialNav .mediaButton:nth-child(4) a {
-  color: --githubcolor;
-}
-footer .socialNav .mediaButton:nth-child(5) a {
-  color: var(--twittercolor);
-}
-footer .socialNav .mediaButton:nth-child(6) a {
-  color: var(--codefightscolor);
-}
-footer .socialNav .mediaButton i {
-  font-size: 20px;
-}
-footer .content {
-  display: none;
-}
-footer .content p {
-  font-size: 12px;
-  font-weight: bold;
-  color: var(--solidBlack);
-  line-height: 1.6em;
-}
-footer .content img {
-  width: 80px;
-  height: 20px;
-}
+  bottom: 0; }
+  footer h2 {
+    font-weight: bold;
+    color: var(--solidBlack);
+    background-color: transparent;
+    font-size: 10px;
+    width: auto; }
+  footer .socialNav {
+    display: grid;
+    grid-template: auto/repeat(6, 1fr);
+    align-items: space-around;
+    justify-items: center;
+    width: 200px; }
+    footer .socialNav .mediaButton:nth-child(1) a {
+      color: var(--gitlabcolor); }
+    footer .socialNav .mediaButton:nth-child(2) a {
+      color: var(--facebookcolor); }
+    footer .socialNav .mediaButton:nth-child(3) a {
+      color: var(--fcccolor); }
+    footer .socialNav .mediaButton:nth-child(4) a {
+      color: --githubcolor; }
+    footer .socialNav .mediaButton:nth-child(5) a {
+      color: var(--twittercolor); }
+    footer .socialNav .mediaButton:nth-child(6) a {
+      color: var(--codefightscolor); }
+    footer .socialNav .mediaButton i {
+      font-size: 20px; }
+  footer .content {
+    display: none; }
+    footer .content p {
+      font-size: 12px;
+      font-weight: bold;
+      color: var(--solidBlack);
+      line-height: 1.6em; }
+    footer .content img {
+      width: 80px;
+      height: 20px; }
 
 section#contact {
   width: 100%;
   background: url("/images/ocean.jpg") center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
-section#contact .contactcontainer {
-  display: grid;
-  grid-template: repeat(3, 1fr)/1fr;
-  align-items: center;
-  justify-items: center;
-  width: 90%;
-  height: auto;
-  margin: 5px;
-  padding: 5px;
-}
-section#contact .contactcontainer .emailbox, section#contact .contactcontainer .phonebox, section#contact .contactcontainer .resumebox {
-  display: grid;
-  grid-template: 1fr 1fr/1fr;
-  align-items: center;
-  justify-items: center;
-}
-section#contact .contactcontainer h3 {
-  font-size: 30px;
-  color: var(--coolblack);
-}
-section#contact .contactcontainer i {
-  font-size: 100px;
-}
-section#contact .contactcontainer i:hover {
-  cursor: pointer;
-}
+  background-attachment: fixed; }
+  section#contact .contactcontainer {
+    display: grid;
+    grid-template: repeat(3, 1fr)/1fr;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    height: auto;
+    margin: 5px;
+    padding: 5px; }
+    section#contact .contactcontainer .emailbox, section#contact .contactcontainer .phonebox, section#contact .contactcontainer .resumebox {
+      display: grid;
+      grid-template: 1fr 1fr/1fr;
+      align-items: center;
+      justify-items: center; }
+    section#contact .contactcontainer h3 {
+      font-size: 30px;
+      color: var(--coolblack); }
+    section#contact .contactcontainer i {
+      font-size: 100px; }
+      section#contact .contactcontainer i:hover {
+        cursor: pointer; }
 
 section#socialMedia {
   width: 100%;
@@ -395,43 +335,32 @@ section#socialMedia {
   background: transparent;
   background: url("/images/socialmedia.jpg") center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
-section#socialMedia .socialNav {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  display: grid;
-  grid-template: repeat(3, 1fr)/repeat(2, 1fr);
-  justify-items: center;
-}
-section#socialMedia .socialNav .mediaButton:nth-child(1) a {
-  color: var(--gitlabcolor);
-}
-section#socialMedia .socialNav .mediaButton:nth-child(2) a {
-  color: var(--facebookcolor);
-}
-section#socialMedia .socialNav .mediaButton:nth-child(3) a {
-  color: var(--fcccolor);
-}
-section#socialMedia .socialNav .mediaButton:nth-child(4) a {
-  color: --githubcolor;
-}
-section#socialMedia .socialNav .mediaButton:nth-child(5) a {
-  color: var(--twittercolor);
-}
-section#socialMedia .socialNav .mediaButton:nth-child(6) a {
-  color: var(--codefightscolor);
-}
-section#socialMedia .socialNav .mediaButton {
-  text-align: center;
-  font-size: 25px;
-}
-section#socialMedia .socialNav .mediaButton a {
-  text-decoration: none;
-}
-section#socialMedia .socialNav .mediaButton i {
-  font-size: 120px;
-}
+  background-attachment: fixed; }
+  section#socialMedia .socialNav {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+    justify-items: center; }
+    section#socialMedia .socialNav .mediaButton:nth-child(1) a {
+      color: var(--gitlabcolor); }
+    section#socialMedia .socialNav .mediaButton:nth-child(2) a {
+      color: var(--facebookcolor); }
+    section#socialMedia .socialNav .mediaButton:nth-child(3) a {
+      color: var(--fcccolor); }
+    section#socialMedia .socialNav .mediaButton:nth-child(4) a {
+      color: --githubcolor; }
+    section#socialMedia .socialNav .mediaButton:nth-child(5) a {
+      color: var(--twittercolor); }
+    section#socialMedia .socialNav .mediaButton:nth-child(6) a {
+      color: var(--codefightscolor); }
+    section#socialMedia .socialNav .mediaButton {
+      text-align: center;
+      font-size: 25px; }
+      section#socialMedia .socialNav .mediaButton a {
+        text-decoration: none; }
+      section#socialMedia .socialNav .mediaButton i {
+        font-size: 120px; }
 
 section#portfolio {
   display: grid;
@@ -445,254 +374,201 @@ section#portfolio {
   margin: 0;
   background: url("/images/desk.jpg") center no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
-section#portfolio .portfolio {
-  display: grid;
-  grid-template: repeat(9, 1fr)/1fr;
-  align-items: default;
-  justify-items: default;
-  grid-gap: 40px;
-  width: 75%;
-  max-width: 400px;
-  margin-bottom: 20px;
-}
-section#portfolio .portfolio .appBlock {
-  height: 250px;
-  background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
-  opacity: 0.85;
-  border: solid 1px black;
-  box-shadow: 3px 6px var(--shadowColor);
-}
-section#portfolio .portfolio .appBlock .thumbnail {
-  width: 100%;
-  height: 55%;
-}
-section#portfolio .portfolio .appBlock .thumbnail h3 {
-  color: var(--appblockColor);
-}
-section#portfolio .portfolio .appBlock .thumbnail a {
-  text-decoration: none;
-}
-section#portfolio .portfolio .appBlock .appcaption {
-  width: 100%;
-  height: 30%;
-  border-top: solid 1px lightgray;
-}
-section#portfolio .portfolio .appBlock .appcaption h5 {
-  text-align: center;
-  font-size: 20px;
-  margin: auto;
-}
-section#portfolio .portfolio .appBlock .appfooter {
-  display: grid;
-  grid-template: 1fr/1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  width: 100%;
-  height: 15%;
-  border-top: solid 1px lightgray;
-}
-section#portfolio .portfolio .appBlock .appfooter p {
-  text-transform: uppercase;
-  font-size: 13px;
-  color: var(--appblockColor);
-  font-weight: bold;
-}
-section#portfolio .portfolio .appBlock .appfooter a {
-  text-decoration: none;
-}
-section#portfolio .portfolio .appBlock .appfooter i {
-  font-size: 20px;
-}
-section#portfolio .portfolio .underConstruction {
-  height: 250px;
-  background-image: url("../images/under_construction.jpg");
-  background-size: contain;
-  background-position: center;
-  border: solid 1px black;
-  box-shadow: 3px 6px var(--shadowColor);
-}
-section#portfolio .portfolio .underConstruction .thumbnail {
-  width: 100%;
-  height: 55%;
-}
-section#portfolio .portfolio .underConstruction .thumbnail h3 {
-  color: var(--gitlabcolor);
-}
-section#portfolio .portfolio .underConstruction .thumbnail a {
-  text-decoration: none;
-}
-section#portfolio .portfolio .underConstruction .appcaption {
-  width: 100%;
-  height: 30%;
-  border-top: solid 1px lightgray;
-}
-section#portfolio .portfolio .underConstruction .appcaption h5 {
-  text-align: center;
-  font-size: 20px;
-  margin: auto;
-}
-section#portfolio .portfolio .underConstruction .appfooter {
-  display: grid;
-  grid-template: 1fr/1fr 1fr;
-  align-items: center;
-  justify-items: center;
-  width: 100%;
-  height: 15%;
-  border-top: solid 1px lightgray;
-}
-section#portfolio .portfolio .underConstruction .appfooter p {
-  text-transform: uppercase;
-  font-size: 13px;
-  color: var(--skillsColor);
-  font-weight: bold;
-}
-section#portfolio .portfolio .underConstruction .appfooter a {
-  text-decoration: none;
-}
-section#portfolio .portfolio .underConstruction .appfooter i {
-  font-size: 20px;
-}
+  background-attachment: fixed; }
+  section#portfolio .portfolio {
+    display: grid;
+    grid-template: repeat(9, 1fr)/1fr;
+    align-items: default;
+    justify-items: default;
+    grid-gap: 40px;
+    width: 75%;
+    max-width: 400px;
+    margin-bottom: 20px; }
+    section#portfolio .portfolio .appBlock {
+      height: 250px;
+      background: linear-gradient(135deg, var(--transitionColorA), var(--transitionColorB)), linear-gradient(var(--transitionColorC), var(--transitionColorC));
+      opacity: 0.85;
+      border: solid 1px black;
+      box-shadow: 3px 6px var(--shadowColor); }
+      section#portfolio .portfolio .appBlock .thumbnail {
+        width: 100%;
+        height: 55%; }
+        section#portfolio .portfolio .appBlock .thumbnail h3 {
+          color: var(--appblockColor); }
+        section#portfolio .portfolio .appBlock .thumbnail a {
+          text-decoration: none; }
+      section#portfolio .portfolio .appBlock .appcaption {
+        width: 100%;
+        height: 30%;
+        border-top: solid 1px lightgray; }
+        section#portfolio .portfolio .appBlock .appcaption h5 {
+          text-align: center;
+          font-size: 20px;
+          margin: auto; }
+      section#portfolio .portfolio .appBlock .appfooter {
+        display: grid;
+        grid-template: 1fr/1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        height: 15%;
+        border-top: solid 1px lightgray; }
+        section#portfolio .portfolio .appBlock .appfooter p {
+          text-transform: uppercase;
+          font-size: 13px;
+          color: var(--appblockColor);
+          font-weight: bold; }
+        section#portfolio .portfolio .appBlock .appfooter a {
+          text-decoration: none; }
+        section#portfolio .portfolio .appBlock .appfooter i {
+          font-size: 20px; }
+    section#portfolio .portfolio .underConstruction {
+      height: 250px;
+      background-image: url("../images/under_construction.jpg");
+      background-size: contain;
+      background-position: center;
+      border: solid 1px black;
+      box-shadow: 3px 6px var(--shadowColor); }
+      section#portfolio .portfolio .underConstruction .thumbnail {
+        width: 100%;
+        height: 55%; }
+        section#portfolio .portfolio .underConstruction .thumbnail h3 {
+          color: var(--gitlabcolor); }
+        section#portfolio .portfolio .underConstruction .thumbnail a {
+          text-decoration: none; }
+      section#portfolio .portfolio .underConstruction .appcaption {
+        width: 100%;
+        height: 30%;
+        border-top: solid 1px lightgray; }
+        section#portfolio .portfolio .underConstruction .appcaption h5 {
+          text-align: center;
+          font-size: 20px;
+          margin: auto; }
+      section#portfolio .portfolio .underConstruction .appfooter {
+        display: grid;
+        grid-template: 1fr/1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        width: 100%;
+        height: 15%;
+        border-top: solid 1px lightgray; }
+        section#portfolio .portfolio .underConstruction .appfooter p {
+          text-transform: uppercase;
+          font-size: 13px;
+          color: var(--skillsColor);
+          font-weight: bold; }
+        section#portfolio .portfolio .underConstruction .appfooter a {
+          text-decoration: none; }
+        section#portfolio .portfolio .underConstruction .appfooter i {
+          font-size: 20px; }
 
 @media only screen and (min-width: 520px) {
   header .portraitBlock {
-    display: grid;
-  }
-}
+    display: grid; } }
 @media only screen and (min-width: 768px) {
   section#menu {
     width: 100%;
     height: auto;
     justify-items: center;
-    background-color: var(--navbarBackground);
-  }
-  section#menu nav {
-    grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    justify-self: center;
-    align-items: center;
-    justify-items: space-around;
-    height: auto;
-    width: 95%;
-    max-width: 1000px;
-    overflow-y: visible;
-    padding: 5px 0 5px 0;
-  }
-  section#menu nav a .button {
-    text-align: center;
-    line-height: 1.9em;
-    font-size: 15px;
-  }
-  section#menu nav .bars {
-    display: none;
-  }
+    background-color: var(--navbarBackground); }
+    section#menu nav {
+      grid-template: 1fr/1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-gap: 10px;
+      justify-self: center;
+      align-items: center;
+      justify-items: space-around;
+      height: auto;
+      width: 95%;
+      max-width: 1000px;
+      overflow-y: visible;
+      padding: 5px 0 5px 0; }
+      section#menu nav a .button {
+        text-align: center;
+        line-height: 1.9em;
+        font-size: 15px; }
+      section#menu nav .bars {
+        display: none; }
 
   section#portfolio .portfolio {
     grid-template: repeat(6, 1fr)/repeat(2, 1fr);
     width: 90%;
-    max-width: 1200px;
-  }
+    max-width: 1200px; }
 
   section#about {
-    margin-top: 0;
-  }
-  section#about .aboutBlock {
-    grid-template: auto/auto auto;
-  }
-  section#about .aboutBlock .portraitBlock {
-    display: grid;
-    grid-template: auto 1fr/1fr;
-    jusity-items: center;
-    align-items: flex-start;
-  }
-  section#about .aboutBlock .portraitBlock img {
-    width: 300px;
-    height: 300px;
-  }
-  section#about .aboutBlock .portraitBlock h3 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  section#about .aboutBlock .skillBlock p {
-    font-size: 30px;
-  }
-  section#about .aboutBlock .skillBlock .starBlock {
-    grid-template: 1fr/repeat(3, 1fr);
-  }
-  section#about .aboutBlock .skillBlock .starBlock i {
-    font-size: 25px;
-  }
-  section#about .aboutBlock .skillBlock .starBlock p {
-    font-size: 15px;
-  }
+    margin-top: 0; }
+    section#about .aboutBlock {
+      grid-template: auto/auto auto; }
+      section#about .aboutBlock .portraitBlock {
+        display: grid;
+        grid-template: auto 1fr/1fr;
+        jusity-items: center;
+        align-items: flex-start; }
+        section#about .aboutBlock .portraitBlock img {
+          width: 300px;
+          height: 300px; }
+        section#about .aboutBlock .portraitBlock h3 {
+          margin-top: 5px;
+          margin-bottom: 5px; }
+      section#about .aboutBlock .skillBlock p {
+        font-size: 30px; }
+      section#about .aboutBlock .skillBlock .starBlock {
+        grid-template: 1fr/repeat(3, 1fr); }
+        section#about .aboutBlock .skillBlock .starBlock i {
+          font-size: 25px; }
+        section#about .aboutBlock .skillBlock .starBlock p {
+          font-size: 15px; }
 
   section#contact {
     background: url("/images/ocean.jpg") center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-  }
-  section#contact .contactcontainer {
-    grid-template: 1fr/1fr 1fr 1fr;
-    width: 75%;
-    max-width: 1000px;
-    margin-bottom: 100px;
-  }
+    background-attachment: fixed; }
+    section#contact .contactcontainer {
+      grid-template: 1fr/1fr 1fr 1fr;
+      width: 75%;
+      max-width: 1000px;
+      margin-bottom: 100px; }
 
   section#socialMedia .socialNav .mediaButton a i {
-    font-size: 200px;
-  }
+    font-size: 200px; }
 
   footer {
-    grid-template: 1fr/auto auto auto;
-  }
-  footer h2 {
-    font-size: 16px;
-  }
-  footer .content {
-    display: grid;
-    grid-template: auto/auto;
-    align-items: center;
-    justify-items: center;
-    width: 95%;
-    max-width: 400px;
-  }
-  footer .content p {
-    display: grid;
-    grid-template: auto/auto;
-    align-items: center;
-    justify-items: center;
-    font-size: 14px;
-  }
-}
+    grid-template: 1fr/auto auto auto; }
+    footer h2 {
+      font-size: 16px; }
+    footer .content {
+      display: grid;
+      grid-template: auto/auto;
+      align-items: center;
+      justify-items: center;
+      width: 95%;
+      max-width: 400px; }
+      footer .content p {
+        display: grid;
+        grid-template: auto/auto;
+        align-items: center;
+        justify-items: center;
+        font-size: 14px; } }
 @media only screen and (min-width: 912px) {
   section#menu nav a .button {
     font-size: 20px;
-    min-height: 35px;
-  }
+    min-height: 35px; }
 
   section#portfolio .portfolio {
-    grid-template: repeat(4, 1fr)/repeat(3, 1fr);
-  }
+    grid-template: repeat(4, 1fr)/repeat(3, 1fr); }
 
   section#about {
-    padding: 5px 0 5px 0;
-  }
-  section#about .aboutBlock .portraitBlock img {
-    width: 400px;
-    height: 400px;
-  }
-}
+    padding: 5px 0 5px 0; }
+    section#about .aboutBlock .portraitBlock img {
+      width: 400px;
+      height: 400px; } }
 @media only screen and (min-width: 1024px) {
   section#menu nav a .button {
-    font-size: 25px;
-  }
+    font-size: 25px; }
 
   section#about .aboutBlock .portraitBlock img {
     width: 400px;
-    height: 400px;
-  }
+    height: 400px; }
   section#about .aboutBlock .skillBlock .starBlock i, section#about .aboutBlock .skillBlock .starBlock p {
-    font-size: 26px;
-  }
-}
+    font-size: 26px; } }
+
+/*# sourceMappingURL=index.css.map */
